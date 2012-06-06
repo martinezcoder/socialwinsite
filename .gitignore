@@ -1,0 +1,6 @@
+$ cat .gitignore
+wp-admin
+BACKUPDB.sh
+_backup
+wp-config-sample.php
+
