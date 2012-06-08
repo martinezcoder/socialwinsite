@@ -53,7 +53,7 @@ dl dd {
 .logo {
 	position:absolute;
 	left:0;
-	top:66px;
+/*	top:66px;*/ top:45px;
 	}
 	.logo h1,
 	.logo h2 {
@@ -78,7 +78,7 @@ dl dd {
 #widget-header {
 	position:absolute;
 	right:-6px;
-	top:123px;
+/*	top:123px;*/ top:102px;
 	z-index:1;
 }
 	.widget-header {
@@ -222,7 +222,7 @@ dl dd {
 .nivo-caption {
 	position:absolute;
 	left:0;
-	top:88px;
+/*	top:88px; */ top:45px; 
 	color:#a1a7a8;
 	opacity:0.8; /* Overridden by captionOpacity setting */
 	width:100%;
@@ -372,7 +372,7 @@ a.nivo-prevNav:hover {
 nav.primary {
 	z-index:2;
 	position:absolute;
-	top:175px;
+/*	top:175px;*/ top:154px;
 	left:0;
 }
 nav.primary .ltc {
