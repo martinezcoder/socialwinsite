@@ -226,7 +226,7 @@ dl dd {
 	left:0;
 	/* margen entre el menú y los slogans del Home*/
 	top:30px; /* top:88px; */
-	color:#a1a7a8;
+	color: #606464; /* color texto de slides #a1a7a8; */
 	opacity:0.8; /* Overridden by captionOpacity setting */
 	width:100%;
 	z-index:999;
@@ -238,7 +238,7 @@ dl dd {
 	.nivo-caption h2 {
 		font-size:92px;
 		line-height:1em;
-		color:#76d4e5;
+		color:#76d4e5; /* color título slides */ 
 		text-transform:uppercase;
 		letter-spacing:-2px;
 		margin:0;
@@ -250,7 +250,7 @@ dl dd {
 		}
 	.nivo-caption h3 {
 		font-size:26px;
-		color:#3b4243;
+		color:#3b4243; /* color resumen texto slides */ 
 		line-height:1.2em;
 		font-weight:bold;
 		padding:0;
