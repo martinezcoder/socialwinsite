@@ -231,6 +231,10 @@ dl dd {
 	width:100%;
 	z-index:999;
 }
+	.nivo-caption p {
+		text-align: justify;  /* texto slides justificado */ 
+	}
+
 .nivo-caption .nivo-caption-inner {
 	padding:0;
 	margin:0;
