@@ -21,8 +21,12 @@
           <?php if($myfooter_text){?>
             <?php echo of_get_option('footer_text'); ?>
           <?php } else { ?>
-            <?php bloginfo('name'); ?> &copy; <?php echo date("Y") ?> &bull; <a href="<?php bloginfo('url'); ?>/privacy-policy/" title="Privacy Policy">Privacy Policy</a><br />Like this design? Browse for <a rel="nofollow" href="http://www.templatemonster.com/wordpress-themes.php" title="WordPress templates" target="_blank">more WordPress themes</a>!
+            <?php bloginfo('name'); ?> &copy; <?php echo date("Y") ?> &bull; 
 
+<!--
+<a href="<?php bloginfo('url'); ?>/privacy-policy/" title="Privacy Policy">Privacy Policy</a><br />
+Like this design? Browse for <a rel="nofollow" href="http://www.templatemonster.com/wordpress-themes.php" title="WordPress templates" target="_blank">more WordPress themes</a>!
+-->
           <?php } ?>
         
       </div>
