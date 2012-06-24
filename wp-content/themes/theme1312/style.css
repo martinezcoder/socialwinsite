@@ -31,11 +31,22 @@ dl dt {
 	margin-bottom:.2em;
 	font-size:18px;
 	line-height:1.2em;
-	color:#191919;
+	color:#6D7171;
 	}
+
 dl dd {
 	padding:0 0 0 32px;
 	margin:0 0 1.5em 0;
+	}
+
+dl dt a{
+	text-decoration: none;
+	color:#6D7171;
+}
+
+dl dt a:hover {
+	color:#191919; 
+	text-decoration: none;
 	}
 
 
