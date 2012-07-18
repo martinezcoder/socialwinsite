@@ -71,6 +71,32 @@ p {
 	text-decoration:none;
 }
 
+.SocialServices h2{
+	font: Arial, Helvetica, sans-serif;
+
+	font-size:16px;
+	line-height:2.2em;
+	margin-bottom:10px;
+	letter-spacing:-0.5px;
+	font-weight:bold;
+	color:#3B4243;
+	text-decoration:none;
+}
+
+
+.SocialServices h3{
+	font: Arial, Helvetica, sans-serif;
+
+	font-size:14px;
+	line-height:1.2em;
+	margin-bottom:10px;
+	letter-spacing:-0.5px;
+	font-weight:bold;
+	color:#76E4D5;
+	text-decoration:none;
+}
+
+
 .SocialServices p{
 	text-align: justify; 
 	color: #555;
