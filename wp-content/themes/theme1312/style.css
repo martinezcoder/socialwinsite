@@ -49,10 +49,39 @@ dl dt a:hover {
 	text-decoration: none;
 	}
 
-
+/* Personales Fran
+---------------------------------------- */
 p {
 		text-align: justify;  /* texto slides justificado */ 
 }
+
+.SocialServices{
+	padding:0px 30px 0px 10px;
+}
+
+.SocialServices h1{
+	font: Arial, Helvetica, sans-serif;
+
+	font-size:24px;
+	line-height:1.2em;
+	margin-bottom:10px;
+	letter-spacing:-0.5px;
+	font-weight:bold;
+	color:#76E4D5;
+	text-decoration:none;
+}
+
+.SocialServices p{
+	text-align: justify; 
+	color: #555;
+}
+
+
+
+/*
+----------------------------------------
+*/
+
 
 /* Header
 ---------------------------------------- */
@@ -1144,7 +1173,7 @@ nav.oldernewer {
 		}
 	.header-title .page-desc {
 		font-size:.91em;
-		color:#999;
+		color:#777;
 		}
 
 
