@@ -8,7 +8,9 @@
 </div>
 <div id="bottom-content">
 	<div class="container_16 clearfix">
+
 		<?php if ( ! dynamic_sidebar( 'Bottom Content (Home)' ) ) : ?>
+
       <!--Widgetized 'Bottom Content' for the home page-->
     <?php endif ?>
   </div>

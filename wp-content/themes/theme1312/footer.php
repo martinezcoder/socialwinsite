@@ -2,9 +2,13 @@
 	<footer id="footer">
 		<div class="container_16 clearfix">
 			<div class="grid_16">
+
       	<?php if ( ! dynamic_sidebar( 'Footer' ) ) : ?>
+
           <!--Widgetized Footer-->
+
         <?php endif ?>
+
         <?php if ( of_get_option('footer_menu') == 'true') { ?>  
           <nav class="footer">
 						<?php wp_nav_menu( array(
@@ -23,12 +27,14 @@
           <?php } else { ?>
             <?php bloginfo('name'); ?> &copy; <?php echo date("Y") ?> &bull; 
 
+
 <!--
 <a href="<?php bloginfo('url'); ?>/privacy-policy/" title="Privacy Policy">Privacy Policy</a><br />
 Like this design? Browse for <a rel="nofollow" href="http://www.templatemonster.com/wordpress-themes.php" title="WordPress templates" target="_blank">more WordPress themes</a>!
 -->
+
           <?php } ?>
-        
+
       </div>
 		</div><!--.container-->
 	</footer>

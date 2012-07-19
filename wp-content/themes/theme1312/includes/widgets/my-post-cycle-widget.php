@@ -144,9 +144,9 @@ class MY_CycleWidget extends WP_Widget {
                 <?php while (have_posts()) : the_post(); ?>	
                 <div class="slogan_item">
                   <?php if($limittext=="" || $limittext==0){ ?>
-                  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                  <h2><a href="#"><?php the_title(); ?></a></h2>
                   <?php }else{ ?>
-                  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                  <h2><a href="#"><?php the_title(); ?></a></h2>
                   <?php $excerpt = get_the_excerpt(); echo my_string_limit_words($excerpt,$limittext); } ?>
                 </div>
                 <?php endwhile; ?>
