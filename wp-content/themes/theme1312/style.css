@@ -295,7 +295,7 @@ p {
 .nivo-caption {
 	position:absolute;
 	left:0;
-	/* margen entre el menú y los slogans del Home*/
+	/* margen entre el menu y los slogans del Home*/
 	top:30px; /* top:88px; */
 	color: #606464; /* color texto de slides #a1a7a8; */
 	opacity:0.8; /* Overridden by captionOpacity setting */
@@ -311,7 +311,7 @@ p {
 	.nivo-caption h2 {
 		font-size:92px;
 		line-height:1em;
-		color:#76d4e5; /* color título slides */ 
+		color:#76d4e5; /* color titulo slides */ 
 		text-transform:uppercase;
 		letter-spacing:-2px;
 		margin:0;
@@ -329,7 +329,7 @@ p {
 		padding:0;
 		margin:-6px 0 24px 0;
 		text-transform:none;
-		width:600px;
+		width:500px;
 		background:#fff;
 		}
 	.nivo-caption p {

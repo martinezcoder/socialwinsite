@@ -40,6 +40,21 @@ Like this design? Browse for <a rel="nofollow" href="http://www.templatemonster.
 	</footer>
 </div><!--#main-->
 <?php wp_footer(); ?> <!-- this is used by many Wordpress features and for plugins to work proporly -->
-<?php echo stripslashes(of_get_option('ga_code')); ?><!-- Show Google Analytics -->
+<?php echo stripslashes(of_get_option('ga_code')); ?>
+<!-- Show Google Analytics -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-33589334-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
 </body>
 </html>
