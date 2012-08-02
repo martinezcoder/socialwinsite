@@ -189,9 +189,8 @@ article.p{
 		#servicios:hover{
 			border: 3px solid #76d4e5;
 
-		background:  -moz-radial-gradient(center, ellipse, #FFFFFF 0%, #76d4e5 300%);
-		background:  -webkit-radial-gradient(center, ellipse, #FFFFFF 0%, #76d4e5 300%);
-	
+			background:  -moz-radial-gradient(center, ellipse, #FFFFFF 0%, #76d4e5 300%);
+			background:  -webkit-radial-gradient(center, ellipse, #FFFFFF 0%, #76d4e5 300%);
 
 		}
 
@@ -200,9 +199,9 @@ article.p{
 	display: inline-block;
 	float: left;
 	width: 75%;
-/*	border: 1px solid #999999;*/
 	padding: 10px;
 	margin: 0px;
+/*	border: 1px solid #999999;*/
 }
 
 
@@ -211,16 +210,26 @@ article.p{
 	float: left;
 	width: 20%;
 	height: auto;
-/*	border: 1px solid #999999;*/
 	padding: 10px;
 	margin: 0px;
 }
+
+
+.imagender{
+	display: inline-block;
+	float: right;
+	width: 20%;
+	height: auto;
+	padding: 10px;
+	margin: 10px;
+/*	border: 1px solid #999999;*/
+}
+
 
 .titulocaja{
 	display: inline-block;
 	float: left;
 	width: 100%;
-/*	border: 1px solid #999999;*/
 }
 
 
@@ -249,6 +258,15 @@ figcaption {
 
 
 
+
+/* Utilidades */ 
+.sinmargen {
+	padding: 0px;
+	margin: 0px;
+}
+.borde {
+	border: 1px solid #999999;
+}
 
 
 
