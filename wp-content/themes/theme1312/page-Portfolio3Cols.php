@@ -46,7 +46,7 @@ get_header(); ?>
         <div class="folio-desc">
           <h3><a href="<?php the_permalink(); ?>"><?php $title = the_title('','',FALSE); echo substr($title, 0, 40); ?></a></h3>
           <p class="excerpt"><?php $excerpt = get_the_excerpt(); echo my_string_limit_words($excerpt,11);?></p>
-          <a href="<?php the_permalink(); ?>" class="button">Read more</a>
+          <a href="<?php the_permalink(); ?>" class="button">M&aacute;s</a>
         </div>
       </li>
     

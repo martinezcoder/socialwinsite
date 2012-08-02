@@ -32,7 +32,7 @@
           <?php if ($theme1312_post_excerpt=='') { ?>
             <div class="excerpt"><?php $excerpt = get_the_excerpt(); echo my_string_limit_words($excerpt,50);?></div>
           <?php } ?>
-          <a href="<?php the_permalink() ?>" class="button">Read more</a>
+          <a href="<?php the_permalink() ?>" class="button">M&aacute;s</a>
         </div>
         <footer>
           <?php the_tags('Tags: ', ', ', ''); ?> <?php edit_post_link('Edit', '', ''); ?>

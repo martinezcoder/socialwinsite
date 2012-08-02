@@ -45,7 +45,7 @@ get_header(); ?>
               <time datetime="<?php the_time('Y-m-d\TH:i'); ?>"><?php the_time('F j, Y'); ?></time>
             </header>
             <p class="excerpt"><?php $excerpt = get_the_excerpt(); echo my_string_limit_words($excerpt,50);?></p>
-            <a href="<?php the_permalink(); ?>" class="button">Read more</a>
+            <a href="<?php the_permalink(); ?>" class="button">M&aacute;s</a>
           </div>
         </div>
       </li>

@@ -77,7 +77,7 @@
 	
 	// custom excerpt ellipses for 2.9+
 	function custom_excerpt_more($more) {
-		return 'Read More &raquo;';
+		return 'M&aacute;s &raquo;';
 	}
 	add_filter('excerpt_more', 'custom_excerpt_more');
 	// no more jumping for read more link

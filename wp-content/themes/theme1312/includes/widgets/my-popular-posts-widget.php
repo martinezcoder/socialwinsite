@@ -45,7 +45,7 @@ class MY_PopularPostsWidget extends WP_Widget {
                           <?php } ?>
                           <h5><a href="<?php echo $guid; ?>" title="<?php echo $post_title; ?>"><?php echo my_string_limit_char($post_title,20);?>...</a></h5>
                           <div class="excerpt"><?php echo my_string_limit_char($excerpt,52);?>...</div>
-                          <a href="<?php echo $guid; ?>"><?php _e('Read more &gt;&gt;','theme1312');?></a>
+                          <a href="<?php echo $guid; ?>"><?php _e('M&aacute;s &gt;&gt;','theme1312');?></a>
                         </li>
                     <?php
                         }

@@ -20,7 +20,7 @@
       
       <div class="post-content">
         <div class="excerpt"><?php $excerpt = get_the_excerpt(); echo my_string_limit_words($excerpt,50);?></div>
-        <a href="<?php the_permalink() ?>" class="button">Read more</a>
+        <a href="<?php the_permalink() ?>" class="button">M&aacute;s</a>
       </div>
     </article>
   <?php endwhile; else: ?>

@@ -115,7 +115,7 @@ function widget($args, $instance) {
               <div class="name-testi"><span class="user"><?php echo $testiname; ?></span>, <a href="http://<?php echo $testiurl; ?>"><?php echo $testiurl; ?></a></div>
             <?php }?>
             <?php if ( $instance['more_link'] ) : ?>
-              <a href="<?php the_permalink() ?>" class="<?php if($instance['more_link_class']!="") {echo $instance['more_link_class'];}else{ ?>link<?php } ?>"><?php if($instance['more_link_text']==""){ ?>Read more<?php }else{ ?><?php echo $instance['more_link_text']; ?><?php } ?></a>
+              <a href="<?php the_permalink() ?>" class="<?php if($instance['more_link_class']!="") {echo $instance['more_link_class'];}else{ ?>link<?php } ?>"><?php if($instance['more_link_text']==""){ ?>M&aacute;s<?php }else{ ?><?php echo $instance['more_link_text']; ?><?php } ?></a>
             <?php endif; ?>
 		</li>
 	<?php } ?>
@@ -282,7 +282,7 @@ function form($instance) {
   <p>
   <label for="<?php echo $this->get_field_id("more_link_text"); ?>">
     <?php _e( 'Link text' ); ?>:
-    <input class="widefat" id="<?php echo $this->get_field_id("more_link_text"); ?>" name="<?php echo $this->get_field_name("more_link_text"); ?>" type="text" value="<?php echo esc_attr($instance["more_link_text"]); ?>" /> <span style="font-size:11px; color:#999;"><?php _e( '(default: "Read more")' ); ?></span>
+    <input class="widefat" id="<?php echo $this->get_field_id("more_link_text"); ?>" name="<?php echo $this->get_field_name("more_link_text"); ?>" type="text" value="<?php echo esc_attr($instance["more_link_text"]); ?>" /> <span style="font-size:11px; color:#999;"><?php _e( '(default: "M&aacute;s")' ); ?></span>
   </label>
   </p>
   <p>
