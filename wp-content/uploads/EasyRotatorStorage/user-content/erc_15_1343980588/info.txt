@@ -1,0 +1,1 @@
+a:6:{s:4:"name";s:2:"CX";s:11:"description";N;s:12:"isCheckedOut";b:1;s:19:"checkedOutMachineID";s:30:"dGe4nUiKCvISFzKdD99uJVWxMXdUrZ";s:14:"checkedOutTime";i:1343980588;s:10:"checkOutID";s:30:"ofHSyqE79BRfdeC5OLcG7ozfmj9KzJ";}

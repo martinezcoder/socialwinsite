@@ -39,6 +39,9 @@
 	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/prettyPhoto.css" />
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/grid.css" />
+<!-- Fran Init -->
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/slicebox.css" />
+<!-- Fran End -->  
 	<?php
 		/* We add some JavaScript to pages with the comment form
 		 * to support sites with threaded comments (when in use).
