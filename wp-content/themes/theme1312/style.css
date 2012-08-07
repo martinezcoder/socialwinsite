@@ -53,6 +53,7 @@ dl dt a:hover {
 ---------------------------------------- */
 p {
 		text-align: justify;  /* texto slides justificado */ 
+		color: #555;
 }
 
 .easyRotatorWrapper{
