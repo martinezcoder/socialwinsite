@@ -18,7 +18,7 @@ function my_script() {
 		wp_enqueue_script('custom', get_bloginfo('template_url').'/js/custom.js', array('jquery'), '1.0');
 
 		/* Fran Init */
-		wp_enqueue_script('slicebxMdrnizer', get_bloginfo('template_url').'/js/modernizr.custom.13303.js', array('jquery'), '1.0'); 
+		wp_enqueue_script('slicebxMdrnizer', get_bloginfo('template_url').'/js/modernizr.custom.94439.js', array('jquery'), '1.0'); 
 		/* Fran End */
 
 	}
