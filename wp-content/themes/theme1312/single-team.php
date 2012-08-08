@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="content" class="grid_12 <?php echo of_get_option('blog_sidebar_pos') ?>">
+<div id="content" class="grid_15 <?php echo of_get_option('blog_sidebar_pos') ?>">
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
     <div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
       <article class="single-post">
@@ -19,5 +19,5 @@
 
   <?php endwhile; /* end loop */ ?>
 </div><!--#content-->
-<?php get_sidebar(); ?>
+<!-- < ?php get_sidebar(); ? > -->
 <?php get_footer(); ?>

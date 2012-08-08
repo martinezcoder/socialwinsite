@@ -1,23 +1,31 @@
 <?php get_header(); ?>
-<div id="content" class="grid_12 <?php echo of_get_option('blog_sidebar_pos') ?>">
-	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+   <?php if (get_post( $args[0] )->post_type != 'clients') { ?>
+	<?php echo '<div id="content" class="grid_12';of_get_option('blog_sidebar_pos');echo '">'; ?>
+   <?php } else { ?>
+	<?php echo '<div id="content" class="grid_15';of_get_option('blog_sidebar_pos');echo '">'; ?>
+   <?php } ?>
+
+    <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
     <div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
       <article class="single-post">
         <header>
           <h1><?php the_title(); ?></h1>
         </header>
         <?php $single_image_size = of_get_option('single_image_size'); ?>
-				<?php if($single_image_size=='' || $single_image_size=='normal'){ ?>
-          <?php if(has_post_thumbnail()) {
-            echo '<div class="featured-thumbnail"><div class="img-wrap">'; the_post_thumbnail(); echo '</div></div>';
-            }
-          ?>
+
+	  <?php if($single_image_size=='' || $single_image_size=='normal'){ ?>
+		          <?php if(has_post_thumbnail()) {
+		            echo '<div class="featured-thumbnail"><div class="img-wrap">'; the_post_thumbnail(); echo '</div></div>';
+		            }
+		          ?>
         <?php } else { ?>
-          <?php if(has_post_thumbnail()) {
-            echo '<div class="featured-thumbnail large"><div class="img-wrap"><div class="f-thumb-wrap">'; the_post_thumbnail('post-thumbnail-xl'); echo '</div></div></div>';
-            }
-          ?>
+		          <?php if(has_post_thumbnail()) {
+		            echo '<div class="featured-thumbnail large"><div class="img-wrap"><div class="f-thumb-wrap">'; the_post_thumbnail('post-thumbnail-xl'); echo '</div></div></div>';
+		            }
+		          ?>
         <?php } ?>
+
         <div class="post-content">
           <?php the_content(); ?>
           <?php wp_link_pages('before=<div class="pagination">&after=</div>'); ?>
@@ -54,5 +62,12 @@
 
   <?php endwhile; /* end loop */ ?>
 </div><!--#content-->
-<?php get_sidebar(); ?>
+
+
+<?php 
+	if (get_post( $args[0] )->post_type != 'clients') {
+		get_sidebar();
+	}
+?>
+
 <?php get_footer(); ?>
