@@ -2751,7 +2751,8 @@ input[type="submit"]:hover {
 		height:30px;
 		line-height:30px;
 		padding:0 10px;
-		color:#fff;
+		color:#111;
+		background: #76d4e5;
 		cursor:pointer;
 		border:none;
 		}

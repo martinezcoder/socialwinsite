@@ -75,9 +75,9 @@ $comment_type = '';
 
 if ( get_option('require_name_email') && !$user->exists() ) {
 	if ( 6 > strlen($comment_author_email) || '' == $comment_author )
-		wp_die( __('<strong>ERROR</strong>: please fill the required fields (name, email).') );
+		wp_die( __('<strong>ERROR</strong>: por favor, rellene los campos requeridos (nombre, email).') );
 	elseif ( !is_email($comment_author_email))
-		wp_die( __('<strong>ERROR</strong>: please enter a valid email address.') );
+		wp_die( __('<strong>ERROR</strong>: por favor, entre una direcci&oacuten de correo v&aacutelida.') );
 }
 
 if ( '' == $comment_content )

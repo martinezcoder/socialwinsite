@@ -59,7 +59,7 @@ if ( post_password_required($post) ) {  // and it doesn't match the cookie
 <?php } // end for each comment ?>
 </ol>
 <?php } else { // this is displayed if there are no comments so far ?>
-	<p><?php _e('No comments yet.'); ?></p>
+	<p><?php _e('Sin comentarios'); ?></p>
 <?php } ?>
 
 <?php if ( comments_open() ) { ?>

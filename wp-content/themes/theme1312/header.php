@@ -19,7 +19,7 @@
 		echo wp_title( ' | ', false, right ); bloginfo( 'name' );
 	} ?></title>
 	<meta name="description" content="<?php wp_title(); echo ' | '; bloginfo( 'description' ); ?>" />
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta http-equiv="Content-type" content="text/html" charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="keywords" content="Consultoria, Redes Sociales, Social Media, Planes Estrategicos, Estrategias Online, Estrategias Facebook, Estrategias Twitter, Reputacion Online">
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
   <link rel="icon" href="<?php bloginfo( 'template_url' ); ?>/socialwin.ico" type="image/x-icon" />
