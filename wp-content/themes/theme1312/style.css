@@ -89,6 +89,9 @@ p.textoclaro {
 
 	}
 
+	#socialwinpage ul li {
+		color: #555;		
+	}
 
 #cabecera {
 	padding: 0px;
@@ -316,7 +319,7 @@ figcaption {
 		margin-bottom:0;
 		background:url(images/logo-bg.png) no-repeat 100% 0;
 		letter-spacing:-4px;
-		padding:10px 12px 0 0;
+		padding:0 12px 0 0;
 		font-weight:bold;
 		border-bottom:none;
 		}
@@ -325,7 +328,13 @@ figcaption {
 			color:#3b4243;
 			text-decoration:none;
 			}
-
+	.logo h6 {
+		font-size:14px;
+		margin-bottom:0;
+		letter-spacing:0px;
+		padding:0px 0px 0 5px;
+		border-bottom:none;
+		}
 
 
 
@@ -1173,6 +1182,7 @@ article.single-post {
 }
 	.post-content .excerpt {
 		margin-bottom:1.5em;
+		text-align: justify;
 		}
 	.pagination {
 		

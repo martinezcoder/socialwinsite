@@ -175,6 +175,7 @@
             <?php } else { ?>
               <h2><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h2>
             <?php } ?>
+            <h6><?php bloginfo('description'); ?></h6>
             
           <?php } else { ?>
           
@@ -186,6 +187,7 @@
             
           <?php }?>
         </div>
+
         <nav class="primary">
         	<span class="ltc"></span>
           <span class="rtc"></span>
