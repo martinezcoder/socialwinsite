@@ -3,7 +3,7 @@
 Plugin Name: EasyRotator for WordPress
 Plugin URI: http://www.dwuser.com/easyrotator/wordpress/
 Description: Add professional, customizable photo sliders to your site in seconds.  Powered by the EasyRotator application from DWUser.com.
-Version: 1.0.3
+Version: 1.0.5
 Author: DWUser.com
 Author URI: http://www.dwuser.com/
 License: GPL v2 or later
@@ -111,7 +111,13 @@ class EasyRotator
 	
 	function hook_admin_init()
 	{
-		wp_enqueue_style(  'jquery-ui-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+        $includeJQUICSS = true;
+        if (stripos(@$_GET['page'], 'pagelines') === 0)
+            $includeJQUICSS = false;
+
+        if ($includeJQUICSS)
+		    wp_enqueue_style(  'jquery-ui-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
+            // to investigate: wp_enqueue_style( 'wp-jquery-ui-dialog' );
 		        
 		// All er-specific admin css
         wp_register_style( 'easyrotator-plugin-admin-css', $this->url . 'css/easyrotator_admin.css', array(), '1.0.0', 'all' );
@@ -1014,7 +1020,7 @@ class EasyRotator
 				            attributes.name = "EasyRotatorWizard_wpExplorer";
 				            attributes.align = "middle";
 				            swfobject.embedSWF(
-				                "' . $this->url . 'img/EasyRotatorWizard_wpExplorerOS.swf?rev=5", "erWPManagerContent", 
+				                "' . $this->url . 'img/EasyRotatorWizard_wpExplorerOS.swf?rev=6", "erWPManagerContent",
 				                "660", "390", 
 				                swfVersionStr, xiSwfUrlStr, 
 				                flashvars, params, attributes);
@@ -1852,6 +1858,22 @@ class EasyRotator
 			
 			$content = $before . $after;
 		}
+
+        if (is_feed())
+        {
+            $replacementText = '<div class="easyRotatorWrapper easyRotatorWrapperRSS" align="' . $atts['align'] . '">';
+            $firstImage = stripos($content, '<img');
+            if ($firstImage !== false)
+            {
+                preg_match('|<img.*?\ssrc="([^"]+)"|i', $content, $matches);
+                if (is_array($matches) && count($matches) == 2)
+                {
+                    $replacementText .= '<img src="' . $matches[1] . '" class="easyRotatorRSSPreviewImg" />';
+                }
+            }
+            $replacementText .= '<!--easyRotatorRSSPreviewText--></div>';
+            $content = $replacementText;
+        }
 		
 		return $content; //return $matches[0];
 		

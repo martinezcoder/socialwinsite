@@ -59,6 +59,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 			padding-left: 21px;
 			background: transparent url('../img/er_icon_16.png') no-repeat 0 1px;
 		}
+        div.easyrotator_welcome_notice div.er_chromeAIRBugNote {
+            background: #FCC;
+            border: 1px solid #C00;
+            padding: 3px 10px;
+            color: #C00;
+        }
 		
 		div.easyrotator_welcome_notice .er_hidden {
 			visibility: hidden;

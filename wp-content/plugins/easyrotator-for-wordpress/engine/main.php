@@ -806,7 +806,7 @@ class EasyRotatorWP
 			{
 				// ---------------------------------------------
 				// --- METHOD: WordPress.getFeaturedPhotos
-				//			Params: filter, filterDetail, limit, order
+				//			Params: filter, filterDetail, limit, order, excludeCurrent, fullSize, thumbSize
 				//			Desc: Used by the wizard to provide previews of photos to be added when adding dynamic featured-photo data.
 				// ---------------------------------------------
 				
@@ -816,6 +816,8 @@ class EasyRotatorWP
 					data-limit: (int) max number of photos to return; 0 = unlimited
 					data-order: rand | desc [default] | asc
 				    data-excludeCurrent: true | false [default]
+				    data-fullSize: 'full' [default] | 'large' | 'medium' | 'thumbnail' | '320,240' (pixels)
+				    data-thumbSize: 'full' | 'large' | 'medium' | 'thumbnail' [default] | '320,240' (pixels)
 				*/
 				
 				// Get params
@@ -824,6 +826,8 @@ class EasyRotatorWP
 				$limit = intval($this->getParam('limit'));
 				$order = $this->getParam('order');
                 $excludeCurrent = $this->getParam('excludeCurrent');
+                $fullSize = $this->getParam('fullSize');
+                $thumbSize = $this->getParam('thumbSize');
 				
 				// Use the getFeaturedPhotoInfo method...
 				$params = array(
@@ -833,6 +837,10 @@ class EasyRotatorWP
 					'data-order' => $order,
                     'data-excludeCurrent' => $excludeCurrent,
 				);
+                if (strlen($fullSize) > 0)
+                    $params['data-fullSize'] = $fullSize;
+                if (strlen($thumbSize) > 0)
+                    $params['data-thumbSize'] = $thumbSize;
 				$photos = self::getFeaturedPhotoInfo($params); // format: array( array('post_id', 'thumb_id', 'src', 'thumb', 'title', 'description', 'link') , ...)
 				
 				// Format output and return
@@ -1673,6 +1681,8 @@ class EasyRotatorWP
 			data-limit: (int) max number of photos to return; 0 = unlimited
 			data-order: rand | desc [default] | asc
 			data-excludeCurrent: true | false [default]
+		    data-fullSize: 'full' [default] | 'large' | 'medium' | 'thumbnail' | '320,240'  (in pixels)
+		    data-thumbSize: 'full' | 'large' | 'medium' | 'thumbnail' [default] | '320,240'  (in pixels)
 		*/
 		
 		$props = is_array($params) ? $params : array();
@@ -1739,7 +1749,29 @@ class EasyRotatorWP
 		
 		// Args built; get the posts.
 		$posts = get_posts($args);
-		
+
+        // Determine if custom image sizes have been specified
+        $fullSize = 'full';
+        if (isset($props['data-fullSize']))
+        {
+            $fullSizeTemp = $props['data-fullSize'];
+            $isDims = preg_match('|^(\\d+),(\\d+)$|', $fullSizeTemp, $matches);
+            if (in_array($fullSizeTemp, array('thumbnail', 'medium', 'large', 'full')))
+                $fullSize = $fullSizeTemp;
+            elseif ($isDims)
+                $fullSize = array(intval($matches[1]), intval($matches[2]));
+        }
+        $thumbSize = 'thumbnail';
+        if (isset($props['data-thumbSize']))
+        {
+            $thumbSizeTemp = $props['data-thumbSize'];
+            $isDims = preg_match('|^(\\d+),(\\d+)$|', $thumbSizeTemp, $matches);
+            if (in_array($thumbSizeTemp, array('thumbnail', 'medium', 'large', 'full')))
+                $thumbSize = $thumbSizeTemp;
+            elseif ($isDims)
+                $thumbSize = array(intval($matches[1]), intval($matches[2]));
+        }
+
 		// Build output
 		$photos = array();
 		
@@ -1749,8 +1781,8 @@ class EasyRotatorWP
 			if (has_post_thumbnail( $post_id ))
 			{
 				$thumb_id = get_post_thumbnail_id( $post_id );
-				$srcObj = wp_get_attachment_image_src( $thumb_id, 'full' );
-				$thumbObj = wp_get_attachment_image_src( $thumb_id, 'thumbnail' );
+				$srcObj = wp_get_attachment_image_src( $thumb_id, $fullSize );
+				$thumbObj = wp_get_attachment_image_src( $thumb_id, $thumbSize );
 				$src = $srcObj[0];
 				$thumb = $thumbObj[0];
 				
@@ -1995,12 +2027,12 @@ class EasyRotatorWPUtils
 		
 		
 		//If there is a file, process it.
-		if (is_uploaded_file($_FILES['Filedata']['tmp_name'])) 
+		if (is_uploaded_file($_FILES['Filedata']['tmp_name']))
 		{
 			$file_name = $_FILES['Filedata']['name'];
 			$file_type = $_FILES['Filedata']['type'];
-			
-			//  sanatize file name
+
+			//  sanitize file name
 		    //     - remove extra spaces/convert to _,
 		    //     - remove non 0-9a-Z._- characters,
 		    //     - remove leading/trailing spaces

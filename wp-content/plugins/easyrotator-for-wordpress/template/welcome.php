@@ -47,6 +47,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     
     <div class="part2 er_hidden">
       <p class="er_titleLine"><span style="font-weight: bold;">Welcome to EasyRotator! You're almost ready to start creating rotators!</span></p>
+      <div style="display: none;" class="er_chromeAIRBugNote"><p>It appears that you're using Google Chrome on Windows.&nbsp; There's a new issue that may break auto-installation in Chrome.&nbsp; Please <a href="http://www.dwuser.com/support/easyrotator/kb/chrome-air-problem/" target="_blank">click here</a> to learn more about how you can avoid this problem.</p></div>
       <div class="state1">
         <p>To use the EasyRotator admin, you need to install the latest version of the <a href="http://get.adobe.com/flashplayer/" target="_blank">Adobe Flash Player</a>.&nbsp; Once you've finished updating, reload this page to continue.</p>
       </div>
@@ -356,6 +357,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 							}
 						});
 					});
+
+
+                    // Display preemptive error message for Chrome21+ users on Windows.  There's a new bug affecting AIR and Chrome.
+                    var chromeNoteBox = box.find('div.er_chromeAIRBugNote');
+                    var chromeMatches = navigator.userAgent.match(/\sChrome\/(\d+)/i);
+                    if (/^win/i.test(navigator.platform) && chromeMatches)
+                    {
+                        var chromeVersion = parseInt(chromeMatches[1]);
+                        if (chromeVersion > 20) // problem appeared in Chrome 21
+                        {
+                            chromeNoteBox.show();
+                        }
+                    }
+
 					
 				});
 			})(jQuery);
