@@ -123,6 +123,8 @@ article.p{
 		-webkit-border-radius: 5px;
 		border-radius: 5px;
 
+		behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 		border: 1px solid #999999;
 
 	}
@@ -187,17 +189,23 @@ article.p{
 
 	#servicios {
 		border: 3px solid #4f5556;
+		text-decoration: none;
 
 		-moz-border-radius: 4px;
 		-webkit-border-radius: 4px;
 		border-radius: 4px;	
+		
+		behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
 	}
 
 		#servicios:hover{
+			cursor: pointer;
 			border: 3px solid #76d4e5;
 
 			background:  -moz-radial-gradient(center, ellipse, #FFFFFF 0%, #76d4e5 300%);
 			background:  -webkit-radial-gradient(center, ellipse, #FFFFFF 0%, #76d4e5 300%);
+			background:  -radial-gradient(center, ellipse, #FFFFFF 0%, #76d4e5 300%);
+			behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
 
 		}
 
@@ -343,6 +351,9 @@ figcaption {
 			-moz-border-radius:3px;
 			-webkit-border-radius:3px;
 			border-radius:3px 3px 3px 3px;
+
+			behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 		}
 
 		.widget-fran ul li.play{
@@ -790,6 +801,9 @@ ul.sf-menu li li li.sfHover ul {
 	-moz-border-radius:0 0 5px 5px;
 	-webkit-border-radius:0 0 5px 5px;
 	padding-bottom:18px;
+
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 	}
 .sf-menu li li {
 	background:	#3b4243;
@@ -857,6 +871,9 @@ li.sfHover > a > .sf-sub-indicator {
 	-moz-border-radius-topright: 17px;
 	-webkit-border-top-right-radius: 17px;
 	-webkit-border-bottom-left-radius: 17px;
+
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 }
 .sf-shadow ul.sf-shadow-off {
 	background: transparent;
@@ -1226,6 +1243,8 @@ p.gravatar {
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 	}
 .alignright {
 	float:right;
@@ -1233,9 +1252,10 @@ p.gravatar {
 	padding:7px;
 	background:#fff;
 /*	border:1px solid #dbdbdb; */
-	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
+	border-radius:5px;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
 	}
 .aligncenter {
 	text-align:center;
@@ -1246,6 +1266,8 @@ p.gravatar {
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 	}
 article .post-content img {
 	max-width:710px;
@@ -1259,6 +1281,8 @@ article .post-content img {
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	text-align:center;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 	}
 .frame img.alignleft,
 .frame img.alignright{
@@ -1281,6 +1305,8 @@ article .post-content img {
 	border-radius:3px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 }
 .wp-pagenavi a:hover, .wp-pagenavi span.current {
 	background:#76d4e5;
@@ -1649,6 +1675,8 @@ nav.oldernewer {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 }
 	#sidebar h3 {
 		margin-bottom:.5em;
@@ -2049,6 +2077,8 @@ nav.oldernewer {
 		-moz-border-radius:5px;
 		-webkit-border-radius:5px;
 		min-height:100px;
+		behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 		}
 		.testimonials div.testi_item blockquote {
 			border:none;
@@ -2356,6 +2386,8 @@ blockquote.testi-single {
 	border-radius:5px;
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 	}
 .button:hover {
 	background:#999;
@@ -2394,6 +2426,8 @@ blockquote.testi-single {
     -moz-border-radius: 0 5px 5px 5px;
     -webkit-border-radius: 0 5px 5px 5px;
     margin: -1px 0 0 0;
+    behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 }
 
 .tabs .tab-menu ul {
@@ -2421,6 +2455,8 @@ blockquote.testi-single {
     letter-spacing: 1px;
     margin: 0 2px 0 0;
     padding: 8px 20px;
+    behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 }
 
 .tabs .tab-menu a:hover {
@@ -2444,6 +2480,8 @@ blockquote.testi-single {
     -moz-border-radius: 0 5px 5px 5px;
     -webkit-border-radius: 0 5px 5px 5px;
     padding: 20px;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 }
 
 
@@ -2469,6 +2507,8 @@ blockquote.testi-single {
 	font-size:11px;
 	text-transform:uppercase;
 	text-decoration:none;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 	}
 .toggle .trigger:hover,
 .toggle .trigger.active {
@@ -2489,6 +2529,8 @@ blockquote.testi-single {
 	margin: 2px 0 0 0 ;
 	padding: 20px;
 	font-size:13px;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 	}
 
 
@@ -2657,6 +2699,8 @@ blockquote.testi-single {
 	border:1px solid #dbdbdb;
 	font-family:Arial, Helvetica, sans-serif;
 	margin-bottom:15px;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 	}
 	.error-box, .wpcf7-mail-sent-ng {
 		border-color:#ff9999;
@@ -2699,6 +2743,8 @@ input[type="text"], textarea {
 	border-radius:5px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 	}
 input[type="submit"] {
 	position:relative;
@@ -2717,6 +2763,8 @@ input[type="submit"] {
 	height:31px;
 	cursor:pointer;
 	font-weight:normal;
+	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
+
 	}
 input[type="submit"]:hover {
 	background:#999;
@@ -2796,6 +2844,7 @@ input[type="submit"]:hover {
 		-webkit-border-radius:4px;
 		color:#111;
 		font-size:12px;
+		behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
 		}
 		.wpcf7-form p.field small {
 			color:red;
@@ -2815,6 +2864,7 @@ input[type="submit"]:hover {
 		color:#111;
 		font-size:12px;
 		margin-bottom:17px;
+		behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
 		}
 	.wpcf7-form .submit-wrap {
 		padding:0 0 0 69px;
@@ -2835,6 +2885,7 @@ input[type="submit"]:hover {
 		width:70px;
 		height:30px;
 		margin-right:5px;
+		behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
 		}
 	.wpcf7-form .submit-wrap input:hover {
 		background:#2c4149;
