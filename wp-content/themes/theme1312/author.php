@@ -7,18 +7,35 @@
       $curauth = get_userdata(intval($author));
     endif;
   ?>
-  <div class="author-info">
-    <h1>About: <?php echo $curauth->display_name; ?></h1>
-    <p class="avatar">
-      <?php if(function_exists('get_avatar')) { echo get_avatar( $curauth->user_email, $size = '120' ); } /* Displays the Gravatar based on the author's email address. Visit Gravatar.com for info on Gravatars */ ?>
-    </p>
-    
-    <?php if($curauth->description !="") { /* Displays the author's description from their Wordpress profile */ ?>
-      <p><?php echo $curauth->description; ?></p>
-    <?php } ?>
-  </div><!--.author-->
   <div id="recent-author-posts">
-    <h3>Recent Posts by <?php echo $curauth->display_name; ?></h3>
+  
+  <div class="author-info">
+    <h1>&Uacute;ltimos posts  de <?php echo $curauth->display_name; ?></h1>
+    <p class="avatar">
+
+	<?php
+	global $post;
+
+	$persona = get_posts('post_type=team&cat=&orderby=post_date&order=desc&numberposts=5');
+
+	foreach($persona as $post) {
+		if (get_the_title($post->ID) == $curauth->display_name)
+		{
+			if ( has_post_thumbnail($post->ID) ){
+					echo '<a href="'.get_permalink($post->ID).'" title="'.get_the_title($post->ID).'"><div class="thumb-wrap">';
+					echo get_the_post_thumbnail($post->ID, "small-post-thumbnail", array( "class" => "thumb" ));
+					echo '</div></a>';
+			}
+/*
+			echo wp_trim_words($post->post_content, 30);
+*/
+		}
+	}
+	?>
+	
+    </p>
+  </div><!--.author-->
+
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); /* Displays the most recent posts by that author. Note that this does not display custom content types */ ?>
       <?php static $count = 0;
         if ($count == "5") // Number of posts to display

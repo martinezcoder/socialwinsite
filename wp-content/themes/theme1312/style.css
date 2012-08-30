@@ -1385,7 +1385,7 @@ nav.oldernewer {
 	width:100%;
 	overflow:hidden;
 	margin-bottom:3em;
-	padding-bottom:2em;
+	padding-bottom:0em;
 	border-bottom:1px solid #eee;
 }
 	.author-info .avatar {
