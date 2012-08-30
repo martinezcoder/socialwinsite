@@ -77,7 +77,7 @@
   <?php endif; ?>
   </div><!--#recentPosts-->
   <div id="recent-author-comments">
-    <h3>Recent Comments by <?php echo $curauth->display_name; ?></h3>
+    <h2>Comentarios recientes de <?php echo $curauth->display_name; ?></h2>
       <?php
         $number=5; // number of recent comments to display
         $comments = $wpdb->get_results("SELECT * FROM $wpdb->comments WHERE comment_approved = '1' and comment_author_email='$curauth->user_email' ORDER BY comment_date_gmt DESC LIMIT $number");
@@ -88,7 +88,7 @@
           echo  '<li class="recentcomments">' . sprintf(__('%1$s on %2$s'), get_comment_date(), '<a href="'. get_comment_link($comment->comment_ID) . '">' . get_the_title($comment->comment_post_ID) . '</a>') . '</li>';
         endforeach; else: ?>
                   <p>
-                    No comments by <?php echo $curauth->display_name; ?> yet.
+                    Sin comentarios de <?php echo $curauth->display_name; ?>.
                   </p>
         <?php endif; ?>
             </ul>
