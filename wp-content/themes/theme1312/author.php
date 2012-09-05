@@ -9,6 +9,7 @@
   ?>
   <div id="recent-author-posts">
   
+  <!-- Fran ini: busca en el equipo la foto del autor en cuestión -->
   <div class="author-info">
     <h1>&Uacute;ltimos posts  de <?php echo $curauth->display_name; ?></h1>
     <p class="avatar">
@@ -18,10 +19,12 @@
 
 	$persona = get_posts('post_type=team&cat=&orderby=post_date&order=desc&numberposts=5');
 
-	foreach($persona as $post) {
+	foreach($persona as $post) 
+	{
 		if (get_the_title($post->ID) == $curauth->display_name)
 		{
-			if ( has_post_thumbnail($post->ID) ){
+			if ( has_post_thumbnail($post->ID) )
+			{
 					echo '<a href="'.get_permalink($post->ID).'" title="'.get_the_title($post->ID).'"><div class="thumb-wrap">';
 					echo get_the_post_thumbnail($post->ID, "small-post-thumbnail", array( "class" => "thumb" ));
 					echo '</div></a>';
@@ -35,7 +38,8 @@
 	
     </p>
   </div><!--.author-->
-
+  <!-- Fran fin -->
+	
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); /* Displays the most recent posts by that author. Note that this does not display custom content types */ ?>
       <?php static $count = 0;
         if ($count == "5") // Number of posts to display

@@ -12,6 +12,19 @@
         <header>
           <h1><?php the_title(); ?></h1>
         </header>
+
+<!-- Fran inicio: se añade la barra de vínculos a redes sociales al principio del artículo -->
+		<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
+<!-- Fran final -->
+
+<!-- Fran inicio: añadimos información sobre la noticia en la misma noticia -->
+                <div class="post-meta">
+                  <div class="fleft">Categor&iacuteas: <?php the_category(', ') ?> | <time datetime="<?php the_time('Y-m-d\TH:i'); ?>"><?php the_time('d/m/Y'); ?> at <?php the_time() ?></time> , por <?php the_author_posts_link() ?></div>
+                  <div class="fright"><?php comments_popup_link('Sin comentarios', 'Un comentario', '% comentarios', 'comments-link', 'Post cerrado'); ?></div>
+                </div><!--.post-meta-->
+<!-- Fran final -->
+
+
         <?php $single_image_size = of_get_option('single_image_size'); ?>
 
 	  <?php if($single_image_size=='' || $single_image_size=='normal'){ ?>
