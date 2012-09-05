@@ -19,6 +19,7 @@
 
   <?php endwhile; /* end loop */ ?>
 
+<!-- Fran inicio. Ultimas noticias del autor -->
   <?php
 
 	$corte = strpos($post->post_title, " ");
@@ -38,51 +39,54 @@
 		$socio = $partner_name->display_name;
 		if ($autor == $socio)
 		{
-			if ( has_post_thumbnail($post_noticia->ID) )
+
+			if ($post_counter == 0)
 			{
-
-					echo '<article id="post-'; echo $post_noticia->ID; echo '" '; echo post_class('', $post_noticia->ID); echo '>';
-					echo '<header>';
-						echo '<h2>';
-							echo '<a href="'.get_permalink($post_noticia->ID).'" title="'.get_the_title($post_noticia->ID).'" rel="bookmark">';
-							echo get_the_title($post_noticia->ID);
-						echo '</a></h2>';
-						echo '<div class="post-meta">';
-							echo '<div class="fleft">Categor&iacuteas: ';
-								echo the_category(', ', '', $post_noticia->ID);
-								echo ' | <time datetime="'; echo $post_noticia->post_date; echo'">';
-								echo $post_noticia->post_date; echo '</time>';
-							echo '</div>';
-							echo '<div class="fright">';
-							$comentarios = $post_noticia–>comment_count;
-							if ($comentarios > 0){
-								echo $post_noticia–>comment_count; echo ' comentarios.';
-							}else{
-								echo 'Sin comentarios.';
-							}
-							echo '</div>';
-						echo '</div><!--.post-meta-->';
-					echo '</header>';
-					echo '<div class="featured-thumbnail">'.get_the_post_thumbnail($post_noticia->ID, "post-thumbnail", array( "class" => "thumb" )).'</div>';
-						echo '<div class="post-content">';
-						echo '<div class="excerpt">';
-						echo my_string_limit_words($post_noticia->post_content, 50);
-						echo '</div>';
-						echo '<a href="'.$post_noticia->guid.'" class="button">M&aacute;s</a>';
-					echo '</div>';
-					echo '</article>';
-
+				echo '<h1>&Uacute;ltimos posts  de ';
+				echo $socio;
+				echo '</h1>';
 			}
-			
-			if ($post_counter == 5) break;
+
+			echo '<article id="post-'; echo $post_noticia->ID; echo '" '; echo post_class('', $post_noticia->ID); echo '>';
+			echo '<header>';
+				echo '<h2>';
+					echo '<a href="'.get_permalink($post_noticia->ID).'" title="'.get_the_title($post_noticia->ID).'" rel="bookmark">';
+					echo get_the_title($post_noticia->ID);
+				echo '</a></h2>';
+				echo '<div class="post-meta">';
+					echo '<div class="fleft">Categor&iacuteas: ';
+						echo the_category(', ', '', $post_noticia->ID);
+						echo ' | <time datetime="'; echo $post_noticia->post_date; echo'">';
+						echo $post_noticia->post_date; echo '</time>';
+					echo '</div>';
+					echo '<div class="fright">';
+					$comentarios = $post_noticia–>comment_count;
+					if ($comentarios > 0){
+						echo $post_noticia–>comment_count; echo ' comentarios.';
+					}else{
+						echo 'Sin comentarios.';
+					}
+					echo '</div>';
+				echo '</div><!--.post-meta-->';
+			echo '</header>';
+			echo '<div class="featured-thumbnail">'.get_the_post_thumbnail($post_noticia->ID, "post-thumbnail", array( "class" => "thumb" )).'</div>';
+				echo '<div class="post-content">';
+				echo '<div class="excerpt">';
+				echo my_string_limit_words($post_noticia->post_content, 50);
+				echo '</div>';
+				echo '<a href="'.$post_noticia->guid.'" class="button">M&aacute;s</a>';
+			echo '</div>';
+			echo '</article>';
+
+			if ($post_counter == 4) break;
 			$post_counter++;
 		}
 
-
 	}
-  ?>
-        
 
+  ?>
+
+<!-- Fran final -->
 
 
 </div><!--#content-->

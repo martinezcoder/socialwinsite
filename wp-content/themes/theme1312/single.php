@@ -13,15 +13,15 @@
           <h1><?php the_title(); ?></h1>
         </header>
 
-<!-- Fran inicio: se añade la barra de vínculos a redes sociales al principio del artículo -->
-		<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
+<!-- Fran inicio: se aï¿½ade la barra de vï¿½nculos a redes sociales al principio del artï¿½culo -->
+ 		<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
 <!-- Fran final -->
 
-<!-- Fran inicio: añadimos información sobre la noticia en la misma noticia -->
-                <div class="post-meta">
-                  <div class="fleft">Categor&iacuteas: <?php the_category(', ') ?> | <time datetime="<?php the_time('Y-m-d\TH:i'); ?>"><?php the_time('d/m/Y'); ?> at <?php the_time() ?></time> , por <?php the_author_posts_link() ?></div>
-                  <div class="fright"><?php comments_popup_link('Sin comentarios', 'Un comentario', '% comentarios', 'comments-link', 'Post cerrado'); ?></div>
-                </div><!--.post-meta-->
+<!-- Fran inicio: aï¿½adimos informaciï¿½n sobre la noticia en la misma noticia -->
+        <div class="post-meta">
+          <div class="fleft">Categor&iacuteas: <?php the_category(', ') ?> | <time datetime="<?php the_time('Y-m-d\TH:i'); ?>"><?php the_time('d/m/Y'); ?> at <?php the_time() ?></time> , por <?php the_author_posts_link() ?></div>
+          <div class="fright"><?php comments_popup_link('Sin comentarios', 'Un comentario', '% comentarios', 'comments-link', 'Post cerrado'); ?></div>
+        </div><!--.post-meta-->
 <!-- Fran final -->
 
 
@@ -71,6 +71,12 @@
       </div><!--.newer-- >
     </nav><!--.oldernewer-- >
 -->
+
+<!-- Fran inicio: se aÃ±ade la barra de vÃ­nculos a redes sociales al final del artÃ­culo -->
+ 		<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
+<!-- Fran final -->
+
+
     <?php comments_template( '', true ); ?>
 
   <?php endwhile; /* end loop */ ?>

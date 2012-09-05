@@ -209,10 +209,42 @@
             </form>
           </div>  
         <?php } ?>
+
+
+
+
+<div class="sociable alignright">
+	<div class="sociable_tagline">Síguenos en tu red social!</div>
+
+<!--
+ 		<ul class='clearfix'>
+ 			<li id="LinkedIn_Counter"><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-url="http://www.linkedin.com/company/socialwin" data-counter="right"> </script></li>
+ 			<li id="Twitter_Counter"><a href="https://twitter.com/share" data-text="http://www.socialwin.es" data-url="http://www.socialwin.es" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></li>
+ 			<li id="Facebook_Counter"><iframe src="http://www.facebook.com/plugins/like.php?href=http://www.socialwin.es" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height:32px;width:100px" allowTransparency="true"></iframe></li>
+ 			<li id="Google_p"><g:plusone annotation="bubble" href="http://www.socialwin.es" size="medium"></g:plusone></li>
+ 		</ul>
+-->
+	<ul class='clearfix'>
+			<li><a title="Twitter" class="option1_32" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW"></a></li>
+			<li><a title="Facebook" class="option1_32" style="background-position:-96px 0px" rel="nofollow" target="_blank" href=""></a></li>
+			<li><a title="LinkedIn" class="option1_32" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin"></a></li>
+	</ul>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
         <div id="widget-header">
         	<?php if ( ! dynamic_sidebar( 'Header' ) ) : ?>
             <!-- Widgetized Header -->
-          <?php endif ?>
+            <?php endif ?>
         </div><!--#widget-header-->
       </div>
 		</div><!--.container-->
