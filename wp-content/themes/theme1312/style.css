@@ -390,7 +390,7 @@ figcaption {
 	position:absolute;
 	right:-6px;
 	/* margen del menú widget de la derecha */
-	top:100px; /* top:123px;*/
+	top:60px; /* top:123px;*/
 	z-index:1;
 }
 	.widget-header {
