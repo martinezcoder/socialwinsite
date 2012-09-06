@@ -2,12 +2,13 @@ div.sociable { /*margin: 8px 0;*/}
 
 li div#___plusone_0 {
 float:right !important;
-width:60px !important;
+width:70px !important;
 }
 li#Google_p div {
 float:right !important;
-width:60px !important;
+width:70px !important;
 }
+
 /*
 #___plusone_2{
 float:right !important;
@@ -40,16 +41,21 @@ width:60px !important;
 */
 
 div.sociable li#Twitter_Counter iframe{
-width:100px !important;
+width:90px !important;
 }
 
 #Digg_Counter{
-width:80px !important;
+width:90px !important;
 
 }
 #Facebook_Counter iframe{
 
-width:76px !important;
+width:110px !important;
+}
+
+
+#LinkedIn_Counter {
+width:100px !important;
 }
 
 span.sociable_tagline { position: relative; }

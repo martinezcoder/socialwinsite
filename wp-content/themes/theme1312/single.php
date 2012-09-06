@@ -13,21 +13,15 @@
           <h1><?php the_title(); ?></h1>
         </header>
 
-<!-- Fran inicio: se a�ade la barra de v�nculos a redes sociales al principio del art�culo -->
-
- 		<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
- 		
-		<!-- facebook --> 
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=489652324380222";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-		<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
-
+<!-- Fran inicio:  "me gusta!" para redes sociales -->
+		<div class='sociable' style='float:none'>
+			<ul class='clearfix'>
+				<li id="Twitter_Counter"><a href="https://twitter.com/share" data-text="<?php the_title(); ?>" data-url="<?php the_permalink(); ?>" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></li>
+				<li id="Facebook_Counter"><iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&font" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height:32px;width:100px" allowTransparency="true"></iframe></li>
+				<li id="LinkedIn_Counter"><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-url="<?php the_permalink(); ?>" data-counter="right"></script></li>
+				<li id="Google_p"><script type="text/javascript" src="http://apis.google.com/js/plusone.js">{lang:'es'}</script><g:plusone annotation="bubble" href="<?php the_permalink(); ?>" size="medium"></g:plusone></li>
+			</ul>
+		</div> 		
 <!-- Fran final -->
 
 <!-- Fran inicio: a�adimos informaci�n sobre la noticia en la misma noticia -->
@@ -85,8 +79,15 @@
     </nav><!--.oldernewer-- >
 -->
 
-<!-- Fran inicio: se añade la barra de vínculos a redes sociales al final del artículo -->
- 		<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
+<!-- Fran inicio:  "me gusta!" para redes sociales -->
+		<div class='sociable' style='float:none'>
+			<ul class='clearfix'>
+				<li id="Twitter_Counter"><a href="https://twitter.com/share" data-text="<?php the_title(); ?>" data-url="<?php the_permalink(); ?>" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></li>
+				<li id="Facebook_Counter"><iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&font" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height:32px;width:100px" allowTransparency="true"></iframe></li>
+				<li id="LinkedIn_Counter"><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-url="<?php the_permalink(); ?>" data-counter="right"></script></li>
+				<li id="Google_p"><script type="text/javascript" src="http://apis.google.com/js/plusone.js">{lang:'es'}</script><g:plusone annotation="bubble" href="<?php the_permalink(); ?>" size="medium"></g:plusone></li>
+			</ul>
+		</div> 		
 <!-- Fran final -->
 
 

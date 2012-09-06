@@ -2997,4 +2997,71 @@ input[type="submit"]:hover {
 	display: block;
 }
 
+
+/* SOCIALS */
+
+div.sociable { /*margin: 8px 0;*/}
+
+li div#___plusone_0 {
+float:right !important;
+width:70px !important;
+}
+li#Google_p div {
+float:right !important;
+width:70px !important;
+}
+
+div.sociable li#Twitter_Counter iframe{
+width:90px !important;
+}
+
+#Facebook_Counter iframe{
+width:110px !important;
+}
+
+#LinkedIn_Counter {
+width:100px !important;
+}
+
+.sociable ul {
+	display: block;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.sociable ul li {
+	background: none;
+	display: inline !important;
+	list-style-type: none;
+	margin: 0;
+	padding: 3px;
+    float:left;
+}
+.sociable ul li:before { content: ""; }
+.sociable img {
+	float: none;
+
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.sociable-hovers {
+	opacity: .4;
+	-moz-opacity: .4;
+	filter: alpha(opacity=40);
+}
+.sociable-hovers:hover {
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+
+.option1_32{
+background:url("images/socials/sprites/option1_32.png") no-repeat scroll;
+display: block;float: left;height: 32px;width: 32px;
+}
+
+
+
 /* Always remember to compress your live stylesheet and keep an uncompressed backup */
