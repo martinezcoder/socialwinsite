@@ -42,9 +42,12 @@
 
 			if ($post_counter == 0)
 			{
+				echo '<h2>Noticias recientes</h2>';
+				/*
 				echo '<h1>&Uacute;ltimos posts  de ';
 				echo $socio;
 				echo '</h1>';
+				 */
 			}
 
 			echo '<article id="post-'; echo $post_noticia->ID; echo '" '; echo post_class('', $post_noticia->ID); echo '>';
@@ -78,9 +81,10 @@
 			echo '</div>';
 			echo '</article>';
 
-			if ($post_counter == 4) break;
 			$post_counter++;
 		}
+
+		if ($post_counter >= 5) break;
 
 	}
 

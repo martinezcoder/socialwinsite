@@ -14,7 +14,20 @@
         </header>
 
 <!-- Fran inicio: se a�ade la barra de v�nculos a redes sociales al principio del art�culo -->
+
  		<?php if( function_exists( do_sociable() ) ){ do_sociable(); } ?>
+ 		
+		<!-- facebook --> 
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=489652324380222";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="arial"></div>
+
 <!-- Fran final -->
 
 <!-- Fran inicio: a�adimos informaci�n sobre la noticia en la misma noticia -->
