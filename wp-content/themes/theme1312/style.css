@@ -419,6 +419,7 @@ figcaption {
 					color:#3b4243;
 					}
 
+
 /* Social Networks */
 .social-networks {
 	list-style-type:none;
@@ -2951,6 +2952,7 @@ input[type="submit"]:hover {
 .last { margin-right:0 !important; clear:right; }
 
 
+.fleftall { float:left; width:100%}
 .fleft { float:left;}
 .fright { float:right;}
 .clear { clear:both;}
@@ -3000,68 +3002,62 @@ input[type="submit"]:hover {
 
 /* SOCIALS */
 
-div.sociable { /*margin: 8px 0;*/}
+#sociable-header {
+	position:absolute;
+	right:-6px;
+	top:60px;
+	z-index:1;
 
-li div#___plusone_0 {
-float:right !important;
-width:70px !important;
+	float:right;
+	padding:7px 5px;
 }
-li#Google_p div {
-float:right !important;
-width:70px !important;
-}
+	.sociable-header {
+		}
+		.sociable-header ul {
+			list-style-type:none;
+			padding:0;
+			margin:0;
+			display: block;
+			}
+			.sociable-header ul li {
+				list-style-type: none;
+				background: none;
+				display: inline !important;
+				margin: 0;
+				padding: 3px;
+			    float:left;
+			}
+				.sociable-header ul li a{
+					text-decoration: none;
+					outline:none;
+				}
 
-div.sociable li#Twitter_Counter iframe{
-width:90px !important;
-}
+			.option1_32{
+			background:url("images/socials/sprites/option1_32.png") no-repeat scroll;
+			display: block;float: left;height: 32px;width: 32px;
+			}
 
-#Facebook_Counter iframe{
-width:110px !important;
-}
+			#Twitter_Counter {
+			width:100px !important;
+			}
+			#Facebook_Counter {
+			width:110px !important;
+			}
+			#LinkedIn_Counter {
+			width:110px !important;
+			}
+			#Google_p  {
+			width:110px !important;
+			}
 
-#LinkedIn_Counter {
-width:100px !important;
-}
 
-.sociable ul {
+.s_clearfix:after {
+	visibility: hidden;
 	display: block;
-	margin: 0 !important;
-	padding: 0 !important;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }
-.sociable ul li {
-	background: none;
-	display: inline !important;
-	list-style-type: none;
-	margin: 0;
-	padding: 3px;
-    float:left;
-}
-.sociable ul li:before { content: ""; }
-.sociable img {
-	float: none;
-
-	border: 0;
-	margin: 0;
-	padding: 0;
-}
-
-.sociable-hovers {
-	opacity: .4;
-	-moz-opacity: .4;
-	filter: alpha(opacity=40);
-}
-.sociable-hovers:hover {
-	opacity: 1;
-	-moz-opacity: 1;
-	filter: alpha(opacity=100);
-}
-
-
-.option1_32{
-background:url("images/socials/sprites/option1_32.png") no-repeat scroll;
-display: block;float: left;height: 32px;width: 32px;
-}
-
-
 
 /* Always remember to compress your live stylesheet and keep an uncompressed backup */

@@ -13,24 +13,20 @@
           <h1><?php the_title(); ?></h1>
         </header>
 
-<!-- Fran inicio:  "me gusta!" para redes sociales -->
-		<div class='sociable' style='float:none'>
-			<ul class='clearfix'>
-				<li id="Twitter_Counter"><a href="https://twitter.com/share" data-text="<?php the_title(); ?>" data-url="<?php the_permalink(); ?>" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></li>
-				<li id="Facebook_Counter"><iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&font" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height:32px;width:100px" allowTransparency="true"></iframe></li>
-				<li id="LinkedIn_Counter"><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-url="<?php the_permalink(); ?>" data-counter="right"></script></li>
-				<li id="Google_p"><script type="text/javascript" src="http://apis.google.com/js/plusone.js">{lang:'es'}</script><g:plusone annotation="bubble" href="<?php the_permalink(); ?>" size="medium"></g:plusone></li>
-			</ul>
-		</div> 		
-<!-- Fran final -->
-
 <!-- Fran inicio: a�adimos informaci�n sobre la noticia en la misma noticia -->
-        <div class="post-meta">
-          <div class="fleft">Categor&iacuteas: <?php the_category(', ') ?> | <time datetime="<?php the_time('Y-m-d\TH:i'); ?>"><?php the_time('d/m/Y'); ?> at <?php the_time() ?></time> , por <?php the_author_posts_link() ?></div>
-          <div class="fright"><?php comments_popup_link('Sin comentarios', 'Un comentario', '% comentarios', 'comments-link', 'Post cerrado'); ?></div>
-        </div><!--.post-meta-->
+		
+		<?php if ($post->post_type <> 'clients')
+			  {
+			  	the_sociallinks();
+				 
+				echo '<div class="post-meta">';
+				echo '<div class="fleftall">Artículo escrito el <time datetime="<?php the_time(\'Y-m-d\TH:i\'); ?>"><?php the_time(\'d/m/Y\'); ?> at <?php the_time() ?></time> por <?php the_author_posts_link() ?></div>';
+				echo '<div class="fleft">Categor&iacuteas: <?php the_category(\', \') ?> </div>';
+				echo '<div class="fright"><?php comments_popup_link(\'Sin comentarios\', \'Un comentario\', \'% comentarios\', \'comments-link\', \'Post cerrado\'); ?></div>';
+        		echo '</div><!--.post-meta-->';
+			  }
+        ?>
 <!-- Fran final -->
-
 
         <?php $single_image_size = of_get_option('single_image_size'); ?>
 
@@ -79,16 +75,8 @@
     </nav><!--.oldernewer-- >
 -->
 
-<!-- Fran inicio:  "me gusta!" para redes sociales -->
-		<div class='sociable' style='float:none'>
-			<ul class='clearfix'>
-				<li id="Twitter_Counter"><a href="https://twitter.com/share" data-text="<?php the_title(); ?>" data-url="<?php the_permalink(); ?>" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></li>
-				<li id="Facebook_Counter"><iframe src="http://www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&font" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height:32px;width:100px" allowTransparency="true"></iframe></li>
-				<li id="LinkedIn_Counter"><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-url="<?php the_permalink(); ?>" data-counter="right"></script></li>
-				<li id="Google_p"><script type="text/javascript" src="http://apis.google.com/js/plusone.js">{lang:'es'}</script><g:plusone annotation="bubble" href="<?php the_permalink(); ?>" size="medium"></g:plusone></li>
-			</ul>
-		</div> 		
-<!-- Fran final -->
+	<?php if ($post->post_type <> 'clients') {	the_sociallinks();} ?>
+	
 
 
     <?php comments_template( '', true ); ?>

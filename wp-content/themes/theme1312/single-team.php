@@ -50,6 +50,7 @@
 				 */
 			}
 
+			
 			echo '<article id="post-'; echo $post_noticia->ID; echo '" '; echo post_class('', $post_noticia->ID); echo '>';
 			echo '<header>';
 				echo '<h2>';
@@ -79,6 +80,7 @@
 				echo '</div>';
 				echo '<a href="'.$post_noticia->guid.'" class="button">M&aacute;s</a>';
 			echo '</div>';
+			echo '<br>'; the_sociallinks($post_noticia->ID);
 			echo '</article>';
 
 			$post_counter++;

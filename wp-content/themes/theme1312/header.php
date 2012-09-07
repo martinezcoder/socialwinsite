@@ -211,19 +211,17 @@
         <?php } ?>
 
 
-        <div id="widget-header">
-
-			<div class="sociable alignright">
+        <div id="sociable-header">
+        	<div class="sociable-header">
 				<div class="sociable_tagline">Síguenos en tu red social!</div>
-
-					<ul class='clearfix'>
-							<li><a title="Twitter" class="option1_32" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW"></a></li>
-							<!-- <li><a title="Facebook" class="option1_32" style="background-position:-96px 0px" rel="nofollow" target="_blank" href=""></a></li> -->
-							<li><a title="LinkedIn" class="option1_32" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin"></a></li>
-							<li><a title="RSS" class="option1_32" style="background-position:-128px 0px" rel="nofollow" target="_blank" href=""></a></li>	
-					</ul>
-
-			 </div>
+				<ul class='s_clearfix'>
+					<li><a title="Twitter" class="option1_32" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW"></a></li>
+					<!-- <li><a title="Facebook" class="option1_32" style="background-position:-96px 0px" rel="nofollow" target="_blank" href=""></a></li> -->
+					<li><a title="LinkedIn" class="option1_32" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin"></a></li>
+					<li><a title="Pinterest" class="option1_32" style="background-position:-128px -32px" rel="nofollow" target="_blank" href="http://pinterest.com/socialwin/"></a></li>	
+					<li><a title="RSS" class="option1_32" style="background-position:-128px 0px" rel="nofollow" target="_blank" href="http://feeds.feedburner.com/SocialWin"></a></li>	
+				</ul>
+			</div>
 		</div>
 <!--
         <div id="widget-header">
@@ -231,7 +229,6 @@
             <?php endif */ ?>
         </div>
 -->
-
       </div>
 
 	</div><!--.container-->

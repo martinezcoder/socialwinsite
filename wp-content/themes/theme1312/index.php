@@ -6,8 +6,9 @@
           <h2><a href="<?php the_permalink() ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
           <?php if ($theme1312_post_meta=='') { ?>
             <div class="post-meta">
-             <div class="fleft">Categor&iacuteas: <?php the_category(', ') ?> | <time datetime="<?php the_time('Y-m-d\TH:i'); ?>"><?php the_time('d/m/Y'); ?> at <?php the_time() ?></time> , por <?php the_author_posts_link() ?></div>
-              <div class="fright"><?php comments_popup_link('Sin comentarios', 'Un comentario', '% comentarios', 'comments-link', 'Post cerrado'); ?></div>
+		          <div class="fleftall">Artículo escrito el <time datetime="<?php the_time('Y-m-d\TH:i'); ?>"><?php the_time('d/m/Y'); ?> at <?php the_time() ?></time> por <?php the_author_posts_link() ?></div> 
+		          <div class="fleft">Categor&iacuteas: <?php the_category(', ') ?> </div>
+		          <div class="fright"><?php comments_popup_link('Sin comentarios', 'Un comentario', '% comentarios', 'comments-link', 'Post cerrado'); ?></div>
             </div><!--.post-meta-->
           <?php } ?>		
         </header>
@@ -37,6 +38,8 @@
         <footer>
           <?php the_tags('Tags: ', ', ', ''); ?> <?php edit_post_link('Edit', '', ''); ?>
         </footer>
+		<br>
+		<?php the_sociallinks(); ?>
       </article>
       
     <?php endwhile; else: ?>
