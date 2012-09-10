@@ -2422,8 +2422,8 @@ function the_shortlink( $text = '', $title = '', $before = '', $after = '' ) {
 function the_sociallinks($id = 0) {
 
 	$post_title = get_the_title($id);
-	$post_permalink = get_permalink($id);
-
+	$post_permalink = wp_get_shortlink($id);
+	
 	$html_text = "";
 	$html_text = "<div class='sociable-header' style='float:none'>";
 	$html_text = $html_text."<ul class='s_clearfix'>";
