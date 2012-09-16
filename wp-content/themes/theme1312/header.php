@@ -218,6 +218,7 @@
 					<li><a title="Twitter" class="option1_32" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW"></a></li>
 					<!-- <li><a title="Facebook" class="option1_32" style="background-position:-96px 0px" rel="nofollow" target="_blank" href=""></a></li> -->
 					<li><a title="LinkedIn" class="option1_32" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin"></a></li>
+					<li><a title="Google+" class="option1_32" style="background-position:-96px -32px" rel="nofollow" target="_blank" href="https://plus.google.com/u/0/106528211751763873508"></a></li>
 					<li><a title="Pinterest" class="option1_32" style="background-position:-128px -32px" rel="nofollow" target="_blank" href="http://pinterest.com/socialwin/"></a></li>	
 					<li><a title="RSS" class="option1_32" style="background-position:-128px 0px" rel="nofollow" target="_blank" href="http://feeds.feedburner.com/SocialWin"></a></li>	
 				</ul>
