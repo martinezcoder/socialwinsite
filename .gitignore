@@ -1,5 +1,4 @@
 $ cat .gitignore
-BACKUPDB.sh
 _backup
 .project
 
