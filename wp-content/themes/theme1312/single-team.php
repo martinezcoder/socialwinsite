@@ -42,7 +42,7 @@
 
 			if ($post_counter == 0)
 			{
-				echo '<h2>Noticias recientes</h2>';
+				echo '<h2>Mis artículos de opinión</h2>';
 				/*
 				echo '<h1>&Uacute;ltimos posts  de ';
 				echo $socio;
