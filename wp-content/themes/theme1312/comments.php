@@ -18,7 +18,7 @@
 <!-- You can start editing here. -->
 
 <?php if ( have_comments() ) : ?>
-	<h3 class="space" id="comments"><?php comments_number('Sin comentarios', '1 Comentario', '% Comentarios' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h4 class="space" id="comments"><?php comments_number('Sin comentarios', '1 Comentario', '% Comentarios' );?> a &#8220;<?php the_title(); ?>&#8221;</h4>
 
 	<ol class="commentlist">
 	<?php wp_list_comments(); ?>

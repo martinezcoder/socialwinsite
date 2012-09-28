@@ -1038,7 +1038,7 @@ function comments_popup_link( $zero = false, $one = false, $more = false, $css_c
 function get_comment_reply_link($args = array(), $comment = null, $post = null) {
 	global $user_ID;
 
-	$defaults = array('add_below' => 'comment', 'respond_id' => 'respond', 'reply_text' => __('Reply'),
+	$defaults = array('add_below' => 'comment', 'respond_id' => 'respond', 'reply_text' => __('Responder'),
 		'login_text' => __('Log in to Reply'), 'depth' => 0, 'before' => '', 'after' => '');
 
 	$args = wp_parse_args($args, $defaults);
@@ -1354,7 +1354,7 @@ class Walker_Comment extends Walker {
 		<?php endif; ?>
 		<div class="comment-author vcard">
 		<?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-		<?php printf(__('<cite class="fn">%s</cite> <span class="says">says:</span>'), get_comment_author_link()) ?>
+		<?php printf(__('<cite class="fn">%s</cite> <span class="says">comenta:</span>'), get_comment_author_link()) ?>
 		</div>
 <?php if ($comment->comment_approved == '0') : ?>
 		<em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
@@ -1364,7 +1364,7 @@ class Walker_Comment extends Walker {
 		<div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
 			<?php
 				/* translators: 1: date, 2: time */
-				printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Edit)'),'&nbsp;&nbsp;','' );
+				printf( __('%1$s a las %2$s'), get_comment_date(),  get_comment_time()) ?></a><?php edit_comment_link(__('(Editar)'),'&nbsp;&nbsp;','' );
 			?>
 		</div>
 
