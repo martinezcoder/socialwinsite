@@ -2367,6 +2367,7 @@ blockquote.testi-single {
 	}
 	
 	/* Footer navigation */
+/*
 	nav.footer {
 		float:right;
 	}
@@ -2379,7 +2380,26 @@ blockquote.testi-single {
 				float:left;
 				padding-left:15px;
 				}
+*/
 
+
+	#footer a {
+	  color: #AAA;
+	  text-decoration:none;
+	}  
+		#footer a:hover { 
+		  color: #444;
+		}
+	
+	#footer ul {
+	  float: right;
+	  list-style: none;
+	}
+	
+	#footer ul li {
+	  float: left;
+	  margin-left: 10px;
+	}
 
 
 /* Misc
