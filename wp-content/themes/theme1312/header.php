@@ -18,9 +18,10 @@
 	} else {
 		echo wp_title( ' | ', false, right ); bloginfo( 'name' );
 	} ?></title>
-	<meta name="description" content="<?php wp_title(); echo ' | '; bloginfo( 'description' ); ?>" />
+	
+	<meta name="description" content="<?php echo wp_title(' | ', false, right); bloginfo( 'description' ); ?>" />
 	<meta http-equiv="Content-type" content="text/html" charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta name="keywords" content="<?php wp_title(); echo ' redes sociales, '; bloginfo( 'description' ); echo ', Consultoria, Redes Sociales, Social Media, Planes Estrategicos, Estrategias Online, Estrategias Facebook, Estrategias Twitter, Reputacion Online'; ?>" />
+	<meta name="keywords" content="<?php echo wp_title('redes sociales, ', false, right); echo wp_title('social media, ', false, right); bloginfo( 'description' ); echo ', Consultoria, Redes Sociales, Social Media, Planes Estrategicos, Estrategias Online, Estrategias Facebook, Estrategias Twitter, Reputacion Online'; ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
   <link rel="icon" href="<?php bloginfo( 'template_url' ); ?>/socialwin.ico" type="image/x-icon" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
