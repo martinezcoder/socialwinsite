@@ -1,4 +1,4 @@
-@charset utf-8;
+@charset "utf-8";
 /*--
 	Theme Name: theme1312
 	Theme URI: http://template-help.com/
@@ -108,7 +108,6 @@ article.p{
 		text-align: justify; 
 }
 
-
 #seccioncols {
 	float: left;
 	width: 920px;
@@ -126,8 +125,8 @@ article.p{
 		-webkit-border-radius: 5px;
 		border-radius: 5px;
 
-		behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
-
+		behavior: url(/PIE.htc); 
+		
 		border: 1px solid #999999;
 
 	}
