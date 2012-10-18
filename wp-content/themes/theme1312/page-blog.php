@@ -11,6 +11,8 @@ get_header(); ?>
   $wp_query = new WP_Query();
   $wp_query->query("showposts=".of_get_option('posts_count')."&paged=".$paged);
   ?>
+  <h1 style="font-size:1.5em;color:#333">Blog de noticias Social<span style="color:#76E4D5;">Win</span></h1>
+  <h2></h2>
   <?php if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post();?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <header>

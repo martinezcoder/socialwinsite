@@ -2,13 +2,13 @@
 <html <?php language_attributes(); ?>>
 <head>
 	<title><?php if ( is_category() ) {
-		echo 'Category Archive for &quot;'; single_cat_title(); echo '&quot; | '; bloginfo( 'name' );
+		echo 'Categoría &quot;'; single_cat_title(); echo '&quot; | '; bloginfo( 'name' );
 	} elseif ( is_tag() ) {
-		echo 'Tag Archive for &quot;'; single_tag_title(); echo '&quot; | '; bloginfo( 'name' );
+		echo 'Tag &quot;'; single_tag_title(); echo '&quot; | '; bloginfo( 'name' );
 	} elseif ( is_archive() ) {
 		wp_title(''); echo ' Archive | '; bloginfo( 'name' );
 	} elseif ( is_search() ) {
-		echo 'Search for &quot;'.wp_specialchars($s).'&quot; | '; bloginfo( 'name' );
+		echo 'Búsqueda &quot;'.wp_specialchars($s).'&quot; | '; bloginfo( 'name' );
 	} elseif ( is_home() ) {
 		bloginfo( 'name' ); echo ' | '; bloginfo( 'description' );
 	}  elseif ( is_404() ) {
@@ -16,14 +16,47 @@
 	} elseif ( is_single() ) {
 		wp_title('');
 	} else {
-		echo wp_title( ' | ', false, right ); bloginfo( 'name' );
+	    $titulo_del_post = single_post_title( '', false );
+	    if (
+	           ($titulo_del_post == "Servicios")
+               || ($titulo_del_post == "Auditoría")               
+               || ($titulo_del_post == "Estrategia")
+               || ($titulo_del_post == "Implementación")
+               || ($titulo_del_post == "Herramientas")
+               || ($titulo_del_post == "Formación")            
+               || ($titulo_del_post == "Consultoría")
+           )
+        {
+            echo wp_title( 'Social Media | ', false, right ); bloginfo( 'name' );    
+        }else{
+		  echo wp_title( ' | ', false, right ); bloginfo( 'name' );
+        }
 	} ?></title>
 	
-	<meta name="description" content="<?php echo wp_title(' | ', false, right); bloginfo( 'description' ); ?>" />
-	<meta http-equiv="Content-type" content="text/html" charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="description" content="<?php 
+        $titulo_del_post = single_post_title( '', false );
+        if (
+               ($titulo_del_post == "Servicios")
+               || ($titulo_del_post == "Auditoría")               
+               || ($titulo_del_post == "Estrategia")
+               || ($titulo_del_post == "Implementación")
+               || ($titulo_del_post == "Herramientas")
+               || ($titulo_del_post == "Formación")            
+               || ($titulo_del_post == "Consultoría")
+           )
+        {
+            echo wp_title( 'Redes Sociales | ', false, right ); bloginfo( 'description' );    
+        }else{
+          echo wp_title( ' | ', false, right ); bloginfo( 'description' );
+        }
+	?>" />
+	<meta http-equiv="Content-type" content="text/html; charset=<?php bloginfo( 'charset' ); ?>" />
 	<meta name="keywords" content="<?php echo wp_title('redes sociales, ', false, right); echo wp_title('social media, ', false, right); bloginfo( 'description' ); echo ', Consultoria, Redes Sociales, Social Media, Planes Estrategicos, Estrategias Online, Estrategias Facebook, Estrategias Twitter, Reputacion Online'; ?>" />
+    <meta name="author" content="SocialWin">
+    <meta http-equiv="Content-Language" content="es"/>
+
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
-  <link rel="icon" href="<?php bloginfo( 'template_url' ); ?>/socialwin.ico" type="image/x-icon" />
+    <link rel="icon" href="<?php bloginfo( 'template_url' ); ?>/socialwin.ico" type="image/x-icon" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'rss2_url' ); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'atom_url' ); ?>" />
@@ -216,12 +249,12 @@
         	<div class="sociable-header">
 				<div class="sociable_tagline">Síguenos en tu red social!</div>
 				<ul class='s_clearfix'>
-					<li><a title="Twitter" class="option1_32" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW"></a></li>
+					<li><a title="Twitter" class="option1_32" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW">Twitter</a></li>
 					<!-- <li><a title="Facebook" class="option1_32" style="background-position:-96px 0px" rel="nofollow" target="_blank" href=""></a></li> -->
-					<li><a title="LinkedIn" class="option1_32" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin"></a></li>
+					<li><a title="LinkedIn" class="option1_32" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin">Linkedin</a></li>
 					<!-- <li><a title="Google+" class="option1_32" style="background-position:-96px -32px" rel="nofollow" target="_blank" href="https://plus.google.com/u/0/106528211751763873508"></a></li> -->
-					<li><a title="Pinterest" class="option1_32" style="background-position:-128px -32px" rel="nofollow" target="_blank" href="http://pinterest.com/socialwin/"></a></li>	
-					<li><a title="RSS" class="option1_32" style="background-position:-128px 0px" rel="nofollow" target="_blank" href="http://feeds.feedburner.com/SocialWin"></a></li>	
+					<li><a title="Pinterest" class="option1_32" style="background-position:-128px -32px" rel="nofollow" target="_blank" href="http://pinterest.com/socialwin/">Pinterest</a></li>	
+					<li><a title="RSS" class="option1_32" style="background-position:-128px 0px" rel="nofollow" target="_blank" href="http://feeds.feedburner.com/SocialWin">RSS Feedburner</a></li>	
 				</ul>
 			</div>
 		</div>

@@ -351,7 +351,7 @@ figcaption {
 		.widget-fran ul {
 			width:30px;
 			height:30px;
-			background:#28241f url(../botones/options.png) no-repeat top left;
+			background:#28241f;
 			text-indent:-9000px;
 			cursor:pointer;
 			opacity:0.9;
@@ -3050,6 +3050,7 @@ input[type="submit"]:hover {
 				.sociable-header ul li a{
 					text-decoration: none;
 					outline:none;
+					color:transparent;
 				}
 
 			.option1_32{
