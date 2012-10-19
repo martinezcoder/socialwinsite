@@ -1,7 +1,7 @@
 <?php
 
 /*
-Copyright 2011 DWUser.com.
+Copyright 2011-2012 DWUser.com.
 Email contact: support {at] dwuser.com
 
 This file is part of EasyRotator for WordPress.
@@ -253,6 +253,10 @@ class EasyRotatorWP
 				$this->outputAPIError('auth', 'Invalid API credentials specified.');
 				return;
 			}
+
+            // Now that we're authenticated, enable error output to aid debugging
+            ini_set('display_errors', '1');
+
 			
 			// Determine method and process
 			
@@ -868,7 +872,6 @@ class EasyRotatorWP
                 if (get_magic_quotes_gpc())
                     $html = stripslashes($html);
 				$htmlUpdated = self::replaceDynamicRotatorHTML($html);
-                error_log($html);
 
 				$this->startAPIResponse();
 				echo('<result status="success" message="Live HTML may be found in the htmlUpdated attribute." htmlUpdated="' . htmlspecialchars($htmlUpdated) . '" />');

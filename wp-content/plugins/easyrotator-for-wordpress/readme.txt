@@ -3,8 +3,10 @@ Contributors: DWUser.com
 Donate link: http://www.dwuser.com/easyrotator/wordpress/
 Tags: rotator, slider, slide, slide show, slideshow, photos, photo, pictures, gallery, photo gallery, image gallery, images, image, media, video, audio, posts, pages, widget, plugin, seo, WordPress slider, templates, mobile, iPad, iPhone, touchscreen, jQuery, Adobe AIR, flash replacement
 Requires at least: 2.8
-Tested up to: 3.4.1
-Stable tag: 1.0.5
+Tested up to: 3.4.2
+Stable tag: 1.0.6
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Add beautiful, responsive EasyRotator photo rotators and sliders to your WordPress site in seconds.
 
@@ -115,9 +117,25 @@ This is usually caused by overly-broad declarations in your stylesheet.  [Open a
 
 To learn how to create an images-only layout for your rotator, see [this article](http://www.dwuser.com/support/easyrotator/kb/images-only-layout/).
 
+= Is it possible to add Pinterest sharing buttons to my rotators? =
+
+We recently released an add-on that enables social sharing for rotators.  By default, options are included for Pinterest, Twitter and Facebook; these can be customized if desired.  To learn more, see [this article](http://www.dwuser.com/education/content/free-add-on-social-sharing-for-easyrotator/).
+
 = What types of video can I use in a rotator? =
 
 To learn more about what video types are supported and how to integrate video, see [this article](http://www.dwuser.com/support/easyrotator/kb/video-faqs/).
+
+= How can I make links open in a new window? =
+
+To learn about setting link targets, see [this article](http://www.dwuser.com/support/easyrotator/kb/link-target/).
+
+= How can I link slide titles to corresponding posts? =
+
+When using dynamic data in a rotator, you may want to link the image titles to their corresponding posts.  To learn about how to enable this setting, see [this article](http://www.dwuser.com/support/easyrotator/kb/automatically-link-title/).
+
+= How can I customize the RSS feed view? =
+
+To learn more about the way rotators appears in RSS feed view and how to customize this view, see [this article](http://www.dwuser.com/support/easyrotator/kb/rss-compatibility/). 
 
 = Does EasyRotator work properly on SSL sites? =
 
@@ -134,12 +152,17 @@ Yes!  The most recent versions of the plugin are automatically compatible with S
 8. The EasyRotator Rotator widget lets you easily add rotators to widget-compatible themes
 
 == Changelog ==
+= 1.0.6 =
+* Compatibility Enhancement: Pre-emptively disable mod_security POST filtering when uploading rotators, via custom .htaccess file.
+* Compatibility Enhancement: When API calls are made, enable error output after API call has been authenticated.  This allows for better debug messages, especially when out-of-memory errors occur.
+* Bug Fix: Accidentally was logging rotator HTML to PHP log.
+
 = 1.0.5 =
 * Compatibility Enhancement: Built-in warning for new Windows Chrome / AIR compatibility issue.
 * Bug Fix: Avoid 2130 errors when launching EasyRotator manager in WordPress.
 
 = 1.0.4 =
-* Enhancement: Compatibility with RSS feeds.  Instead of rendering the full rotator code, only the first photo will be shown.  A special comment is inserted, allowing for customization of this display (see FAQs for soon-forthcoming documentation).
+* Enhancement: Compatibility with RSS feeds.  Instead of rendering the full rotator code, only the first photo will be shown.  A special comment is inserted, allowing for customization of this display (see FAQs for documentation).
 * Enhancement: New advanced option that allows for explicitly setting the photo sizes to be loaded for Main images and Thumbnail images when using dynamic data.  Note that installation of the latest editor application update is required to access this feature.
 * Enhancement: Better compatibility with shared hosting system where non-fatal errors occur or analytics/ad code is appended to each API request.
 * Enhancement: Better debug messages when errors occur, including links to help content.
