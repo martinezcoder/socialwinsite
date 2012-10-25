@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.8" -->
-<!-- generated-on="19/10/2012 1:10 pm" -->
+<!-- generated-on="25/10/2012 5:19 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
 		<lastmod>2012-10-19T08:38:25+00:00</lastmod>
@@ -17,7 +17,7 @@
 		<loc>http://www.socialwin.es/team-view/celia-ramon-wyser/</loc>
 		<lastmod>2012-10-18T17:42:08+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/contacto/</loc>
@@ -107,19 +107,19 @@
 		<loc>http://www.socialwin.es/social-media/facebook/facebook-compra-glancee/</loc>
 		<lastmod>2012-10-18T12:00:26+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/team-view/thomas-bartczak/</loc>
 		<lastmod>2012-10-18T11:57:14+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/team-view/fran-martinez/</loc>
 		<lastmod>2012-10-18T11:36:17+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/consultoria-estrategica/claves-del-nuevo-marketing/</loc>
@@ -131,115 +131,115 @@
 		<loc>http://www.socialwin.es/social-media/github-la-socializacion-del-codigo-fuente/</loc>
 		<lastmod>2012-09-11T18:34:00+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/consultoria-estrategica/efectos-del-social-media-en-la-empresa/</loc>
 		<lastmod>2012-09-11T10:55:23+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/consultoria-estrategica/modelos-de-negocio-del-siglo-xxi-y-ventaja-competitiva-2-0/</loc>
 		<lastmod>2012-09-04T10:45:42+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/slide-view/engage/</loc>
 		<lastmod>2012-08-28T11:21:29+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/slide-view/listen/</loc>
 		<lastmod>2012-08-28T11:21:16+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/slide-view/measure-2/</loc>
 		<lastmod>2012-08-28T11:21:02+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/social-media/como-elegir-la-plataforma-de-marketing-social-adecuada-para-tu-empresa/</loc>
 		<lastmod>2012-08-28T10:42:10+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/clients-view/aol/</loc>
 		<lastmod>2012-08-10T11:16:59+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/clients-view/watx/</loc>
 		<lastmod>2012-08-10T11:00:29+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/clients-view/gae/</loc>
 		<lastmod>2012-08-10T10:57:31+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/clients-view/telepolis/</loc>
 		<lastmod>2012-08-10T10:46:49+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/clients-view/american-red-cross/</loc>
 		<lastmod>2012-08-10T10:41:54+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/clients-view/bcnturisme/</loc>
 		<lastmod>2012-08-10T10:32:33+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/social-media/hollywood/</loc>
 		<lastmod>2012-08-08T10:39:10+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/social-media/consejos-para-usar-google-para-quedadas-online-2/</loc>
 		<lastmod>2012-08-08T10:38:23+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/social-media/4-formas-de-usar-instagram-en-tu-escritorio/</loc>
 		<lastmod>2012-08-08T08:39:04+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/clients-view/grupo-duplex/</loc>
 		<lastmod>2012-08-07T20:06:53+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/clients-view/catcaix/</loc>
 		<lastmod>2012-08-07T19:46:07+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/clients-view/seat/</loc>
 		<lastmod>2012-08-07T19:43:54+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/nosotros/</loc>
@@ -250,12 +250,6 @@
 	<url>
 		<loc>http://www.socialwin.es/metodo-socialwin/</loc>
 		<lastmod>2012-08-01T10:29:40+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/nosotros/testimonios/</loc>
-		<lastmod>2012-07-22T19:04:01+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -287,13 +281,13 @@
 		<loc>http://www.socialwin.es/social-media/nuevas-redes/socl/</loc>
 		<lastmod>2012-06-24T18:54:44+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/social-media/google/googleplus-local/</loc>
 		<lastmod>2012-06-24T18:54:28+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.2</priority>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/topcontent/</loc>
