@@ -46,7 +46,7 @@ function get_locale() {
 	}
 
 	if ( empty( $locale ) )
-		$locale = 'en_US';
+		$locale = 'es';
 
 	return apply_filters( 'locale', $locale );
 }

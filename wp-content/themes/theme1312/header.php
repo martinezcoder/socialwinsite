@@ -53,7 +53,6 @@
 	<meta http-equiv="Content-type" content="text/html; charset=<?php bloginfo( 'charset' ); ?>" />
 	<meta name="keywords" content="<?php echo wp_title('redes sociales, ', false, right); echo wp_title('social media, ', false, right); bloginfo( 'description' ); echo ', Consultoria, Redes Sociales, Social Media, Planes Estrategicos, Estrategias Online, Estrategias Facebook, Estrategias Twitter, Reputacion Online'; ?>" />
     <meta name="author" content="SocialWin">
-    <meta http-equiv="Content-Language" content="es"/>
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="icon" href="<?php bloginfo( 'template_url' ); ?>/socialwin.ico" type="image/x-icon" />
