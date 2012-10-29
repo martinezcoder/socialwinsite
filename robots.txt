@@ -7,8 +7,6 @@ Disallow:/wp-content/themes/
 Disallow:/wp-admin/
 Disallow:/_wp-
 
-Disallow:/wp-
-
 # Desindexar entradas duplicadas, comentarios y trackbacks
 Allow: /feed/$
 Disallow: /feed
@@ -24,10 +22,5 @@ Disallow: /*/*/*/feed/rss/$
 Disallow: /*/*/*/trackback/$
 
 Sitemap:http://www.socialwin.es/sitemap.xml
-Disallow:/?s=
 Disallow:/search
-
-
-
-
 
