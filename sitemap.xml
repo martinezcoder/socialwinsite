@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.8" -->
-<!-- generated-on="29/10/2012 4:21 pm" -->
+<!-- generated-on="31/10/2012 6:56 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2012-10-29T10:47:03+00:00</lastmod>
+		<lastmod>2012-10-31T06:56:42+00:00</lastmod>
 		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/servicios/formacion/</loc>
+		<lastmod>2012-10-31T06:56:42+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/servicios/</loc>
+		<lastmod>2012-10-31T06:56:23+00:00</lastmod>
+		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
@@ -40,12 +52,6 @@
 	<url>
 		<loc>http://www.socialwin.es/clientes/</loc>
 		<lastmod>2012-10-18T15:14:31+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/servicios/</loc>
-		<lastmod>2012-10-18T15:10:32+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -94,12 +100,6 @@
 	<url>
 		<loc>http://www.socialwin.es/servicios/consultoria/</loc>
 		<lastmod>2012-10-18T12:28:29+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/servicios/formacion/</loc>
-		<lastmod>2012-10-18T12:26:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>

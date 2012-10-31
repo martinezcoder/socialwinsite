@@ -2422,18 +2422,36 @@ function the_shortlink( $text = '', $title = '', $before = '', $after = '' ) {
 function the_sociallinks($id = 0) {
 
 	$post_title = get_the_title($id);
-	$post_permalink = wp_get_shortlink($id);
+	$post_permalink = get_permalink($id);
 	
 	$html_text = "";
 	$html_text = "<div class='sociable-header' style='float:none'>";
 	$html_text = $html_text."<ul class='s_clearfix'>";
-	$html_text = $html_text."<li id=\"Twitter_Counter\"><script type=\"text/javascript\" src=\"//platform.twitter.com/widgets.js\"></script>";
-	$html_text = $html_text."<a href=\"https://twitter.com/share\" data-text=\"".$post_title."\" data-url=\"".$post_permalink."\" class=\"twitter-share-button\" data-count=\"horizontal\"></a></li>";
-	$html_text = $html_text."<li id=\"Facebook_Counter\"><iframe src=\"http://www.facebook.com/plugins/like.php?href=".$post_permalink."&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&font\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden;height:32px;width:100px\" allowTransparency=\"true\"></iframe></li>";
-	$html_text = $html_text."<li id=\"LinkedIn_Counter\"><script src=\"http://platform.linkedin.com/in.js\" type=\"text/javascript\"></script>";
+
+	$html_text = $html_text."<li id=\"Twitter_Counter\">";
+
+    $html_text = $html_text."<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"//platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}";
+    $html_text = $html_text."(document,\"script\",\"twitter-wjs\");</script>";    
+
+	$html_text = $html_text."<a href=\"https://twitter.com/share\" data-text=\"".$post_title."\" 
+	                                                               data-url=\"".$post_permalink."\" 
+	                                                               class=\"twitter-share-button\" 
+	                                                               data-count=\"horizontal\"
+	                                                               data-via=\"SocialWinTW\"
+	                                                               data-lang=\"es\"></a></li>";
+
+	$html_text = $html_text."
+	                         <li id=\"Facebook_Counter\"><iframe src=\"http://www.facebook.com/plugins/like.php?href=".$post_permalink."&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&font\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden;height:32px;width:100px\" allowTransparency=\"true\"></iframe></li>";
+
+	$html_text = $html_text."
+	                         <li id=\"LinkedIn_Counter\"><script src=\"http://platform.linkedin.com/in.js\" type=\"text/javascript\"></script>";
+
 	$html_text = $html_text."<script type=\"IN/Share\" data-url=".$post_permalink." data-counter=\"right\"></script></li>";
-	$html_text = $html_text."<li id=\"Google_p\"><script type=\"text/javascript\" src=\"http://apis.google.com/js/plusone.js\">{lang:'es'}</script>";
+
+	$html_text = $html_text."
+	                         <li id=\"Google_p\"><script type=\"text/javascript\" src=\"http://apis.google.com/js/plusone.js\">{lang:'es'}</script>";
 	$html_text = $html_text."<g:plusone annotation=\"bubble\" href=\"".$post_permalink."\" size=\"medium\"></g:plusone></li>";
+
 	$html_text = $html_text."</ul>";
 	$html_text = $html_text."</div>"; 
 	echo $html_text;
