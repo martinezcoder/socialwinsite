@@ -21,7 +21,7 @@
 				 
 				echo '<div class="post-meta">';
 				echo '<div class="fleftall">Artículo escrito el <time datetime="'; the_time('Y-m-d\TH:i'); echo'">'; the_time('d/m/Y'); echo ' a las '; the_time(); echo '</time> por '; the_author_posts_link(); echo '</div>';
-				echo '<div class="fleft">Categor&iacuteas: ';  the_category(', '); echo '</div>';
+				echo '<div class="fleft">Categorías: ';  the_category(', '); echo '</div>';
 				echo '<div class="fright">'; comments_popup_link('Sin comentarios', 'Un comentario', '% comentarios', 'comments-link', 'Post cerrado'); echo '</div>';
         		echo '</div><!--.post-meta-->';
 			  }

@@ -58,7 +58,7 @@
 					echo get_the_title($post_noticia->ID);
 				echo '</a></h2>';
 				echo '<div class="post-meta">';
-					echo '<div class="fleft">Categor&iacuteas: ';
+					echo '<div class="fleft">Categorías: ';
 						echo the_category(', ', '', $post_noticia->ID);
 						echo ' | <time datetime="'; echo $post_noticia->post_date; echo'">';
 						echo $post_noticia->post_date; echo '</time>';

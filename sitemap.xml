@@ -1,10 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.8" -->
-<!-- generated-on="04/11/2012 8:43 pm" -->
+<!-- generated-on="09/11/2012 4:49 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2012-11-01T07:50:10+00:00</lastmod>
+		<lastmod>2012-11-09T16:48:30+00:00</lastmod>
 		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/facebook/gamification-millones-personas-juegan-facebook/</loc>
+		<lastmod>2012-11-09T16:48:30+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/predicciones-social-media-2013/</loc>
+		<lastmod>2012-11-09T16:43:19+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/el-mapa-de-twitter-muestra-el-ultimo-millon-de-tweets/</loc>
+		<lastmod>2012-11-09T16:38:45+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/uncategorized/jovenes-tienen-su-jefe-amigo-facebook/</loc>
+		<lastmod>2012-11-09T16:32:51+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/nosotros/vision/</loc>
+		<lastmod>2012-11-09T16:06:45+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/team-view/montse-civico/</loc>
+		<lastmod>2012-11-09T15:36:02+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/team-view/celia-ramon-wyser/</loc>
+		<lastmod>2012-11-09T15:13:31+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/crecimiento-facebook-2013/</loc>
+		<lastmod>2012-11-09T12:15:32+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/consultoria-estrategica/contenidoestrategia/</loc>
+		<lastmod>2012-11-09T11:15:01+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/servicios/herramientas/</loc>
+		<lastmod>2012-11-04T20:58:02+00:00</lastmod>
+		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
@@ -20,6 +80,12 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
+		<loc>http://www.socialwin.es/social-media/5-estadios-implementacion-redes-sociales-empresa/</loc>
+		<lastmod>2012-10-29T16:15:31+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
 		<loc>http://www.socialwin.es/marketing/seo-sem-posicionamiento-redes-sociales/</loc>
 		<lastmod>2012-10-29T16:14:47+00:00</lastmod>
 		<changefreq>weekly</changefreq>
@@ -28,12 +94,6 @@
 	<url>
 		<loc>http://www.socialwin.es/team-view/fran-martinez/</loc>
 		<lastmod>2012-10-29T10:47:03+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/team-view/celia-ramon-wyser/</loc>
-		<lastmod>2012-10-29T10:43:46+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
@@ -80,12 +140,6 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/nosotros/vision/</loc>
-		<lastmod>2012-10-18T14:53:57+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
 		<loc>http://www.socialwin.es/servicios/auditoria/</loc>
 		<lastmod>2012-10-18T14:40:08+00:00</lastmod>
 		<changefreq>monthly</changefreq>
@@ -94,12 +148,6 @@
 	<url>
 		<loc>http://www.socialwin.es/metodo-socialwin/metodo/</loc>
 		<lastmod>2012-10-18T14:37:40+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/servicios/herramientas-2/</loc>
-		<lastmod>2012-10-18T12:30:04+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>

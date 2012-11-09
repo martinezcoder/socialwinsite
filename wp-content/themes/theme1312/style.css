@@ -1847,6 +1847,7 @@ nav.oldernewer {
 	margin-bottom: -35px;
 	overflow:hidden;
 	}
+
 	.recent-posts.clients li {
 		float:left;
 		width:  290px; /* 194px; */
@@ -2230,7 +2231,9 @@ blockquote.testi-single {
 	width:100%;
 	overflow:hidden;
 	border:none;
+	list-style-type: none;
 	}
+
 	.recent-posts li {
 		margin:0 0 20px 0;
 		padding:0;
