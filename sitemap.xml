@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.8" -->
-<!-- generated-on="09/11/2012 4:49 pm" -->
+<!-- generated-on="13/11/2012 11:26 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2012-11-09T16:48:30+00:00</lastmod>
+		<lastmod>2012-11-13T06:00:19+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/social-media/facebook/gamification-millones-personas-juegan-facebook/</loc>
-		<lastmod>2012-11-09T16:48:30+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/social-media/predicciones-social-media-2013/</loc>
-		<lastmod>2012-11-09T16:43:19+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/social-media/el-mapa-de-twitter-muestra-el-ultimo-millon-de-tweets/</loc>
-		<lastmod>2012-11-09T16:38:45+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/uncategorized/jovenes-tienen-su-jefe-amigo-facebook/</loc>
-		<lastmod>2012-11-09T16:32:51+00:00</lastmod>
+		<loc>http://www.socialwin.es/social-media/crecimiento-facebook-2013/</loc>
+		<lastmod>2012-11-09T16:52:34+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
@@ -46,12 +28,6 @@
 	<url>
 		<loc>http://www.socialwin.es/team-view/celia-ramon-wyser/</loc>
 		<lastmod>2012-11-09T15:13:31+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/social-media/crecimiento-facebook-2013/</loc>
-		<lastmod>2012-11-09T12:15:32+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>

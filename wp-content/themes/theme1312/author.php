@@ -11,7 +11,7 @@
   
   <!-- Fran ini: busca en el equipo la foto del autor en cuesti�n -->
   <div class="author-info">
-    <h1>&Uacute;ltimos posts  de <?php echo $curauth->display_name; ?></h1>
+    <h1>Últimos posts  de <?php echo $curauth->display_name; ?></h1>
     <p class="avatar">
 
 	<?php
@@ -29,9 +29,6 @@
 					echo get_the_post_thumbnail($post->ID, "small-post-thumbnail", array( "class" => "thumb" ));
 					echo '</div></a>';
 			}
-/*
-			echo wp_trim_words($post->post_content, 30);
-*/
 		}
 	}
 	?>
@@ -83,23 +80,6 @@
     </nav><!--.oldernewer-->
   <?php endif; ?>
   </div><!--#recentPosts-->
-  <div id="recent-author-comments">
-    <h2>Comentarios recientes de <?php echo $curauth->display_name; ?></h2>
-      <?php
-        $number=5; // number of recent comments to display
-        $comments = $wpdb->get_results("SELECT * FROM $wpdb->comments WHERE comment_approved = '1' and comment_author_email='$curauth->user_email' ORDER BY comment_date_gmt DESC LIMIT $number");
-      ?>
-      <ul>
-        <?php
-          if ( $comments ) : foreach ( (array) $comments as $comment) :
-          echo  '<li class="recentcomments">' . sprintf(__('%1$s on %2$s'), get_comment_date(), '<a href="'. get_comment_link($comment->comment_ID) . '">' . get_the_title($comment->comment_post_ID) . '</a>') . '</li>';
-        endforeach; else: ?>
-                  <p>
-                    Sin comentarios de <?php echo $curauth->display_name; ?>.
-                  </p>
-        <?php endif; ?>
-            </ul>
-  </div><!--#recentAuthorComments-->
 
   
 </div><!--#content-->
