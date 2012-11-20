@@ -3,7 +3,7 @@
 Plugin Name: EasyRotator for WordPress
 Plugin URI: http://www.dwuser.com/easyrotator/wordpress/
 Description: Add professional, customizable photo sliders to your site in seconds.  Powered by the EasyRotator application from DWUser.com.
-Version: 1.0.6
+Version: 1.0.7
 Author: DWUser.com
 Author URI: http://www.dwuser.com/
 License: GPL v2 or later
@@ -420,7 +420,11 @@ class EasyRotator
 		var_dump(get_user_option('rich_editing'));
 		echo('</p></div>');
 		*/
-		
+
+        // Make sure this user is allowed to edit
+        if ( !current_user_can('edit_posts') || !current_user_can('edit_pages') )
+            return;
+
 		// Show the welcome/setup notice if needed
 		if (get_user_option('easyrotator_welcome_notice_hide') !== 'yes')
 		{
