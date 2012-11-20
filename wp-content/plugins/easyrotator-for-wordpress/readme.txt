@@ -3,8 +3,8 @@ Contributors: DWUser.com
 Donate link: http://www.dwuser.com/easyrotator/wordpress/
 Tags: rotator, slider, slide, slide show, slideshow, photos, photo, pictures, gallery, photo gallery, image gallery, images, image, media, video, audio, posts, pages, widget, plugin, seo, WordPress slider, templates, mobile, iPad, iPhone, touchscreen, jQuery, Adobe AIR, flash replacement
 Requires at least: 2.8
-Tested up to: 3.4.2
-Stable tag: 1.0.6
+Tested up to: 3.5 Beta 2
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -109,6 +109,10 @@ Scaling and cropping are set when you apply a layout template in the Layout/Pres
 
 For information about modifying rotator alignment, see [this article](http://www.dwuser.com/support/easyrotator/kb/alignment/).
 
+= I'm having trouble with an "AIR Download Error" all of a sudden =
+
+If EasyRotator was working properly and now you're suddenly receiving installation prompts and an "AIR Download Error" message, see [this article](http://www.dwuser.com/support/easyrotator/kb/chrome-air-problem/).
+
 = I'm having trouble with photos shifting or appearing with borders =
 
 This is usually caused by overly-broad declarations in your stylesheet.  [Open a support ticket](http://www.dwuser.com/#bottomBoxes) and include the URL of your page; we'll help you identify the code you need to add.
@@ -128,6 +132,10 @@ To learn more about what video types are supported and how to integrate video, s
 = How can I make links open in a new window? =
 
 To learn about setting link targets, see [this article](http://www.dwuser.com/support/easyrotator/kb/link-target/).
+
+= How can I transfer rotators from one site to another? =
+
+If you need to move rotators from a development to production site, or an old site to a new site, see [this article](http://www.dwuser.com/support/easyrotator/kb/transfer-rotators/) for directions.
 
 = How can I link slide titles to corresponding posts? =
 
@@ -152,6 +160,11 @@ Yes!  The most recent versions of the plugin are automatically compatible with S
 8. The EasyRotator Rotator widget lets you easily add rotators to widget-compatible themes
 
 == Changelog ==
+= 1.0.7 =
+* Compatibility Enhancement: Built-in warning for new Mac Chrome / AIR compatibility issue.
+* Bug Fix: Don't show editor application installation prompt to non-editors.
+* Compatibility Enhancement: Avoid issues with site-relative file links on unusual configurations.
+
 = 1.0.6 =
 * Compatibility Enhancement: Pre-emptively disable mod_security POST filtering when uploading rotators, via custom .htaccess file.
 * Compatibility Enhancement: When API calls are made, enable error output after API call has been authenticated.  This allows for better debug messages, especially when out-of-memory errors occur.

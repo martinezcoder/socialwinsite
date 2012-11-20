@@ -1219,7 +1219,7 @@ class EasyRotatorWP
 				'$matches',
 				'
 				$src = $matches[2];
-				if (!preg_match(\'|^[a-z]+://|i\', $src)) // check for protocol
+				if (!preg_match(\'|^[a-z]+://|i\', $src) && !preg_match(\'|^/|\', $src)) // check for protocol, site-relative
 					return ($matches[1] . \'' . $urlHere . '\' . $matches[2] . $matches[3]);
 				return $matches[0];
 				'
@@ -2023,7 +2023,7 @@ class EasyRotatorWPUtils
 		}
 		
 		// Check for upload errors
-		if ($_FILES['Filedata']['error'] && $_FILES['Filedata']['error'] != '4') 
+		if ($_FILES['Filedata']['error'] && $_FILES['Filedata']['error'] != '4')
 		{
 			return array('success'=>false, 'message'=>$upload_errors_friendly[$_FILES['Filedata']['error']]);
 		}
