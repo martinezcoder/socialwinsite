@@ -11,13 +11,13 @@
   
   <!-- Fran ini: busca en el equipo la foto del autor en cuesti�n -->
   <div class="author-info">
-    <h1>Últimos posts  de <?php echo $curauth->display_name; ?></h1>
+    <h1>Posts  de <?php echo $curauth->display_name; ?></h1>
     <p class="avatar">
 
 	<?php
 	global $post;
 
-	$persona = get_posts('post_type=team&cat=&orderby=post_date&order=desc&numberposts=5');
+	$persona = get_posts('post_type=team&cat=&orderby=post_date&order=desc&numberposts=100');
 
 	foreach($persona as $post) 
 	{

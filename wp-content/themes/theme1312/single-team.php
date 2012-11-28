@@ -28,7 +28,7 @@
 
 	global $post_noticia;
 
-	$lista_noticias = get_posts('post_type=post&cat=&orderby=post_date&order=desc&numberposts=');
+	$lista_noticias = get_posts('post_type=post&cat=&orderby=post_date&order=desc&numberposts=100');
 
 	$post_counter = 0;
 	foreach($lista_noticias as $post_noticia)
@@ -42,7 +42,7 @@
 
 			if ($post_counter == 0)
 			{
-				echo '<h2>Mis artículos de opinión</h2>';
+				echo '<h2>Últimos artículos</h2>';
 				/*
 				echo '<h1>&Uacute;ltimos posts  de ';
 				echo $socio;
@@ -86,14 +86,13 @@
 			$post_counter++;
 		}
 
-		if ($post_counter >= 5) break;
+		//if ($post_counter >= 5) break;
 
 	}
 
   ?>
 
 <!-- Fran final -->
-
 
 </div><!--#content-->
 <!-- < ?php get_sidebar(); ? > -->
