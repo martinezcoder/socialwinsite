@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-	<div id="content" class="grid_12 <?php echo of_get_option('blog_sidebar_pos') ?>">
+	<div id="content" class="grid_13 <?php echo of_get_option('blog_sidebar_pos') ?>">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header>

@@ -294,6 +294,7 @@ ol {
 ul {
     margin: 0 0 1.5em 0;
     padding: 0 0 0 12px;
+    		text-align: justify;  /* texto slides justificado */
 }
 ul li,
 ol li {

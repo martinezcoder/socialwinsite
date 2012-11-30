@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
    <?php if (get_post( $args[0] )->post_type != 'clients') { ?>
-	<?php echo '<div id="content" class="grid_12';of_get_option('blog_sidebar_pos');echo '">'; ?>
+	<?php echo '<div id="content" class="grid_13';of_get_option('blog_sidebar_pos');echo '">'; ?>
    <?php } else { ?>
 	<?php echo '<div id="content" class="grid_15';of_get_option('blog_sidebar_pos');echo '">'; ?>
    <?php } ?>
@@ -49,19 +49,19 @@
       </article>
 
         
-<!--
-			<?php /* If a user fills out their bio info, it's included here */ ?>
+
       <div id="post-author">
-        <h3>Written by <?php the_author_posts_link() ?></h3>
         <p class="gravatar"><?php if(function_exists('get_avatar')) { echo get_avatar( get_the_author_email(), '80' ); /* This avatar is the user's gravatar (http://gravatar.com) based on their administrative email address */  } ?></p>
         <div id="author-description">
-          <?php the_author_meta('description') ?> 
+        Artículo escrito por <?php the_author_posts_link() ?>
+          
           <div id="author-link">
-            <p>View all posts by: <?php the_author_posts_link() ?></p>
-          </div><!--#author-link-- >
-        </div><!--#author-description -- >
-      </div><!--#post-author-- >
--->
+            <?php the_author_meta('description') ?> 
+          </div><!--#author-link-->
+        </div><!--#author-description -->
+      </div><!--#post-author-->
+
+
     </div><!-- #post-## -->
     
 <!--    

@@ -108,11 +108,13 @@ article.p{
 		text-align: justify; 
 }
 
+
 #seccioncols {
 	float: left;
 	width: 920px;
-	margin: 0px;
+	margin-bottom:50px;
 	padding: 0px;
+	
 }
 
 	#columna {
@@ -1355,9 +1357,14 @@ nav.oldernewer {
 	border:1px solid #dbdbdb;
 	padding:20px;
 	margin-bottom:2em;
+	background:url(images/body-tail.gif) 0 0 repeat-x #fff;
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
 	}
-#author-link {
-	margin-top:1.5em;
+	#author-link {
+	margin-top:1em;
 	}
 	#post-author .gravatar {
 		margin:0 20px 0 0;
@@ -1368,6 +1375,7 @@ nav.oldernewer {
 		padding:5px;
 		}
 #author-description {
+	margin-top:2.5em;
 	
 	}
 
@@ -1678,7 +1686,8 @@ nav.oldernewer {
 /* Sidebar
 ---------------------------------------- */
 #sidebar {
-	margin: 40px 0 0 10px;
+	
+	margin: 40px 0 0 14px;
 	padding: 20px 0 0 0;
 	background:url(images/body-tail.gif) 0 0 repeat-x #fff;
 
@@ -1686,29 +1695,35 @@ nav.oldernewer {
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
-
 }
 	#sidebar h3 {
 		margin-bottom:.5em;
+		font-size:16px;
+		margin-left: 10px;
 		}
 	#widget-sidebar {
 		
 	}
 		.widget {
 			margin-bottom:50px;
-			margin-left: 30px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+
+		.widget ul{
+			list-style-type:none;
 		}
 
 		.widget ul li a {
-			margin-left: 10px;
+			/* margin-left: 1	0px; */
 			color:#898D8D;
 			text-decoration:none;
-			font-size:14px;
+			font-size:11px;
 			line-height:1.2em;
-
 			}
 		.widget ul li a:hover {
 			color:#3b4243;
+			text-decoration: underline;
 			}
 		
 		ul.children {
@@ -1856,6 +1871,13 @@ nav.oldernewer {
 		list-style-type:none;
 		font-size:12px;
 		}
+	.recent-posts.clients li:hover {
+		background:url(images/body-tail.gif) 0 0 repeat-x #fff;
+
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+	}
 	.recent-posts.clients li:nth-child(3n) {
 		margin-right:0;
 		}
@@ -1864,7 +1886,7 @@ nav.oldernewer {
 		}	
 		.recent-posts.clients li img.thumb {
 			float:none;
-			margin:0 0 20px 0;
+			margin:0 0 20px 45px;
 			}
 		.recent-posts.clients li h3 {
 			font-size:11px;
@@ -1885,6 +1907,62 @@ nav.oldernewer {
 			.recent-posts.clients li a.link:hover {
 				text-decoration:none;
 				}
+
+
+/* Clients */
+.partners {
+	margin-bottom: -35px;
+	overflow:hidden;
+	}
+
+	.partners li {
+		float:left;
+		width:  290px; /* 194px; */
+		margin-right:29px;
+		margin-bottom: 50px;
+		list-style-type:none;
+		font-size:12px;
+		}
+	.partners li:hover {
+		background:url(images/body-tail.gif) 0 0 repeat-x #fff;
+			
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.partners li:nth-child(3n) {
+		margin-right:0;
+		}
+	.partners li.nomargin {
+		margin-right:0;
+		}	
+		.partners li img.thumb {
+			float:none;
+			margin:0px 0 20px 45px;
+			}
+		.partners li h3 {
+			font-size:11px;
+			text-transform:uppercase;
+			font-weight:normal;
+			color:#191919;
+			margin-bottom:.1em;
+			}
+			.partners li h3 a {
+				color:#191919;
+				}
+		.partners li .excerpt {
+			display:inline;
+			}
+			.partners li a.link {
+				text-decoration:underline;
+				}
+			.partners li a.link:hover {
+				text-decoration:none;
+				}
+
+
+
+
 
 /* Services */
 .recent-posts.services {

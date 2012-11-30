@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="content" class="grid_12 <?php echo of_get_option('blog_sidebar_pos') ?>">
+<div id="content" class="grid_13 <?php echo of_get_option('blog_sidebar_pos') ?>">
 	<?php
     if(isset($_GET['author_name'])) :
       $curauth = get_userdatabylogin($author_name);
@@ -9,7 +9,7 @@
   ?>
   <div id="recent-author-posts">
   
-  <!-- Fran ini: busca en el equipo la foto del autor en cuesti�n -->
+  <!-- SW ini: foto del autor -->
   <div class="author-info">
     <h1>Posts  de <?php echo $curauth->display_name; ?></h1>
     <p class="avatar">
@@ -35,7 +35,7 @@
 	
     </p>
   </div><!--.author-->
-  <!-- Fran fin -->
+  <!-- SW fin -->
 	
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); /* Displays the most recent posts by that author. Note that this does not display custom content types */ ?>
       <?php static $count = 0;

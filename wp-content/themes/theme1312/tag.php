@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="content" class="grid_12 <?php echo of_get_option('blog_sidebar_pos') ?>">
+<div id="content" class="grid_13 <?php echo of_get_option('blog_sidebar_pos') ?>">
   <h1><?php printf( __( 'Tag Archives: %s' ), '<span>' . single_tag_title( '', false ) . '</span>' ); ?></h1>
   <!-- displays the tag's description from the Wordpress admin -->
   <?php echo tag_description(); ?>

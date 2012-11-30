@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="content" class="grid_12 <?php echo of_get_option('blog_sidebar_pos') ?>">
+<div id="content" class="grid_13 <?php echo of_get_option('blog_sidebar_pos') ?>">
   <h1><?php printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
   <?php echo category_description(); /* displays the category's description from the Wordpress admin */ ?>
   

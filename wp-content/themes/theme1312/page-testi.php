@@ -4,7 +4,7 @@
  */
 
 get_header(); ?>
-	<div id="content" class="grid_12 <?php echo of_get_option('blog_sidebar_pos') ?>">
+	<div id="content" class="grid_13 <?php echo of_get_option('blog_sidebar_pos') ?>">
 	  <div class="indent">
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <h1><?php the_title(); ?></h1>

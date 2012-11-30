@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="content" class="grid_12 <?php echo of_get_option('blog_sidebar_pos') ?>">
+<div id="content" class="grid_13 <?php echo of_get_option('blog_sidebar_pos') ?>">
   <h1>
     <?php if ( is_day() ) : /* if the daily archive is loaded */ ?>
       <?php printf( __( 'Daily Archives: <span>%s</span>' ), get_the_date() ); ?>

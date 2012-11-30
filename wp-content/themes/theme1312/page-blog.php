@@ -4,7 +4,7 @@
  */
 
 get_header(); ?>
-<div id="content" class="grid_12 <?php echo of_get_option('blog_sidebar_pos') ?>">
+<div id="content" class="grid_13 <?php echo of_get_option('blog_sidebar_pos') ?>">
 	<?php
   $temp = $wp_query;
   $wp_query= null;

@@ -20,6 +20,7 @@
 
 .grid_1,
 .grid_2,
+.grid_2b,
 .grid_3,
 .grid_4,
 .grid_5,
@@ -60,7 +61,8 @@
 }
 
 .container_16 .grid_2 {
-	width:100px;
+/*	width:100px;*/
+	width:160px;
 }
 
 .container_16 .grid_3 {
@@ -100,7 +102,8 @@
 }
 
 .container_16 .grid_12 {
-	width:700px;
+/*	width:700px;*/
+	width:760px;
 }
 
 .container_16 .grid_13 {
