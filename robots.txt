@@ -2,10 +2,6 @@ User-agent: *
 Disallow:/author/
 Disallow:/category/
 Disallow:/uncategorized/
-Disallow:/community-management/
-Disallow:/consultoria-estrategica/
-Disallow:/marketing-online/
-Disallow:/social-media/
 Disallow:/2012/
 Disallow:/2013/
 Disallow:/plugins/

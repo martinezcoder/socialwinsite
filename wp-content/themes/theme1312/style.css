@@ -98,15 +98,6 @@ p.textoclaro {
 }
 
 
-article {
-	border: 0px solid #999999;
-	padding: 5px;
-	margin: 0px;
-}
-
-article.p{
-		text-align: justify; 
-}
 
 
 #seccioncols {
@@ -1106,13 +1097,16 @@ h3#comments {
 	}
 
 
+
 article {
 	margin-bottom:35px;
+	padding: 5px;
 	width:100%;
+
 	position:relative;
 	clear:both;
-	overflow:hidden;
-	}
+	overflow:hidden;	
+}	
 
 /* Post header */
 article header h2 {
@@ -1130,6 +1124,7 @@ article.single-post {
 	margin-bottom:30px;
 	overflow:hidden;
 	width:100%;
+	text-align: justify; 
 	}
 
 /* Featured thumbnail */
@@ -1215,7 +1210,14 @@ article.single-post footer {
 	overflow:hidden;
 	margin-bottom:1em;
 	}
-	
+	.post-meta a {
+		text-decoration:none;
+		color: #888;
+		font-style: italic;
+	}
+	.post-meta a:hover {
+		text-decoration:underline;
+	}
 	.post-navigation {
 		
 	}
