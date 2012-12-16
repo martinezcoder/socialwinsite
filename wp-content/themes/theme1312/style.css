@@ -1127,6 +1127,10 @@ article.single-post {
 	text-align: justify; 
 	}
 
+	article.single-post header {
+		text-align: left;
+	}
+
 /* Featured thumbnail */
 .featured-thumbnail {
 	float:left;
