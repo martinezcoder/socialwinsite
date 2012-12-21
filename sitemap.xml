@@ -1,24 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.8" -->
-<!-- generated-on="19/11/2012 10:57 am" -->
+<!-- generated-on="21/12/2012 1:37 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2012-12-02T12:01:46+00:00</lastmod>
+		<lastmod>2012-12-18T06:00:19+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/social-media/gamification-millones-personas-juegan-facebook/</loc>
-		<lastmod>2012-12-05T12:01:46+00:00</lastmod>
+		<loc>http://www.socialwin.es/social-media/las-redes-sociales-mas-humanas-que-la-humanidad/</loc>
+		<lastmod>2012-12-14T08:48:46+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/consultoria-estrategica/gestionar-criticas-en-redes-sociales/</loc>
-		<lastmod>2012-12-03T07:00:00+00:00</lastmod>
+		<lastmod>2012-12-14T08:44:11+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
-	</url>	
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/nosotros/blog/</loc>
+		<lastmod>2012-11-30T15:36:21+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/nosotros/nuestros-partners/</loc>
+		<lastmod>2012-11-30T15:35:58+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/nosotros/vision/</loc>
+		<lastmod>2012-11-30T15:34:27+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/gamification-millones-personas-juegan-facebook/</loc>
+		<lastmod>2012-11-30T12:51:42+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/aercomparte-ii-un-dia-lleno-de-social-media/</loc>
+		<lastmod>2012-11-30T10:30:09+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/team-view/fran-martinez/</loc>
+		<lastmod>2012-11-30T10:18:27+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/twittalk-entrevista-a-celia-ramon-wyser/</loc>
+		<lastmod>2012-11-22T11:29:52+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/facebook-compra-glancee/</loc>
+		<lastmod>2012-11-21T00:53:50+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/googleplus-local/</loc>
+		<lastmod>2012-11-21T00:53:30+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/socl/</loc>
+		<lastmod>2012-11-21T00:53:19+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/marketing-online/claves-del-nuevo-marketing/</loc>
+		<lastmod>2012-11-21T00:52:52+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/consultoria-estrategica/cooperacion-cocreacion-claves-exito-negocios-futuro/</loc>
+		<lastmod>2012-11-21T00:52:40+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/predicciones-social-media-2013/</loc>
+		<lastmod>2012-11-18T12:06:29+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/el-mapa-de-twitter-muestra-el-ultimo-millon-de-tweets/</loc>
+		<lastmod>2012-11-18T12:04:14+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
 	<url>
 		<loc>http://www.socialwin.es/social-media/jovenes-tienen-su-jefe-amigo-facebook/</loc>
 		<lastmod>2012-11-18T12:01:46+00:00</lastmod>
@@ -26,22 +110,10 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/nosotros/nuestros-partners/</loc>
-		<lastmod>2012-12-02T12:01:46+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.1</priority>
-	</url>
-	<url>
 		<loc>http://www.socialwin.es/social-media/crecimiento-facebook-2013/</loc>
 		<lastmod>2012-11-18T11:58:48+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/nosotros/vision/</loc>
-		<lastmod>2012-11-09T16:06:45+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>1.0</priority>
+		<priority>0.9</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/team-view/montse-civico/</loc>
@@ -86,20 +158,8 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/marketing/seo-sem-posicionamiento-redes-sociales/</loc>
+		<loc>http://www.socialwin.es/marketing-online/seo-sem-posicionamiento-redes-sociales/</loc>
 		<lastmod>2012-10-29T16:14:47+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/team-view/fran-martinez/</loc>
-		<lastmod>2012-10-29T10:47:03+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/innovacion-y-management/cooperacion-cocreacion-claves-exito-negocios-futuro/</loc>
-		<lastmod>2012-10-29T10:33:45+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
@@ -118,12 +178,6 @@
 	<url>
 		<loc>http://www.socialwin.es/metodo-socialwin/descripcion/</loc>
 		<lastmod>2012-10-18T15:06:43+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/nosotros/blog/</loc>
-		<lastmod>2012-10-18T14:58:00+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -164,22 +218,10 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/social-media/facebook/facebook-compra-glancee/</loc>
-		<lastmod>2012-10-18T12:00:26+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
 		<loc>http://www.socialwin.es/team-view/thomas-bartczak/</loc>
 		<lastmod>2012-10-18T11:57:14+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/consultoria-estrategica/claves-del-nuevo-marketing/</loc>
-		<lastmod>2012-09-20T07:43:08+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/social-media/github-la-socializacion-del-codigo-fuente/</loc>
@@ -330,18 +372,6 @@
 		<lastmod>2012-06-24T21:31:09+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/social-media/nuevas-redes/socl/</loc>
-		<lastmod>2012-06-24T18:54:44+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/social-media/google/googleplus-local/</loc>
-		<lastmod>2012-06-24T18:54:28+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/topcontent/</loc>
