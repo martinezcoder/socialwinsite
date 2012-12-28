@@ -17,17 +17,13 @@
 		wp_title('');
 	} else {
 	    $titulo_del_post = single_post_title( '', false );
-	    if (
-	           ($titulo_del_post == "Servicios")
-               || ($titulo_del_post == "Auditoría")               
-               || ($titulo_del_post == "Estrategia")
-               || ($titulo_del_post == "Implementación")
-               || ($titulo_del_post == "Herramientas")
-               || ($titulo_del_post == "Formación")            
-               || ($titulo_del_post == "Consultoría")
+	    if ( ($titulo_del_post != "Contacto")
+                && ($titulo_del_post != "Nuestros Partners")
+                && ($titulo_del_post != "Equipo")
+                && ($titulo_del_post != "Clientes")
            )
         {
-            echo wp_title( 'Social Media | ', false, right ); bloginfo( 'name' );    
+            echo wp_title( 'Redes Sociales | ', false, right ); bloginfo( 'name' );    
         }else{
 		  echo wp_title( ' | ', false, right ); bloginfo( 'name' );
         }
@@ -35,23 +31,19 @@
 	
 	<meta name="description" content="<?php 
         $titulo_del_post = single_post_title( '', false );
-        if (
-               ($titulo_del_post == "Servicios")
-               || ($titulo_del_post == "Auditoría")               
-               || ($titulo_del_post == "Estrategia")
-               || ($titulo_del_post == "Implementación")
-               || ($titulo_del_post == "Herramientas")
-               || ($titulo_del_post == "Formación")            
-               || ($titulo_del_post == "Consultoría")
+        if ( ($titulo_del_post != "Contacto")
+                && ($titulo_del_post != "Nuestros Partners")
+                && ($titulo_del_post != "Equipo")
+                && ($titulo_del_post != "Clientes")
            )
         {
-            echo wp_title( 'Redes Sociales | ', false, right ); bloginfo( 'description' );    
+            echo wp_title( 'Social Media | ', false, right ); bloginfo( 'description' );    
         }else{
           echo wp_title( ' | ', false, right ); bloginfo( 'description' );
         }
 	?>" />
 	<meta http-equiv="Content-type" content="text/html; charset=<?php bloginfo( 'charset' ); ?>" />
-	<meta name="keywords" content="<?php echo wp_title('redes sociales, ', false, right); echo wp_title('social media, ', false, right); bloginfo( 'description' ); echo ', Consultoria, Redes Sociales, Social Media, Planes Estrategicos, Estrategias Online, Estrategias Facebook, Estrategias Twitter, Reputacion Online'; ?>" />
+	<meta name="keywords" content="<?php echo wp_title('redes sociales, ', false, right); echo wp_title('social media, ', false, right); bloginfo( 'description' ); echo ', análisis redes sociales, Consultoria, Redes Sociales, Social Media, Planes Estrategicos, Estrategias Online, Estrategias Facebook, Estrategias Twitter, Reputacion Online'; ?>" />
     <meta name="author" content="SocialWin">
 
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -69,7 +61,7 @@
     </div>
   <![endif]-->
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/prettyPhoto.css" />
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/grid.css" />
 
