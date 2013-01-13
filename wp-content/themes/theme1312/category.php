@@ -1,9 +1,10 @@
 <?php get_header(); ?>
 
 <div id="content" class="grid_13 <?php echo of_get_option('blog_sidebar_pos') ?>">
-  <h1><?php printf( __( 'Category Archives: %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
+  <h1 style="font-size:1.5em;color:#333"><?php printf( __( 'Categoría %s' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
   <?php echo category_description(); /* displays the category's description from the Wordpress admin */ ?>
-  
+  <h2></h2>
+    
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <header>

@@ -3,12 +3,12 @@
 Plugin Name: SI CAPTCHA Anti-Spam
 Plugin URI: http://www.642weather.com/weather/scripts-wordpress-captcha.php
 Description: Adds CAPTCHA anti-spam methods to WordPress forms for comments, registration, lost password, login, or all. This prevents spam from automated bots. WP, WPMU, and BuddyPress compatible. <a href="plugins.php?page=si-captcha-for-wordpress/si-captcha.php">Settings</a> | <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=KXJWLPPWZG83S">Donate</a>
-Version: 2.7.6.1
+Version: 2.7.6.4
 Author: Mike Challis
 Author URI: http://www.642weather.com/weather/scripts.php
 */
 
-$si_captcha_version = '2.7.6.1';
+$si_captcha_version = '2.7.6.4';
 
 /*  Copyright (C) 2008-2013 Mike Challis  (http://www.642weather.com/weather/contact_us.php)
 
@@ -77,6 +77,7 @@ function si_captcha_get_options() {
          'si_captcha_disable_session' => 'true',
          'si_captcha_captcha_small' => 'false',
          'si_captcha_no_trans' => 'false',
+         'si_captcha_honeypot_enable' => 'false',
          'si_captcha_aria_required' => 'false',
          'si_captcha_external_style' => 'false',
          'si_captcha_captcha_div_style' =>   'display:block;',
@@ -173,10 +174,10 @@ function si_captcha_perm_dropdown($select_name, $checked_value='') {
                  __('Administer site', 'si-captcha') => 'level_10'
                  );
         // print the <select> and loop through <options>
-        echo '<select name="' . $select_name . '" id="' . $select_name . '">' . "\n";
+        echo '<select name="' . esc_attr($select_name) . '" id="' . esc_attr($select_name) . '">' . "\n";
         foreach ($choices as $text => $capability) :
                 if ($capability == $checked_value) $checked = ' selected="selected" ';
-                echo "\t". '<option value="' . $capability . '"' . $checked . ">$text</option> \n";
+                echo "\t". '<option value="' . esc_attr($capability) . '"' . $checked . '>'.esc_html($text)."</option>\n";
                 $checked = '';
         endforeach;
         echo "\t</select>\n";
@@ -369,19 +370,7 @@ echo ($si_captcha_opt['si_captcha_captcha_small'] == 'true') ? 'class="captchaSi
 echo '>';
 $this->si_captcha_captcha_html('si_image_log','log');
 echo '</div>
-';
-	// prints a message if the captcha was wrong
-	if( isset($_GET['captcha']) &&  $_GET['captcha'] == 'show_error' ) {
-        if( $si_captcha_opt['si_captcha_disable_session'] != 'true' && isset($_SESSION['captcha_error']) ) {
-            $show_error = $_SESSION['captcha_error'];
-            unset($_SESSION['captcha_error']);
-         }else{
-             $show_error = ($si_captcha_opt['si_captcha_error_incorrect'] != '') ? $si_captcha_opt['si_captcha_error_incorrect'] : __('Wrong CAPTCHA', 'si-captcha');
-         }
-		echo '<p style="color:#FF0000;">'.$show_error.'</p><div style="clear:both;"></div>';;
-
-	}
-echo '<p>
+<p>
  <label>';
   echo ($si_captcha_opt['si_captcha_label_captcha'] != '') ? $si_captcha_opt['si_captcha_label_captcha'] : __('CAPTCHA Code', 'si-captcha');
   echo '<br />
@@ -746,65 +735,41 @@ function si_wp_authenticate_username_password($user, $username, $password) {
 		return $user;
 } // end function si_wp_authenticate_username_password
 
-// find out CAPTCHA errors while logging in
-// performed after si_captcha_login_redirect
-function si_captcha_login_errors($errors){
-    global $si_captcha_dir, $si_captcha_dir_ns, $si_captcha_opt;
-
-	if( isset( $_REQUEST['action'] ) && 'register' == $_REQUEST['action'] )
-		return($errors);
-
-    $validate_result = $this->si_captcha_validate_code('log', 'unlink');
-    if($validate_result != 'valid') {
-       $error = ($si_captcha_opt['si_captcha_error_error'] != '') ? $si_captcha_opt['si_captcha_error_error'] : __('ERROR', 'si-captcha');
-       return $errors."<strong>$error</strong>: $validate_result";
-    }
-
-	return $errors;
-} // end function si_captcha_login_errors
-
-// block login if CAPTCHA fails
-function si_captcha_login_redirect($url){
-    global $si_captcha_opt;
-
-    $validate_result = $this->si_captcha_validate_code('log', 'no_unlink');
-    if($validate_result != 'valid') {
-        if($si_captcha_opt['si_captcha_disable_session'] != 'true')
-            $_SESSION['captcha_error'] = $validate_result;
-		wp_clear_auth_cookie();
-        return $_SERVER["REQUEST_URI"].'/?captcha=show_error';
-    }
-
-	return home_url('/wp-admin/');  //  is this URL always correct?
-
-} // end function si_captcha_login_redirect
 
 // check the honeypot traps for spam bots
-function si_captcha_validate_tokens($form_id = 'com') {
+// this is a very basic implementation, more agressive approaches might have to be added later
+function si_captcha_check_honeypot($form_id = 'com') {
+      global $si_captcha_opt;
 
-      $si_tok = 'not-ok';
+      if ($si_captcha_opt['si_captcha_honeypot_enable'] == 'false')
+           return 'ok';
 
-      // hidden honeypot field
-      if( isset($_POST["email_$form_id"]) && trim($_POST["email_$form_id"]) != '')
+    // hidden honeypot field
+    if( isset($_POST["email_$form_id"]) && trim($_POST["email_$form_id"]) != '')
          return 'failed honeypot';
 
-      // server-side timestamp forgery token.
-      if (!isset($_POST["si_tok_$form_id"]) || empty($_POST["si_tok_$form_id"])  )
+    // server-side timestamp forgery token.
+    if (!isset($_POST["si_tok_$form_id"]) || empty($_POST["si_tok_$form_id"]) || strpos($_POST["si_tok_$form_id"] , ',') === false )
          return 'no timestamp';
 
-      if ( ! preg_match("/^[0-9]+$/",$_POST["si_tok_$form_id"]) )
+    $vars = explode(',', $_POST["si_tok_$form_id"]);
+    if ( empty($vars[0]) || empty($vars[1]) || ! preg_match("/^[0-9]+$/",$vars[1]) )
          return 'bad timestamp';
 
-      $comment_timestamp    = trim($_POST["si_tok_$form_id"]);
-      $submitted_timestamp  = time();
-      if ( $submitted_timestamp - $comment_timestamp < 5 )
+    if ( wp_hash( $vars[1] ) != $vars[0] )
+       return 'bad timestamp';
+
+      $form_timestamp = $vars[1];
+      $now_timestamp  = time();
+      $human_typing_time = 5; // page load (1s) + submit (1s) + typing time (3s)
+      if ( $now_timestamp - $form_timestamp < $human_typing_time )
 	     return 'too fast less than 5 sec';
-      if ( $submitted_timestamp - $comment_timestamp > 1800 )
+      if ( $now_timestamp - $form_timestamp > 1800 )
 	     return 'over 30 min';
 
       return 'ok';
 
-}  //  end function si_captcha_validate_tokens
+}  //  end function si_captcha_check_honeypot
 
 // check if the posted capcha code was valid
 function si_captcha_validate_code($form_id = 'com', $unlink = 'unlink') {
@@ -834,8 +799,8 @@ function si_captcha_validate_code($form_id = 'com', $unlink = 'unlink') {
              if($unlink == 'unlink')
                 @unlink ($si_captcha_dir_ns . $prefix . '.php');
                    // some empty field and time based honyepot traps for spam bots
-                   $si_tok = $this->si_captcha_validate_tokens("$form_id");
-                   if($si_tok != 'ok')
+                   $hp_check = $this->si_captcha_check_honeypot("$form_id");
+                   if($hp_check != 'ok')
                       return ($si_captcha_opt['si_captcha_error_spambot'] != '') ? $si_captcha_opt['si_captcha_error_spambot'] : __('Possible spam bot', 'si-captcha');
               return 'valid';
 			} else {
@@ -863,8 +828,8 @@ function si_captcha_validate_code($form_id = 'com', $unlink = 'unlink') {
       // Check, that the right CAPTCHA password has been entered, display an error message otherwise.
       if($valid == true) {
            // some empty field and time based honyepot traps for spam bots
-           $si_tok = $this->si_captcha_validate_tokens("$form_id");
-           if($si_tok != 'ok')
+           $hp_check= $this->si_captcha_check_honeypot("$form_id");
+           if($hp_check != 'ok')
                 return ($si_captcha_opt['si_captcha_error_spambot'] != '') ? $si_captcha_opt['si_captcha_error_spambot'] : __('Possible spam bot', 'si-captcha');
           // ok can continue
           return 'valid';
@@ -915,6 +880,19 @@ function si_captcha_captcha_html($label = 'si_image', $form_id = 'com') {
     $securimage_show_url .= '&amp;prefix='.$prefix;
   }
 
+   if($si_captcha_opt['si_captcha_honeypot_enable'] == 'true' ) {
+      // hidden empty honeypot field
+      echo '
+        <div style="display:none;">
+          <label for="email_'.$form_id.'"><small>'.__('Leave this field empty', 'si-captcha').'</small></label>
+          <input type="text" name="email_'.$form_id.'" id="email_'.$form_id.'" value="" />
+        </div>
+';
+      // server-side timestamp forgery token.
+      echo '    <input type="hidden" name="si_tok_'.$form_id.'" value="'. wp_hash( time() ).','.time() .'" />
+';
+  }
+
   echo '<img id="'.$label.'" class="si-captcha" src="'.$securimage_show_url.'" '.$securimage_size.' alt="';
   echo ($si_captcha_opt['si_captcha_tooltip_captcha'] != '') ? esc_attr( $si_captcha_opt['si_captcha_tooltip_captcha'] ) : esc_attr(__('CAPTCHA Image', 'si-captcha'));
   echo '" title="';
@@ -923,10 +901,6 @@ function si_captcha_captcha_html($label = 'si_image', $form_id = 'com') {
   if($capt_disable_sess) {
         echo '    <input id="si_code_'.$form_id.'" name="si_code_'.$form_id.'" type="hidden"  value="'.$prefix.'" />'."\n";
   }
-  // server-side timestamp forgery token.
-  echo '    <input name="si_tok_'.$form_id.'" type="hidden"  value="'. time() .'" />'."\n";
-  // hidden empty honeypot field
-  echo '    <input name="email_'.$form_id.'" type="hidden"  value=""  autofill="off" style="display:none;" />'."\n";
 
   echo '    <div id="si_refresh_'.$form_id.'">'."\n";
   echo '<a href="#" rel="nofollow" title="';
@@ -1300,11 +1274,7 @@ else if (basename(dirname(__FILE__)) == "si-captcha-for-wordpress" && function_e
     add_action('login_head', array( &$si_image_captcha, 'si_captcha_login_head' ) );
     add_action('bp_login_bar_logged_out', array( &$si_image_captcha, 'si_captcha_bp_login_form' ) );
     add_action('bp_sidebar_login_form', array( &$si_image_captcha, 'si_captcha_bp_login_sidebar_form' ) );
-    // either this or the next two filters after it (take your pick)
-	//add_filter('authenticate', array( &$si_image_captcha, 'si_wp_authenticate_username_password'), 9, 3);
-    add_filter('login_errors',  array( &$si_image_captcha, 'si_captcha_login_errors'), 9, 3);
-    add_filter('login_redirect', array( &$si_image_captcha, 'si_captcha_login_redirect'), 9, 3);
-
+	add_filter('authenticate', array( &$si_image_captcha, 'si_wp_authenticate_username_password'), 9, 3);
   }
 
   if ($si_captcha_opt['si_captcha_lostpwd'] == 'true') {

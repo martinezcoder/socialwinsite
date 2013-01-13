@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.8" -->
-<!-- generated-on="21/12/2012 1:37 pm" -->
+<!-- generated-on="12/01/2013 11:47 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2012-12-18T06:00:19+00:00</lastmod>
+		<lastmod>2013-01-12T11:42:01+00:00</lastmod>
 		<changefreq>daily</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/eventos/</loc>
+		<lastmod>2013-01-12T11:37:06+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/prensa/</loc>
+		<lastmod>2013-01-12T09:31:58+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/informes/</loc>
+		<lastmod>2013-01-12T07:57:55+00:00</lastmod>
+		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
@@ -266,37 +284,37 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/clients-view/aol/</loc>
+		<loc>http://www.socialwin.es/clientes/aol/</loc>
 		<lastmod>2012-08-10T11:16:59+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/clients-view/watx/</loc>
+		<loc>http://www.socialwin.es/clientes/watx/</loc>
 		<lastmod>2012-08-10T11:00:29+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/clients-view/gae/</loc>
+		<loc>http://www.socialwin.es/clientes/gae/</loc>
 		<lastmod>2012-08-10T10:57:31+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/clients-view/telepolis/</loc>
+		<loc>http://www.socialwin.es/clientes/telepolis/</loc>
 		<lastmod>2012-08-10T10:46:49+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/clients-view/american-red-cross/</loc>
+		<loc>http://www.socialwin.es/clientes/american-red-cross/</loc>
 		<lastmod>2012-08-10T10:41:54+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/clients-view/bcnturisme/</loc>
+		<loc>http://www.socialwin.es/clientes/bcnturisme/</loc>
 		<lastmod>2012-08-10T10:32:33+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
@@ -320,19 +338,19 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/clients-view/grupo-duplex/</loc>
+		<loc>http://www.socialwin.es/clientes/grupo-duplex/</loc>
 		<lastmod>2012-08-07T20:06:53+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/clients-view/catcaix/</loc>
+		<loc>http://www.socialwin.es/clientes/catcaix/</loc>
 		<lastmod>2012-08-07T19:46:07+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/clients-view/seat/</loc>
+		<loc>http://www.socialwin.es/clientes/seat/</loc>
 		<lastmod>2012-08-07T19:43:54+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>

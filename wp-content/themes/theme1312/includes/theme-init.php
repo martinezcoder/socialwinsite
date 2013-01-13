@@ -71,40 +71,9 @@ add_action('init', 'my_post_type_slider');
 
 
 
-/* Portfolio */
-function my_post_type_portfolio() {
-	register_post_type( 'portfolio',
-                array( 
-				'label' => __('Portfolio'), 
-				'singular_label' => __('Porfolio Item', 'theme1312'),
-				'_builtin' => false,
-				'public' => true, 
-				'show_ui' => true,
-				'show_in_nav_menus' => true,
-				'hierarchical' => true,
-				'capability_type' => 'page',
-				'menu_icon' => get_template_directory_uri() . '/includes/images/icon_portfolio.png',
-				'rewrite' => array(
-					'slug' => 'portfolio-view',
-					'with_front' => FALSE,
-				),
-				'supports' => array(
-						'title',
-						'editor',
-						'thumbnail',
-						'excerpt',
-						'custom-fields',
-						'comments')
-					) 
-				);
-	register_taxonomy('portfoliocat', 'portfolio', array('hierarchical' => true, 'label' => 'Portfolio Categories', 'singular_name' => 'Category', "rewrite" => true, "query_var" => true));
-}
-
-add_action('init', 'my_post_type_portfolio');
-
-
 
 /* Testimonial */
+/*
 function my_post_type_testi() {
 	register_post_type( 'testi',
                 array( 
@@ -127,6 +96,8 @@ function my_post_type_testi() {
 }
 
 add_action('init', 'my_post_type_testi');
+*/
+
 
 
 
@@ -156,6 +127,7 @@ add_action('init', 'my_post_type_slogan');
 
 
 /* FAQs */
+/*
 function phi_post_type_faq() {
 	register_post_type('faq', 
 				array(
@@ -169,7 +141,7 @@ function phi_post_type_faq() {
 				'hierarchical' => false,
 				'rewrite' => array("slug" => "faq"), // Permalinks
 				'query_var' => "faq", // This goes to the WP_Query schema
-				'supports' => array('title','author','thumbnail', 'editor' ,'excerpt'/*,'custom-fields'*/),
+				'supports' => array('title','author','thumbnail', 'editor' ,'excerpt'),
 				'menu_position' => 5,
 				'publicly_queryable' => true,
 				'exclude_from_search' => false,
@@ -185,19 +157,19 @@ function phi_post_type_faq() {
 						"public" => false));
 }
 add_action('init', 'phi_post_type_faq');
-
+*/
 
 /* Clients */
 function my_post_type_clients() {
 	register_post_type( 'clients',
                 array( 
-				'label' => __('Clients'), 
+				'label' => __('Clientes'), 
 				'public' => true, 
 				'show_ui' => true,
 				'show_in_nav_menus' => false,
 				'menu_position' => 5,
 				'rewrite' => array(
-					'slug' => 'clients-view',
+					'slug' => 'clientes',
 					'with_front' => FALSE,
 				),
 				'supports' => array(
@@ -212,6 +184,7 @@ function my_post_type_clients() {
 add_action('init', 'my_post_type_clients');
 
 /* Services */
+/*
 function my_post_type_services() {
 	register_post_type( 'services',
                 array( 
@@ -234,13 +207,13 @@ function my_post_type_services() {
 }
 
 add_action('init', 'my_post_type_services');
-
+*/
 
 /* Our Team */
 function my_post_type_team() {
 	register_post_type( 'team',
                 array( 
-				'label' => __('Our Team'), 
+				'label' => __('Equipo'), 
 				'singular_label' => __('Person', 'theme1312'),
 				'_builtin' => false,
 				'exclude_from_search' => true, // Exclude from Search Results
@@ -265,6 +238,67 @@ function my_post_type_team() {
 
 add_action('init', 'my_post_type_team');
 
+
+/* Informes */
+function my_post_type_informes() {
+	register_post_type( 'informes',
+                array( 
+				'label' => __('Informes sectoriales'), 
+				'singular_label' => __('Informes', 'theme1312'),
+				'_builtin' => false,
+				'public' => true, 
+				'show_ui' => true,
+				'show_in_nav_menus' => true,
+				'hierarchical' => true,
+				'capability_type' => 'page',
+				'menu_icon' => get_template_directory_uri() . '/includes/images/icon_portfolio.png',
+				'query_var' => "informes",
+				'rewrite' => array(
+					'slug' => 'informes',
+					'with_front' => FALSE,
+				),
+				'supports' => array(
+						'title',
+						'editor','comments','page-attributes','thumbnail', 'tags',
+						'sectores')
+					) 
+				);
+	register_taxonomy('sectores', 
+					'informes', 
+					array('hierarchical' => true, 
+						'label' => 'Sectores', 
+						'singular_name' => 'Sector', 
+						"rewrite" => true,
+						"show_ui" => true,
+						"public" => false));
+
+}
+
+add_action('init', 'my_post_type_informes');
+
+
+/* Notas de prensa */
+function my_post_type_prensa() {
+	register_post_type('prensa', 
+				array(
+				'label' => __('Nota de prensa'),
+				'singular_label' => __('Notas de prensa'),
+				'public' => false,
+				'show_ui' => true,
+				'_builtin' => false, // It's a custom post type, not built in
+				'_edit_link' => 'post.php?post=%d',
+				'capability_type' => 'post',
+				'menu_icon' => get_template_directory_uri() . '/includes/images/icon_portfolio.png',
+				'hierarchical' => false,
+				'rewrite' => array("slug" => "prensa"), // Permalinks
+				'query_var' => "prensa", // This goes to the WP_Query schema
+				'supports' => array('title','thumbnail', 'editor'),
+				'publicly_queryable' => true,
+				'exclude_from_search' => false,
+				));
+
+}
+add_action('init', 'my_post_type_prensa');
 
 
 ?>

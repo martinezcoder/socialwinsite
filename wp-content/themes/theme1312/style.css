@@ -1339,17 +1339,18 @@ article .post-content img {
 
 /* Older and newer navigation */
 nav.oldernewer {
-	width:100%;
-	overflow:hidden;
-	margin-bottom:1.5em;
+	text-align: center;
 }
+
+	nav.oldernewer div {
+		display: inline-block;
+		margin: 10px;	
+	}
+	
 	.older {
-		float:left;
 	}
 	.newer {
-		float:right;
 	}
-
 
 
 /* Author
@@ -2987,7 +2988,7 @@ input[type="submit"]:hover {
 		background:#76d4e5;
 		color:#fff;
 		text-decoration:none;
-		line-height:35px;
+		line-height:15px;
 		font-size:10px;
 		text-transform:uppercase;
 		border-radius:5px;
@@ -2995,7 +2996,7 @@ input[type="submit"]:hover {
 		-moz-border-radius:5px;
 		cursor:pointer;
 		border:none;
-		width:70px;
+		min-width:70px;
 		height:30px;
 		margin-right:5px;
 		behavior: url(/PIE.htc); /* This lets IE know to call the script on all elements which get the 'box' class */
@@ -3162,5 +3163,24 @@ input[type="submit"]:hover {
 	clear: both;
 	height: 0;
 }
+
+
+/* Meta information for post */
+.post-prensa {
+	border-top:1px solid #eaeaea;
+	padding:.2em 0;
+	width:100%;
+	font-size:.92em;
+	overflow:hidden;
+	}
+	.post-prensa a {
+		text-decoration:none;
+		color: #888;
+		font-style: bold italic;
+	}
+	.post-prensa a:hover {
+		text-decoration:underline;
+	}
+
 
 /* Always remember to compress your live stylesheet and keep an uncompressed backup */

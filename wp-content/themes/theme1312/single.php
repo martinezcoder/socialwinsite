@@ -1,10 +1,6 @@
 <?php get_header(); ?>
 
-   <?php if (get_post( $args[0] )->post_type != 'clients') { ?>
 	<?php echo '<div id="content" class="grid_13';of_get_option('blog_sidebar_pos');echo '">'; ?>
-   <?php } else { ?>
-	<?php echo '<div id="content" class="grid_15';of_get_option('blog_sidebar_pos');echo '">'; ?>
-   <?php } ?>
 
     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
     <div id="post-<?php the_ID(); ?>" <?php post_class('post'); ?>>
@@ -15,8 +11,7 @@
 
 <!-- Fran inicio: a�adimos informaci�n sobre la noticia en la misma noticia -->
 		
-		<?php if ($post->post_type <> 'clients')
-			  {
+		<?php 
 			  	the_sociallinks();
 				 
 				echo '<div class="post-meta">';
@@ -24,7 +19,6 @@
 				echo '<div class="fleft">Categorías: ';  the_category(', '); echo '</div>';
 				echo '<div class="fright">'; comments_popup_link('Sin comentarios', 'Un comentario', '% comentarios', 'comments-link', 'Post cerrado'); echo '</div>';
         		echo '</div><!--.post-meta-->';
-			  }
         ?>
 <!-- Fran final -->
 
@@ -48,7 +42,8 @@
         </div><!--.post-content-->
       </article>
 
-        
+
+
 
       <div id="post-author">
         <p class="gravatar"><?php if(function_exists('get_avatar')) { echo get_avatar( get_the_author_email(), '80' ); /* This avatar is the user's gravatar (http://gravatar.com) based on their administrative email address */  } ?></p>
@@ -60,6 +55,7 @@
           </div><!--#author-link-->
         </div><!--#author-description -->
       </div><!--#post-author-->
+
 
 
     </div><!-- #post-## -->
@@ -75,9 +71,8 @@
     </nav><!--.oldernewer-- >
 -->
 
-	<?php if ($post->post_type <> 'clients') {	the_sociallinks();} ?>
+	<?php the_sociallinks(); ?>
 	
-
 
     <?php comments_template( '', true ); ?>
 
@@ -86,9 +81,7 @@
 
 
 <?php 
-	if (get_post( $args[0] )->post_type != 'clients') {
 		get_sidebar();
-	}
 ?>
 
 <?php get_footer(); ?>

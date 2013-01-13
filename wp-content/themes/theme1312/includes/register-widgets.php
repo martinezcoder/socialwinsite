@@ -12,6 +12,7 @@ include_once (TEMPLATEPATH . '/includes/widgets/my-post-cycle-widget.php');
 include_once (TEMPLATEPATH . '/includes/widgets/my-popular-posts-widget.php');
 include_once (TEMPLATEPATH . '/includes/widgets/my-social-widget.php');
 include_once (TEMPLATEPATH . '/includes/widgets/my-posts-type-widget.php');
+include_once (TEMPLATEPATH . '/includes/widgets/my-sectores-widget.php');
 add_action("widgets_init", "load_my_widgets");
 
 function load_my_widgets() {
@@ -22,5 +23,6 @@ function load_my_widgets() {
 	register_widget("MY_PopularPostsWidget");
 	register_widget("My_SocialNetworksWidget");
 	register_widget("MY_PostsTypeWidget");
+	register_widget("MY_SectoresWidget");
 }
 ?>

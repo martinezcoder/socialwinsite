@@ -2,13 +2,13 @@
 <div id="content" class="grid_13 <?php echo of_get_option('blog_sidebar_pos') ?>">
   <h1>
     <?php if ( is_day() ) : /* if the daily archive is loaded */ ?>
-      <?php printf( __( 'Daily Archives: <span>%s</span>' ), get_the_date() ); ?>
+      <?php printf( __( 'Archivos diarios: <span>%s</span>' ), get_the_date() ); ?>
     <?php elseif ( is_month() ) : /* if the montly archive is loaded */ ?>
-      <?php printf( __( 'Monthly Archives: <span>%s</span>' ), get_the_date('F Y') ); ?>
+      <?php printf( __( 'Archivos mensuales: <span>%s</span>' ), get_the_date('F Y') ); ?>
     <?php elseif ( is_year() ) : /* if the yearly archive is loaded */ ?>
-      <?php printf( __( 'Yearly Archives: <span>%s</span>' ), get_the_date('Y') ); ?>
+      <?php printf( __( 'Archivos anuales: <span>%s</span>' ), get_the_date('Y') ); ?>
     <?php else : /* if anything else is loaded, ex. if the tags or categories template is missing this page will load */ ?>
-      Blog Archives
+      Archivos del Blog
     <?php endif; ?>
   </h1>
 
@@ -56,5 +56,13 @@
   <?php endif; ?>
   
 </div><!--#content-->
+
+	
+<?php if (get_post( $args[0] )->post_type == 'informes') { ?>
+<?php get_sidebar('informes'); ?>
+<?php } else { ?>
 <?php get_sidebar(); ?>
+<?php } ?>
+
+
 <?php get_footer(); ?>

@@ -140,6 +140,170 @@ add_action( 'manage_pages_custom_column', 'fb_AddThumbValue', 10, 2 );
 }
 
 
+/**
+ * Display the sector list for the informe.
+ *
+ *
+ * @param string $separator Optional, default is empty string. Separator for between the categories.
+ * @param string $parents Optional. How to display the parents.
+ * @param int $post_id Optional. Post ID to retrieve categories.
+ */
+function the_sector( $separator = '', $parents='', $post_id = false ) {
+	echo get_the_sector_list( $separator, $parents, $post_id );
+}
 
+
+/**
+ * Retrieve sector list in either HTML list or custom format.
+ *
+ *
+ * @param string $separator Optional, default is empty string. Separator for between the categories.
+ * @param string $parents Optional. How to display the parents.
+ * @param int $post_id Optional. Post ID to retrieve categories.
+ * @return string
+ */
+function get_the_sector_list( $separator = '', $parents='', $post_id = false ) {
+	global $wp_rewrite;
+	if ( ! is_object_in_taxonomy( get_post_type( $post_id ), 'sectores' ) )
+		return apply_filters( 'the_sector', '', $separator, $parents );
+
+	$sectores = get_the_sector( $post_id );
+	if ( empty( $sectores ) )
+		return apply_filters( 'the_sector', __( 'Todos' ), $separator, $parents );
+
+	$rel = ( is_object( $wp_rewrite ) && $wp_rewrite->using_permalinks() ) ? 'rel="category tag"' : 'rel="category"';
+
+	$thelist = '';
+	if ( '' == $separator ) {
+		$thelist .= '<ul class="post-categories">';
+		foreach ( $sectores as $sector ) {
+			$thelist .= "\n\t<li>";
+			switch ( strtolower( $parents ) ) {
+				case 'multiple':
+					if ( $sector->parent )
+//						$thelist .= get_category_parents( $sector->parent, true, $separator );
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a></li>';
+					break;
+				case 'single':
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>';
+					if ( $sector->parent )
+//						$thelist .= get_category_parents( $sector->parent, false, $separator );
+					$thelist .= $sector->name.'</a></li>';
+					break;
+				case '':
+				default:
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a></li>';
+			}
+		}
+		$thelist .= '</ul>';
+	} else {
+		$i = 0;
+		foreach ( $sectores as $sector ) {
+			if ( 0 < $i )
+				$thelist .= $separator;
+			switch ( strtolower( $parents ) ) {
+				case 'multiple':
+					if ( $sector->parent )
+//						$thelist .= get_category_parents( $sector->parent, true, $separator );
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a>';
+					break;
+				case 'single':
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>';
+					if ( $sector->parent )
+						$thelist .= get_category_parents( $sector->parent, false, $separator );
+					$thelist .= "$sector->name</a>";
+					break;
+				case '':
+				default:
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a>';
+			}
+			++$i;
+		}
+	}
+	return apply_filters( 'the_sector', $thelist, $separator, $parents );
+}
+
+
+/**
+ * Retrieve informes sector.
+ *
+ * @param int $id Optional, default to current post ID. The post ID.
+ * @return array
+ */
+function get_the_sector( $id = false ) {
+	$sectores = get_the_terms( $id, 'sectores' );
+
+	if ( ! $sectores )
+		$sectores = array();
+
+	$sectores = array_values( $sectores );
+
+	foreach ( array_keys( $sectores ) as $key ) {
+		_make_cat_compat( $sectores[$key] );
+	}
+
+	// Filter name is plural because we return alot of categories (possibly more than #13237) not just one
+	return apply_filters( 'get_the_sectors', $sectores );
+}
+
+
+/**
+ * Retrieve sector link URL.
+ *
+ * @see get_term_link()
+ *
+ * @param int|object $sector sector ID or object.
+ * @return string Link on success, empty string if sector does not exist.
+ */
+function get_sector_link( $sector ) {
+	if ( ! is_object( $sector ) )
+		$sector = (int) $sector;
+
+	$sector = get_term_link( $sector, 'sectores' );
+
+	if ( is_wp_error( $sector ) )
+		return '';
+
+	return $sector;
+}
+
+
+function the_sociallinks($id = 0) {
+
+	$post_title = get_the_title($id);
+	$post_permalink = get_permalink($id);
+	
+	$html_text = "";
+	$html_text = "<div class='sociable-header' style='float:none'>";
+	$html_text = $html_text."<ul class='s_clearfix'>";
+
+	$html_text = $html_text."<li id=\"Twitter_Counter\">";
+
+    $html_text = $html_text."<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"//platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}";
+    $html_text = $html_text."(document,\"script\",\"twitter-wjs\");</script>";    
+
+	$html_text = $html_text."<a href=\"https://twitter.com/share\" data-text=\"".$post_title."\" 
+	                                                               data-url=\"".$post_permalink."\" 
+	                                                               class=\"twitter-share-button\" 
+	                                                               data-count=\"horizontal\"
+	                                                               data-via=\"SocialWinTW\"
+	                                                               data-lang=\"es\"></a></li>";
+
+	$html_text = $html_text."
+	                         <li id=\"Facebook_Counter\"><iframe src=\"http://www.facebook.com/plugins/like.php?href=".$post_permalink."&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&font\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden;height:32px;width:100px\" allowTransparency=\"true\"></iframe></li>";
+
+	$html_text = $html_text."
+	                         <li id=\"LinkedIn_Counter\"><script src=\"http://platform.linkedin.com/in.js\" type=\"text/javascript\"></script>";
+
+	$html_text = $html_text."<script type=\"IN/Share\" data-url=".$post_permalink." data-counter=\"right\"></script></li>";
+
+	$html_text = $html_text."
+	                         <li id=\"Google_p\"><script type=\"text/javascript\" src=\"http://apis.google.com/js/plusone.js\">{lang:'es'}</script>";
+	$html_text = $html_text."<g:plusone annotation=\"bubble\" href=\"".$post_permalink."\" size=\"medium\"></g:plusone></li>";
+
+	$html_text = $html_text."</ul>";
+	$html_text = $html_text."</div>"; 
+	echo $html_text;
+}
 
 ?>
