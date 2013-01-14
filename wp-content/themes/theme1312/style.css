@@ -1177,6 +1177,23 @@ article.single-post {
 .post-content {
 	
 }
+	.post-content h2 {
+		border: 0px;
+		padding: 0px;
+		margin: 0px;
+		font-size:1.3em;
+		line-height:1.2em;
+	}
+	
+	.post-content a {
+		text-decoration: none;
+	}
+	.post-content a:hover {
+		text-decoration: none;
+		color:#76d4e5;
+	}
+
+
 	.post-content .excerpt {
 		margin-bottom:1.5em;
 		text-align: justify;
@@ -3090,9 +3107,6 @@ input[type="submit"]:hover {
 	height: 0;
 }
 
-.clearfix {
-	display: inline-block;
-}
 
 * html .clearfix {
 	height: 1%;
@@ -3142,10 +3156,10 @@ input[type="submit"]:hover {
 			}
 
 			#Twitter_Counter {
-			width:100px !important;
+			width:130px !important;
 			}
 			#Facebook_Counter {
-			width:110px !important;
+			width:130px !important;
 			}
 			#LinkedIn_Counter {
 			width:110px !important;
@@ -3154,6 +3168,12 @@ input[type="submit"]:hover {
 			width:110px !important;
 			}
 
+.socialcount_informes {
+	display:block;
+	float:left;
+	clear:both;
+	margin-top:0.9em;
+}
 
 .s_clearfix:after {
 	visibility: hidden;
@@ -3180,6 +3200,21 @@ input[type="submit"]:hover {
 	}
 	.post-prensa a:hover {
 		text-decoration:underline;
+	}
+
+
+.margenizq {
+	margin-left: 50px;
+}
+
+
+.pdfopen {
+	z-index:1;
+	background:url("images/pdfopen.jpg")  no-repeat;
+	display: block; float: left; height: 50px; width: 50px;
+}
+	.pdfopen strong {
+		opacity:0;
 	}
 
 

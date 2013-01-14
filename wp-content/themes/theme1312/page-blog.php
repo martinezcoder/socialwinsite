@@ -48,7 +48,7 @@ get_header(); ?>
       	<?php if ($post_excerpt=='true' || $post_excerpt=='') { ?>
           <div class="excerpt"><?php $excerpt = get_the_excerpt(); echo my_string_limit_words($excerpt,50);?></div>
         <?php } ?>
-        <a href="<?php the_permalink() ?>" class="button"><?php _e('M&aacute;s','theme1312');?></a>
+        <a href="<?php the_permalink() ?>" class="button"><?php _e('Más','theme1312');?></a>
       </div>
 			<br>
 			<?php the_sociallinks(); ?>

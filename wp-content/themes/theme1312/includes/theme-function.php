@@ -1,5 +1,25 @@
 <?php
 
+
+// Mostrar fichero PDF link
+function my_pdf_file_link($string, $word_limit)
+{
+  $words = explode('</a>', $string, ($word_limit + 1));
+  if(count($words) > $word_limit)
+  	array_pop($words);
+  return implode(' ', $words).' ';;
+}
+
+function my_string_delete_start($string, $word_limit)
+{
+  $words = explode('Descarga Descarga el informe.', $string, ($word_limit + 1));
+  if(count($words) > $word_limit)
+  	array_pop($words);
+  return implode(' ', $words).' ';;
+}
+
+
+
 // The excerpt based on words
 function my_string_limit_words($string, $word_limit)
 {
@@ -182,17 +202,17 @@ function get_the_sector_list( $separator = '', $parents='', $post_id = false ) {
 				case 'multiple':
 					if ( $sector->parent )
 //						$thelist .= get_category_parents( $sector->parent, true, $separator );
-					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a></li>';
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "Ver todos los posts del sector %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a></li>';
 					break;
 				case 'single':
-					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>';
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "Ver todos los posts del sector %s" ), $sector->name ) ) . '" ' . $rel . '>';
 					if ( $sector->parent )
 //						$thelist .= get_category_parents( $sector->parent, false, $separator );
 					$thelist .= $sector->name.'</a></li>';
 					break;
 				case '':
 				default:
-					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a></li>';
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "Ver todos los posts del sector %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a></li>';
 			}
 		}
 		$thelist .= '</ul>';
@@ -205,17 +225,17 @@ function get_the_sector_list( $separator = '', $parents='', $post_id = false ) {
 				case 'multiple':
 					if ( $sector->parent )
 //						$thelist .= get_category_parents( $sector->parent, true, $separator );
-					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a>';
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "Ver todos los posts del sector %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a>';
 					break;
 				case 'single':
-					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>';
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "Ver todos los posts del sector %s" ), $sector->name ) ) . '" ' . $rel . '>';
 					if ( $sector->parent )
-						$thelist .= get_category_parents( $sector->parent, false, $separator );
+//						$thelist .= get_category_parents( $sector->parent, false, $separator );
 					$thelist .= "$sector->name</a>";
 					break;
 				case '':
 				default:
-					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a>';
+					$thelist .= '<a href="' . esc_url( get_sector_link( $sector->term_id ) ) . '" title="' . esc_attr( sprintf( __( "Ver todos los posts del sector %s" ), $sector->name ) ) . '" ' . $rel . '>' . $sector->name.'</a>';
 			}
 			++$i;
 		}

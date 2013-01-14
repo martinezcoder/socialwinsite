@@ -110,6 +110,7 @@ function my_post_type_slogan() {
 				'show_ui' => true,
 				'show_in_nav_menus' => false,
 				'menu_position' => 5,
+				'capability_type' => 'page',
 				'rewrite' => array(
 					'slug' => 'slogan-view',
 					'with_front' => FALSE,
@@ -168,6 +169,7 @@ function my_post_type_clients() {
 				'show_ui' => true,
 				'show_in_nav_menus' => false,
 				'menu_position' => 5,
+				'capability_type' => 'page',
 				'rewrite' => array(
 					'slug' => 'clientes',
 					'with_front' => FALSE,
@@ -250,7 +252,7 @@ function my_post_type_informes() {
 				'show_ui' => true,
 				'show_in_nav_menus' => true,
 				'hierarchical' => true,
-				'capability_type' => 'page',
+				'capability_type' => 'post',
 				'menu_icon' => get_template_directory_uri() . '/includes/images/icon_portfolio.png',
 				'query_var' => "informes",
 				'rewrite' => array(

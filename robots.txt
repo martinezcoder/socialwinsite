@@ -9,7 +9,7 @@ Disallow:/wp-includes/
 Disallow:/wp-content/plugins/
 Disallow:/wp-content/themes/
 Disallow:/wp-admin/
-
+Allow: /wp-content/uploads
 
 # Desindexar entradas duplicadas, comentarios y trackbacks
 Allow: /feed/$
