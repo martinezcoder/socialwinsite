@@ -6,6 +6,7 @@
 get_header(); ?>
 <div id="content" class="grid_16">
   <h1><?php the_title(); ?></h1>
+  <p>Contacto: <strong>celia.ramon@socialwin.es</strong></p>
   <?php
   $temp = $wp_query;
   $wp_query= null;
