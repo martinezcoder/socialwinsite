@@ -39,7 +39,7 @@
         <?php next_post_link('%link', '&laquo; Siguiente') ?>
       </div>
       <div class="#">
-      	<a href="<?php echo home_url('/prensa') ?>" class="button">Index</a>
+      	<a href="<?php echo home_url('/notas-de-prensa') ?>" class="button">Índice</a>
       </div>
       <div class="newer">
         <?php previous_post_link('%link', 'Anterior &raquo;') ?>
