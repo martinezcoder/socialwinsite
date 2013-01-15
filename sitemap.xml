@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="14/01/2013 12:41 pm" -->
+<!-- generated-on="15/01/2013 11:53 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2013-01-14T12:34:03+00:00</lastmod>
+		<lastmod>2013-01-15T09:51:14+00:00</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -16,12 +16,6 @@
 	<url>
 		<loc>http://www.socialwin.es/eventos/</loc>
 		<lastmod>2013-01-12T11:37:06+00:00</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/prensa/</loc>
-		<lastmod>2013-01-12T09:31:58+00:00</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
