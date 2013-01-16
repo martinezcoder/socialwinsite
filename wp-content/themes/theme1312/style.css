@@ -3072,7 +3072,7 @@ input[type="submit"]:hover {
 .last { margin-right:0 !important; clear:right; }
 
 
-.fleftall { float:left; width:100%}
+.fleftall { float:left; width:100%;}
 .fleft { float:left;}
 .fright { float:right;}
 .clear { clear:both;}

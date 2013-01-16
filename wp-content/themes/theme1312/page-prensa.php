@@ -7,6 +7,26 @@ get_header(); ?>
 <div id="content" class="grid_16">
   <h1><?php the_title(); ?></h1>
   <p>Press Officer: <strong>celia.ramon@socialwin.es</strong></p>
+
+  <dl class="faq_list">
+      <h4>
+        Links
+      </h4>
+
+     <div class="post-prensa">
+         <div class="fleft"><a target="_blank" href="http://orientacion-laboral.infojobs.net/cooperacion-cocreacion">http://orientacion-laboral.infojobs.net/cooperacion-cocreacion</a></div>
+     </div>
+
+     <div class="post-prensa">
+         <div class="fleft"><a target="_blank" href="http://orientacion-laboral.infojobs.net/redes-sociales-emprendedores">http://orientacion-laboral.infojobs.net/redes-sociales-emprendedores</a></div>
+     </div>
+
+     <div class="post-prensa">
+         <div class="fleft"><a target="_blank" href="http://www.puromarketing.com/13/14933/redes-sociales-activo-estrategico.html">http://www.puromarketing.com/13/14933/redes-sociales-activo-estrategico.html</a></div>
+     </div>
+
+  </dl>
+
   <?php
   $temp = $wp_query;
   $wp_query= null;
@@ -14,11 +34,16 @@ get_header(); ?>
   $wp_query->query('post_type=prensa&showposts=-1');
   ?>
   <dl class="faq_list">
+       <h1></h1>
+      <h4>
+        Notas de prensa
+      </h4>
 
 	  <h5>
-	  	 <div class="fleftall"></div>
-	  	 <div class="fleft"><strong>Titular</strong></div>
-	     <div class="fright"><strong>Fecha</strong></div>
+	  	 <div class="post-prensa">
+    	  	 <div class="fleft"><strong>Titular</strong></div>
+    	     <div class="fright"><strong>Fecha</strong></div>
+    	 </div>
 	  </h5>
 
 	<?php $num = 1 ?>
