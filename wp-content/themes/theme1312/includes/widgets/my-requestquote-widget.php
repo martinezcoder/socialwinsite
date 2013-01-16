@@ -14,7 +14,6 @@ class MY_RequestQuoteWidget extends WP_Widget {
 				$txt2 = apply_filters('widget_txt2', $instance['txt2']);
 				$txt3 = apply_filters('widget_txt3', $instance['txt3']);
         ?>
-              
 		<?php 
 			if($txt2=="" && $txt3==""){ 
 				$class='w-full';

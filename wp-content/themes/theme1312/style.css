@@ -1193,6 +1193,14 @@ article.single-post {
 		color:#76d4e5;
 	}
 
+	.post-content ul {
+		color: #555;
+	}
+
+	.post-content ul li {
+		color: #555;
+	}
+
 
 	.post-content .excerpt {
 		margin-bottom:1.5em;

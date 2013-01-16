@@ -17,7 +17,7 @@ function elegance_widgets_init() {
 		'name'					=> 'Top Content (Home)',
 		'id' 						=> 'top-content-area',
 		'description'   => __( 'Located at the top of the content.'),
-		'before_widget' => '<div id="%1$s" class="grid_4">',
+		'before_widget' => '<div id="%1$s" class="grid_5">',
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
