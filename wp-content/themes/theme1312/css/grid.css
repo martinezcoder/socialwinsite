@@ -42,6 +42,14 @@
 	margin-right: 10px;
 }
 
+.grid_5b{
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	margin-right: 20px;	
+}
+
 /* Grid >> Children (Alpha ~ First, Omega ~ Last)
 ----------------------------------------------------------------------------------------------------*/
 
@@ -74,6 +82,10 @@
 }
 
 .container_16 .grid_5 {
+	width:280px;
+}
+
+.container_16 .grid_5b {
 	width:280px;
 }
 
