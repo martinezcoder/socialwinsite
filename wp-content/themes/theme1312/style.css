@@ -489,6 +489,15 @@ figcaption {
 }
 
 
+
+.mislide {
+	display: inline-block;
+	width: 940px;
+	height: 400px;
+}
+
+
+
 /* The Nivo Slider styles */
 .nivoSlider {
 	position:relative;

@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="16/01/2013 12:05 pm" -->
+<!-- generated-on="21/01/2013 7:18 am" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2013-01-16T11:55:00+00:00</lastmod>
+		<lastmod>2013-01-17T16:57:05+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/slide-view/evento/</loc>
+		<lastmod>2013-01-17T16:57:05+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/slide-view/suscribete-al-evento/</loc>
+		<lastmod>2013-01-17T16:56:13+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/social-media/monitorizacion-reputacion-online/</loc>
