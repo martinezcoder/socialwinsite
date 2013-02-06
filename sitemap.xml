@@ -1,21 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="21/01/2013 7:18 am" -->
+<!-- generated-on="06/02/2013 7:07 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2013-01-17T16:57:05+00:00</lastmod>
+		<lastmod>2013-01-30T15:22:18+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/slide-view/evento/</loc>
-		<lastmod>2013-01-17T16:57:05+00:00</lastmod>
+		<loc>http://www.socialwin.es/consultoria-estrategica/informe-auditoria-sectorial-social-media/</loc>
+		<lastmod>2013-01-30T15:22:18+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/slide-view/suscribete-al-evento/</loc>
-		<lastmod>2013-01-17T16:56:13+00:00</lastmod>
+		<loc>http://www.socialwin.es/team-view/encarna-segura/</loc>
+		<lastmod>2013-01-30T14:37:34+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/consultoria-estrategica/que-contiene-un-informe-sectorial-social-media/</loc>
+		<lastmod>2013-01-28T10:28:59+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/slide-view/informe/</loc>
+		<lastmod>2013-01-24T13:50:24+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/evento-automovil/</loc>
+		<lastmod>2013-01-24T13:13:57+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/slide-view/automovil/</loc>
+		<lastmod>2013-01-24T12:43:38+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/slide-view/certifica/</loc>
+		<lastmod>2013-01-24T12:42:48+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/que-es-el-engagement/</loc>
+		<lastmod>2013-01-22T14:31:05+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/por-que-las-redes-sociales-son-un-activo-estrategico/</loc>
+		<lastmod>2013-01-22T11:56:46+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
@@ -48,12 +90,6 @@
 		<lastmod>2013-01-16T10:49:05+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/eventos/</loc>
-		<lastmod>2013-01-16T09:27:09+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/notas-de-prensa/</loc>
@@ -176,12 +212,6 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/team-view/montse-civico/</loc>
-		<lastmod>2012-11-09T15:36:02+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
 		<loc>http://www.socialwin.es/team-view/celia-ramon-wyser/</loc>
 		<lastmod>2012-11-09T15:13:31+00:00</lastmod>
 		<changefreq>weekly</changefreq>
@@ -191,7 +221,7 @@
 		<loc>http://www.socialwin.es/consultoria-estrategica/contenidoestrategia/</loc>
 		<lastmod>2012-11-09T11:15:01+00:00</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.5</priority>
+		<priority>0.4</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/servicios/herramientas/</loc>
@@ -292,24 +322,6 @@
 	<url>
 		<loc>http://www.socialwin.es/consultoria-estrategica/modelos-de-negocio-del-siglo-xxi-y-ventaja-competitiva-2-0/</loc>
 		<lastmod>2012-09-04T10:45:42+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/slide-view/engage/</loc>
-		<lastmod>2012-08-28T11:21:29+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/slide-view/listen/</loc>
-		<lastmod>2012-08-28T11:21:16+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/slide-view/measure-2/</loc>
-		<lastmod>2012-08-28T11:21:02+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
