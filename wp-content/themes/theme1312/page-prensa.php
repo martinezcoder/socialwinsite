@@ -13,7 +13,13 @@ get_header(); ?>
         Links
       </h4>
 
-
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.elmundofinanciero.com/noticia/10609/Analisis-y-Opinion/De-verdad-existe-el-ROI-en-social-media?.html">
+            <div class="fleft">¿De verdad existe el ROI en social media?</div>
+            <div class="fright">Mundo Financiero, 18/02/2013</div>
+        </a>
+     </div>
+     
      <div class="post-prensa">
         <a target="_blank" href="http://cocheglobal.blogspot.com.es/2013/01/marcas-con-muchos-fans-pero-con-pocos.html?m=1">
             <div class="fleft">Marcas con muchos fans pero con pocos clics</div>
