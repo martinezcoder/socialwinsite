@@ -13,16 +13,82 @@ get_header(); ?>
         Links
       </h4>
 
+
      <div class="post-prensa">
-         <div class="fleft"><a target="_blank" href="http://orientacion-laboral.infojobs.net/cooperacion-cocreacion">http://orientacion-laboral.infojobs.net/cooperacion-cocreacion</a></div>
+        <a target="_blank" href="http://cocheglobal.blogspot.com.es/2013/01/marcas-con-muchos-fans-pero-con-pocos.html?m=1">
+            <div class="fleft">Marcas con muchos fans pero con pocos clics</div>
+            <div class="fright">Coche Global, 31/01/2013</div>
+        </a>
      </div>
 
      <div class="post-prensa">
-         <div class="fleft"><a target="_blank" href="http://orientacion-laboral.infojobs.net/redes-sociales-emprendedores">http://orientacion-laboral.infojobs.net/redes-sociales-emprendedores</a></div>
+        <a target="_blank" href="http://www.marketingnews.es/tendencias/noticia/1072016029005/audi-marca-mejor-conduce-redes-sociales-espanolas.1.html?utm_source=rss&utm_medium=feed&utm_campaign=20130201">
+            <div class="fleft">Audi, la marca que mejor se conduce en las redes sociales españolas</div>
+            <div class="fright">Marketing News, 30/01/2013</div>            
+        </a>
      </div>
 
      <div class="post-prensa">
-         <div class="fleft"><a target="_blank" href="http://www.puromarketing.com/13/14933/redes-sociales-activo-estrategico.html">http://www.puromarketing.com/13/14933/redes-sociales-activo-estrategico.html</a></div>
+        <a target="_blank" href="http://www.anuncios.com/investigacion-marketing-opinion-publica/noticia/1072023009601/audi-marca-coches-mas-seguidores-redes-sociales.1.html">
+            <div class="fleft">Audi es la marca de coches con más seguidores en redes sociales</div>
+            <div class="fright">Revista Anuncios, 30/01/2013</div>            
+        </a>
+     </div>
+
+     <div class="post-prensa">
+         <a target="_blank" href="http://www.elmundofinanciero.com/noticia/9828/Motor/AUDI-gana-de-calle-en-las-redes-sociales-espanolas.html">
+             <div class="fleft">AUDI gana de calle en las redes sociales españolas</div>
+             <div class="fright">El mundo financiero, 29/01/2013</div>
+         </a>
+     </div>
+
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.ondacro.com/podcast/entrevista-celia-ramon-informe-auto-en-rrss-29-de-enero-2013?tipo=player&pos=0">
+            <div class="fleft">Entrevista a Celia Ramón Wyser</div>
+            <div class="fright">Onda Cro "Atrapados en las redes", 29/01/2013</div>            
+        </a>
+     </div>
+
+     <div class="post-prensa">
+         <a target="_blank" href="http://www.ivoox.com/entrevista-celia-ramon-informe-auto-rrss-29-audios-mp3_rf_1745023_1.html?autoplay=1"> 
+            <div class="fleft">Entrevista a Celia Ramón Wyser</div>
+            <div class="fright">Ivoox (kiosko de audio), 29/01/2013</div>
+         </a>
+     </div>
+
+     <div class="post-prensa">
+         <a target="_blank" href="http://ticsyformacion.com/2013/01/29/redes-sociales-en-el-sector-de-la-automocion-espana-infografia-infographic-socialmedia/">
+            <div class="fleft">Redes Sociales en el sector de la automoción España#infographic</div>
+            <div class="fright">Ticsyformacion (Alfredo Vela), 29/01/2013</div>            
+        </a>
+     </div>
+
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.dominio.ws/29/redes-sociales-en-el-sector-de-la-automocion-espana-infografia-infographic-socialmedia/">
+            <div class="fleft">Redes Sociales en el sector de la automoción España #infografia #infographic #socialmedia</div>
+            <div class="fright">Dominio, 29/01/2013</div>            
+        </a>
+     </div> 
+
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.puromarketing.com/13/14933/redes-sociales-activo-estrategico.html">
+            <div class="fleft">¿Por qué las redes sociales son un activo estratégico?</div>
+            <div class="fright">PuroMarketing, 10/01/2013</div>            
+        </a>
+     </div>
+
+     <div class="post-prensa">
+        <a target="_blank" href="http://orientacion-laboral.infojobs.net/cooperacion-cocreacion">
+            <div class="fleft">2 claves para hacer realidad tus ideas de negocio</div>
+            <div class="fright">Infojobs, 20/10/2012</div>            
+        </a>
+     </div>
+
+     <div class="post-prensa">
+        <a target="_blank" href="http://orientacion-laboral.infojobs.net/redes-sociales-emprendedores">
+            <div class="fleft">Redes Sociales: Ventajas competitivas para tu negocio</div>
+            <div class="fright">Infojobs, 08/10/2012</div>            
+        </a>
      </div>
 
   </dl>

@@ -2406,12 +2406,18 @@ blockquote.testi-single {
 			}
 
 
+.equipo ul {
+		text-align: left;
+}
 
 
 /* Our team */
 .recent-posts.team {
 	margin:0;
 	padding:0;
+	}
+	.recent-posts.team ul {
+		text-align: left;
 	}
 	.recent-posts.team li.entry {
 		float:left;

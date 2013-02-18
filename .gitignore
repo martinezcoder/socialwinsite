@@ -1,7 +1,7 @@
 $ cat .gitignore
 .project
-wp-config.php
+#wp-config.php
 local.sh
 remote.sh
-bd.sh
+#bd.sh
 
