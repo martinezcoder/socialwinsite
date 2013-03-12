@@ -19,6 +19,13 @@ get_header(); ?>
             <div class="fright">Mundo Financiero, 18/02/2013</div>
         </a>
      </div>
+
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.baquia.com/blogs/social-media/posts/2013-02-12-las-7-areas-de-influencia-de-las-redes-sociales-en-una-empresa">
+            <div class="fleft">Las 7 áreas de influencia de las redes sociales en una empresa</div>
+            <div class="fright">BAQUIA, 12/02/2013</div>
+        </a>
+     </div>
      
      <div class="post-prensa">
         <a target="_blank" href="http://cocheglobal.blogspot.com.es/2013/01/marcas-con-muchos-fans-pero-con-pocos.html?m=1">
