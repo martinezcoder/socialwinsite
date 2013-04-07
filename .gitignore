@@ -1,7 +1,4 @@
 $ cat .gitignore
+_backup
 .project
-#wp-config.php
-local.sh
-remote.sh
-#bd.sh
 

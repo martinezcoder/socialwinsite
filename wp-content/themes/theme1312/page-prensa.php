@@ -6,7 +6,6 @@
 get_header(); ?>
 <div id="content" class="grid_16">
   <h1><?php the_title(); ?></h1>
-  <p>Press Officer: <strong>celia.ramon@socialwin.es</strong></p>
 
   <dl class="faq_list">
       <h4>
@@ -17,13 +16,6 @@ get_header(); ?>
         <a target="_blank" href="http://www.elmundofinanciero.com/noticia/10609/Analisis-y-Opinion/De-verdad-existe-el-ROI-en-social-media?.html">
             <div class="fleft">¿De verdad existe el ROI en social media?</div>
             <div class="fright">Mundo Financiero, 18/02/2013</div>
-        </a>
-     </div>
-
-     <div class="post-prensa">
-        <a target="_blank" href="http://www.baquia.com/blogs/social-media/posts/2013-02-12-las-7-areas-de-influencia-de-las-redes-sociales-en-una-empresa">
-            <div class="fleft">Las 7 áreas de influencia de las redes sociales en una empresa</div>
-            <div class="fright">BAQUIA, 12/02/2013</div>
         </a>
      </div>
      

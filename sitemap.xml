@@ -1,9 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="01/03/2013 10:48 am" -->
+<!-- generated-on="07/04/2013 10:17 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2013-02-18T12:24:53+00:00</lastmod>
+		<lastmod>2013-04-07T22:17:10+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/evento-automovil/</loc>
+		<lastmod>2013-04-07T22:17:10+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/slide-view/analiza/</loc>
+		<lastmod>2013-04-07T22:01:05+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/slide-view/informe-sector-medios/</loc>
+		<lastmod>2013-04-07T22:00:53+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/slide-view/la-salle/</loc>
+		<lastmod>2013-04-07T21:56:59+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/presentacion-en-lasalle-informe-redes-sociales-sector-automovil-2/</loc>
+		<lastmod>2013-04-02T12:37:48+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/canales-de-tv-existen-en-las-redes-sociales-2/</loc>
+		<lastmod>2013-04-01T10:52:31+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/consultoria-estrategica/que-contiene-un-informe-sectorial-social-media/</loc>
+		<lastmod>2013-04-01T10:38:23+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/las-redes-sociales-mas-humanas-que-la-humanidad/</loc>
+		<lastmod>2013-04-01T08:27:52+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/team-view/anna-monreal/</loc>
+		<lastmod>2013-03-25T09:07:10+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/team-view/gessica-cambi/</loc>
+		<lastmod>2013-03-25T08:53:07+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/nosotros/trabaja-con-nosotros/</loc>
+		<lastmod>2013-03-15T17:59:31+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/prensa/</loc>
+		<lastmod>2013-03-12T16:59:59+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -22,24 +94,6 @@
 	<url>
 		<loc>http://www.socialwin.es/consultoria-estrategica/inspirar-sobre-el-social-media/</loc>
 		<lastmod>2013-02-13T08:05:18+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/slide-view/engage/</loc>
-		<lastmod>2013-02-12T12:34:50+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/slide-view/listen/</loc>
-		<lastmod>2013-02-12T12:34:44+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/slide-view/measure-2/</loc>
-		<lastmod>2013-02-12T12:34:34+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
@@ -66,24 +120,6 @@
 		<lastmod>2013-01-30T15:22:18+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/team-view/encarna-segura/</loc>
-		<lastmod>2013-01-30T14:37:34+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/consultoria-estrategica/que-contiene-un-informe-sectorial-social-media/</loc>
-		<lastmod>2013-01-28T10:28:59+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/evento-automovil/</loc>
-		<lastmod>2013-01-24T13:13:57+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/social-media/que-es-el-engagement/</loc>
@@ -122,22 +158,10 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/notas-de-prensa/</loc>
-		<lastmod>2013-01-14T08:48:30+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
 		<loc>http://www.socialwin.es/informes/</loc>
 		<lastmod>2013-01-12T07:57:55+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/social-media/las-redes-sociales-mas-humanas-que-la-humanidad/</loc>
-		<lastmod>2012-12-14T08:48:46+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/consultoria-estrategica/gestionar-criticas-en-redes-sociales/</loc>
@@ -226,12 +250,6 @@
 	<url>
 		<loc>http://www.socialwin.es/social-media/crecimiento-facebook-2013/</loc>
 		<lastmod>2012-11-18T11:58:48+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/team-view/celia-ramon-wyser/</loc>
-		<lastmod>2012-11-09T15:13:31+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
