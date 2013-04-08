@@ -1,33 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="07/04/2013 10:17 pm" -->
+<!-- generated-on="08/04/2013 12:08 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2013-04-07T22:17:10+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/evento-automovil/</loc>
-		<lastmod>2013-04-07T22:17:10+00:00</lastmod>
+		<lastmod>2013-04-08T12:02:33+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/slide-view/analiza/</loc>
-		<lastmod>2013-04-07T22:01:05+00:00</lastmod>
+		<lastmod>2013-04-08T12:02:33+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/slide-view/informe-sector-medios/</loc>
-		<lastmod>2013-04-07T22:00:53+00:00</lastmod>
+		<lastmod>2013-04-08T12:01:24+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/slide-view/la-salle/</loc>
-		<lastmod>2013-04-07T21:56:59+00:00</lastmod>
+		<lastmod>2013-04-08T11:58:24+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
