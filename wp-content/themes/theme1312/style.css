@@ -3145,8 +3145,7 @@ input[type="submit"]:hover {
 #sociable-header {
 	position:absolute;
 	right:-6px;
-	top:60px;
-	z-index:1;
+	top:80px;
 
 	float:right;
 	padding:7px 5px;
@@ -3167,16 +3166,23 @@ input[type="submit"]:hover {
 				padding: 3px;
 			    float:left;
 			}
-				.sociable-header ul li a{
-					text-decoration: none;
-					outline:none;
-					color:transparent;
-				}
+
 
 			.option1_32{
 			background:url("images/socials/sprites/option1_32.png") no-repeat scroll;
 			display: block;float: left;height: 32px;width: 32px;
+					opacity:0.8;
 			}
+			.option1_32:hover{
+				opacity:1; 
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				-ms-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				transition: all 0.5s ease;	
+				-ms-transition: all 0.5s ease;	
+			}	
+					
 
 			#Twitter_Counter {
 			width:130px !important;
@@ -3241,4 +3247,66 @@ input[type="submit"]:hover {
 	}
 
 
+
+.tooltip {
+	display: inline-block; 
+	position: relative; 
+	z-index: 99;
+}
+.tooltip:after, .tooltip:before{
+	position: absolute;  
+	opacity: 0;
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;	
+	-ms-transition: all 0.6s ease;
+}
+
+.tooltip:after {
+	bottom: 26px;
+	content: attr(title);
+	background: rgba(0,0,0, 0.5); 
+	border-radius: 3px;
+	color: #FFF; 
+	font-family: Helvetica, Verdana, Georgia;
+	font-size: 11px;
+	padding: 2px 4px 5px;
+	text-align: center;
+	width: 118px;
+	top: -22px;
+	height: 11px;
+	margin:0;
+}
+
+.tool-left:after {
+	left: 4%;	
+}
+
+.tool-right:after {
+	right: 0;	
+}
+
+.tooltip:before {
+	top: -4px;	
+	left: 33%;
+	bottom: 20px;
+	content: "";
+	border: solid;
+	border-color: rgba(0,0,0, 0.5) transparent;
+	border-width: 5px 3px 0;
+}
+
+.tooltip:hover:after, .tooltip:hover:before{
+	opacity: 1;
+	color: #FFF; 
+
+	-webkit-transition: all 0.6s ease;
+	-moz-transition: all 0.6s ease;
+	-ms-transition: all 0.6s ease;
+	-o-transition: all 0.6s ease;
+	transition: all 0.6s ease;	
+	-ms-transition: all 0.6s ease;	
+}
 /* Always remember to compress your live stylesheet and keep an uncompressed backup */
