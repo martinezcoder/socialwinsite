@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="08/04/2013 12:08 pm" -->
+<!-- generated-on="29/04/2013 2:47 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2013-04-08T12:02:33+00:00</lastmod>
+		<lastmod>2013-04-10T09:00:23+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
@@ -32,6 +32,12 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
+		<loc>http://www.socialwin.es/social-media/cnn-triunfa-en-las-redes-sociales-informe-de-auditoria-sectorial-en-social-media-sector-tv/</loc>
+		<lastmod>2013-04-01T11:12:22+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
 		<loc>http://www.socialwin.es/social-media/canales-de-tv-existen-en-las-redes-sociales-2/</loc>
 		<lastmod>2013-04-01T10:52:31+00:00</lastmod>
 		<changefreq>weekly</changefreq>
@@ -46,6 +52,12 @@
 	<url>
 		<loc>http://www.socialwin.es/social-media/las-redes-sociales-mas-humanas-que-la-humanidad/</loc>
 		<lastmod>2013-04-01T08:27:52+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/social-media/nota-de-prensa-cnn-triunfa-en-las-redes-sociales-espanolas/</loc>
+		<lastmod>2013-03-30T14:26:53+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
 	</url>
