@@ -16,7 +16,7 @@ function my_script() {
 		wp_enqueue_script('cycleAll', get_bloginfo('template_url').'/js/jquery.cycle.all.js', array('jquery'), '2.99');
 		wp_enqueue_script('audiojs', get_bloginfo('template_url').'/js/audiojs/audio.js', array('jquery'), '1.0');
 		wp_enqueue_script('custom', get_bloginfo('template_url').'/js/custom.js', array('jquery'), '1.0');
-
+		wp_enqueue_script('bxslider', get_bloginfo('template_url').'/js/jquery.bxslider.min.js', array('jquery'), '4.1');
 
 	}
 }

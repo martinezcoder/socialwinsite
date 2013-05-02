@@ -64,7 +64,7 @@
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/prettyPhoto.css" />
   <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/grid.css" />
-
+  <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'template_url' ); ?>/css/jquery.bxslider.css"/>
 	<?php
 		/* We add some JavaScript to pages with the comment form
 		 * to support sites with threaded comments (when in use).
@@ -108,7 +108,7 @@
 			});
 			
 			// easyTooltip init
-			jQuery("a.tooltip, .social-networks li a").easyTooltip();
+			//jQuery("a.tooltip, .social-networks li a").easyTooltip();
 			
 			jQuery(".recent-posts.clients li:nth-child(3n), .recent-posts.team li.entry:nth-child(4n), .recent-posts.services li:odd").addClass('nomargin')
 			
@@ -137,6 +137,23 @@
 			});
 		});
 	</script>
+	
+	<!-- jQuery slider presentacion -->
+	<script type="text/javascript">
+		
+		jQuery(window).load(function() {
+			$('.bxslider').bxSlider({
+			  mode: 'horizontal',
+			  useCSS: false,
+			  infiniteLoop: true,
+			  hideControlOnEnd: true,
+			  /*easing: 'easeOutElastic',*/
+			  speed: 800,
+			  pager:false
+			});
+		});
+
+</script>
   <!-- Custom CSS -->
 	<?php if(of_get_option('custom_css') != ''){?>
   <style type="text/css">
@@ -239,10 +256,10 @@
         <div id="sociable-header">
         	<div class="sociable-header">
 				<ul class='s_clearfix'>
-					<li><a class="option1_32 tooltip tool-left" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW"></a></li>
+					<li><a title="Síguenos en Twitter" class="option1_32 tooltip tool-left" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW"></a></li>
 					<li><a title="Síguenos en Facebook" class="option1_32 tooltip tool-left" style="background-position:-96px 0px" rel="nofollow" target="_blank" href="https://www.facebook.com/pages/SocialWin/349679691794392"></a></li>
-					<li><a title="Síguenos en LinkedIn" class="option1_32 tooltip tool-left" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin"></a></li>
-					<li><a title="Síguenos en Google+" class="option1_32 tooltip tool-right" style="background-position:-96px -32px" rel="nofollow" target="_blank" href="https://plus.google.com/u/0/106528211751763873508"></a></li>
+					<li><a title="Síguenos en LinkedIn" class="option1_32 tooltip tool-center" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin"></a></li>
+					<li><a title="Síguenos en Google+" class="option1_32 tooltip tool-center" style="background-position:-96px -32px" rel="nofollow" target="_blank" href="https://plus.google.com/u/0/106528211751763873508"></a></li>
 					<li><a title="Síguenos en Pinterest" class="option1_32 tooltip tool-right" style="background-position:-128px -32px" rel="nofollow" target="_blank" href="http://pinterest.com/socialwin/"></a></li>	
 					<li><a title="RSS" class="option1_32 tooltip tool-right" style="background-position:-128px 0px" rel="nofollow" target="_blank" href="http://feeds.feedburner.com/SocialWin"></a></li>	
 				</ul>
