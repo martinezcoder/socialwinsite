@@ -3306,5 +3306,12 @@ input[type="submit"]:hover {
 	border-width: 5px 3px 0;
 	color: #FFF; 
 }
+.youtube-icon{
+	border: 1px solid #C3C3C3;
+    border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px; 
+	height:31px;
+}
 
 /* Always remember to compress your live stylesheet and keep an uncompressed backup */

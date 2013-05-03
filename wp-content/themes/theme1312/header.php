@@ -255,13 +255,14 @@
 
         <div id="sociable-header">
         	<div class="sociable-header">
-				<ul class='s_clearfix'>
-					<li><a title="Síguenos en Twitter" class="option1_32 tooltip tool-left" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW"></a></li>
-					<li><a title="Síguenos en Facebook" class="option1_32 tooltip tool-left" style="background-position:-96px 0px" rel="nofollow" target="_blank" href="https://www.facebook.com/pages/SocialWin/349679691794392"></a></li>
-					<li><a title="Síguenos en LinkedIn" class="option1_32 tooltip tool-center" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin"></a></li>
-					<li><a title="Síguenos en Google+" class="option1_32 tooltip tool-center" style="background-position:-96px -32px" rel="nofollow" target="_blank" href="https://plus.google.com/u/0/106528211751763873508"></a></li>
-					<li><a title="Síguenos en Pinterest" class="option1_32 tooltip tool-right" style="background-position:-128px -32px" rel="nofollow" target="_blank" href="http://pinterest.com/socialwin/"></a></li>	
-					<li><a title="RSS" class="option1_32 tooltip tool-right" style="background-position:-128px 0px" rel="nofollow" target="_blank" href="http://feeds.feedburner.com/SocialWin"></a></li>	
+				<ul class='s_clearfix'>				
+					<li><a title="Síguenos en Twitter" class="option1_32 tooltip tool-left youtube-icon" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW"></a></li>
+					<li><a title="Síguenos en Facebook" class="option1_32 tooltip tool-left youtube-icon" style="background-position:-96px 0px" rel="nofollow" target="_blank" href="https://www.facebook.com/pages/SocialWin/349679691794392"></a></li>
+					<li><a title="Síguenos en LinkedIn" class="option1_32 tooltip tool-center youtube-icon" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin"></a></li>
+					<li><a title="Síguenos en Youtube" class="option1_32 tooltip tool-center youtube-icon" style="background-position:-353px 0px" rel="nofollow" target="_blank" href="http://www.youtube.com/user/SocialWin"></a></li>
+					<li><a title="Síguenos en Google+" class="option1_32 tooltip tool-right youtube-icon" style="background-position:-96px -32px" rel="nofollow" target="_blank" href="https://plus.google.com/u/0/106528211751763873508"></a></li>
+					<li><a title="Síguenos en Pinterest" class="option1_32 tooltip tool-right youtube-icon" style="background-position:-128px -32px" rel="nofollow" target="_blank" href="http://pinterest.com/socialwin/"></a></li>	
+					<li><a title="RSS" class="option1_32 tooltip tool-right youtube-icon" style="background-position:-128px 0px" rel="nofollow" target="_blank" href="http://feeds.feedburner.com/SocialWin"></a></li>	
 				</ul>
 			</div>
 		</div>
