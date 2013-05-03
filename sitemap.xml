@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="02/05/2013 4:13 pm" -->
+<!-- generated-on="03/05/2013 4:39 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2013-05-02T16:12:27+00:00</lastmod>
+		<lastmod>2013-05-03T16:38:43+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/nosotros/nuestros-partners/</loc>
+		<lastmod>2013-05-03T16:38:43+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/team-view/thomas-bartczak/</loc>
+		<lastmod>2013-05-03T10:50:53+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/team-view/2466/</loc>
+		<lastmod>2013-05-03T10:45:45+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/metodo-socialwin/metodo/</loc>
@@ -102,12 +120,6 @@
 		<lastmod>2013-02-18T12:24:53+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.3</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/nosotros/nuestros-partners/</loc>
-		<lastmod>2013-02-18T10:15:30+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/consultoria-estrategica/inspirar-sobre-el-social-media/</loc>
@@ -336,12 +348,6 @@
 		<lastmod>2012-10-18T12:23:27+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/team-view/thomas-bartczak/</loc>
-		<lastmod>2012-10-18T11:57:14+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/social-media/github-la-socializacion-del-codigo-fuente/</loc>
