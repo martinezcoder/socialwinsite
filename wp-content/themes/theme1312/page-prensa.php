@@ -13,9 +13,37 @@ get_header(); ?>
       </h4>
 
      <div class="post-prensa">
+        <a target="_blank" href="http://www.puromarketing.com/18/15867/cadenas-television-tambien-apuestan-engagement.html">
+            <div class="fleft">Las cadenas de televisión también apuestan por el Engagement</div>
+            <div class="fright">PuroMarketing, 03/05/2013</div>
+        </a>
+     </div> 
+
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.euskadinnova.net/es/enpresa-digitala/noticias/canal-lider-redes-sociales/10214.aspx?utm_source=rss_feed&utm_medium=rss&utm_campaign=accesos_rss">
+            <div class="fleft">El canal CNN líder en redes sociales </div>
+            <div class="fright">Euskadi Innova, 10/04/2013</div>
+        </a>
+     </div> 
+      
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.ricardomena.es/blog/2013/04/05/primer-informe-redes-sociales-en-el-sector-medios-tv/">
+            <div class="fleft">Primer Informe Redes Sociales en el sector Medios TV</div>
+            <div class="fright">Enredos Sociales, 09/04/2013</div>
+        </a>
+     </div>    
+      
+     <div class="post-prensa">
         <a target="_blank" href="http://www.elmundofinanciero.com/noticia/10609/Analisis-y-Opinion/De-verdad-existe-el-ROI-en-social-media?.html">
             <div class="fleft">¿De verdad existe el ROI en social media?</div>
             <div class="fright">Mundo Financiero, 18/02/2013</div>
+        </a>
+     </div>
+
+    <div class="post-prensa">
+        <a target="_blank" href="http://www.marketingdirecto.com/actualidad/medios/la-cnn-arrasa-en-redes-sociales-en-espana-segun-informetv/">
+            <div class="fleft">La CNN arrasa en redes sociales en España, según #informeTV</div>
+            <div class="fright">Marketing Directo, 09/04/2013</div>
         </a>
      </div>
      
