@@ -4,8 +4,10 @@
 	padding: 0;
 	*zoom: 1;
 	max-width:940px;
+	overflow: hidden;
 }
 .bx-wrapper img {
+	margin-left:10px;
 	max-width:  100%; 
 	display: block;
 }
@@ -75,12 +77,14 @@
 
 .bx-wrapper .bx-prev {
 	left: 10px;
-	background: url(../images/controls.png) no-repeat 0 -32px;
+	background: url(../images/controls.png) no-repeat 0 -50px;
+	opacity:0.3;
 }
 
 .bx-wrapper .bx-next {
 	right: 10px;
-	background: url(../images/controls.png) no-repeat -43px -32px;
+	background: url(../images/controls.png) no-repeat -51px -50px;
+	opacity:0.3;
 }
 
 .bx-wrapper .bx-prev:hover {
@@ -88,18 +92,18 @@
 }
 
 .bx-wrapper .bx-next:hover {
-	background-position: -43px 0;
+	background-position: -51px 0;
 }
 
 .bx-wrapper .bx-controls-direction a {
-	position: absolute;
-	top: 50%;
-	margin-top: -16px;
-	outline: 0;
-	width: 32px;
-	height: 32px;
-	text-indent: -9999px;
-	z-index: 9999;
+    height: 50px;
+    margin-top: -16px;
+    outline: 0 none;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    width: 51px;
+    z-index: 9999;	
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {

@@ -11,6 +11,76 @@ get_header(); ?>
       <h4>
         Links
       </h4>
+      
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.eureka-startups.com/blog/2013/05/28/las-startups-chicfy-petsy-y-socialwin-ganan-el-ix-campus-seedrocket-barcelona/">
+            <div class="fleft">Las startups Chicfy, Petsy y SocialWin ganan el IX Campus SeedRocket Barcelonat</div>
+            <div class="fright">EurekaStartups, 28/05/2013</div>
+        </a>
+     </div>       
+      
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.seedrocket.com/blog/2013/05/las-startupschicfy-petsy-y-socialwin-ganan-el-ix-campus-seedrocket-barcelona/">
+            <div class="fleft">Las startups Chicfy, Petsy y SocialWin ganan el IX Campus SeedRocket Barcelona</div>
+            <div class="fright">SeedRocket, 27/05/2013</div>
+        </a>
+     </div> 	 
+	 
+     <div class="post-prensa">
+        <a target="_blank" href="http://loogic.com/chicfy-petsy-y-socialwin-ganadores-de-la-ix-edicion-del-campus-seedrocket-barcelona/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Pymecrunch+%28PymeCrunch%29">
+            <div class="fleft">Chicfy, Petsy y SocialWin ganadores de la IX edición del Campus SeedRocket Barcelona</div>
+            <div class="fright">Loogik.com, 27/05/2013</div>
+        </a>
+     </div> 	 
+	 
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.todostartups.com/videos-para-emprendedores-e-inversores/video-socialwin-3o-premio-en-seedrocket-el-ix-campus-de-emprendedores-2013">
+            <div class="fleft">SocialWin, 3º Premio en SeedRocket, el IX Campus de Emprendedores 2013 </div>
+            <div class="fright">Todostartups, 27/05/2013</div>
+        </a>
+     </div> 	
+
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.blogdeemprendedores.com/">
+            <div class="fleft">Seedrocket IX Campus mis impresiones</div>
+            <div class="fright">Blogdeemprendedores.com, 27/05/2013</div>
+        </a>
+     </div> 	 
+	 
+     <div class="post-prensa">
+        <a target="_blank" href="http://nafhat.info/videos/video/wondj6l6WBk/Chicfy-com-Petsy-y-Social-Win-las-3-startups-ganadores-del-IX-Campus-SeedRocket.html">
+            <div class="fleft">Chicfy.com, Petsy y Social Win, las 3 startups ganadores del IX Campus </div>
+            <div class="fright">Nafhat, 27/05/2013</div>
+        </a>
+     </div> 		 
+	 
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.genbeta.com/web/chicfy-petsy-y-socialwin-son-los-ganadores-del-ultimo-campus-seedrocket?utm_source=buffer&utm_medium=twitter&utm_campaign=Buffer&utm_content=buffer311ce">
+            <div class="fleft">Chicfy, Petsy y SocialWin son los ganadores del último campus SeedRocket</div>
+            <div class="fright">Genbeta, 27/05/2013</div>
+        </a>
+     </div> 	
+     
+     <div class="post-prensa">
+        <a target="_blank" href="http://agoranews.es/2013/05/24/chicfycom-petsy-y-social-win-las-3-startups-ganadores-del-ix-campus-seedrocket">
+            <div class="fleft">Chicfy.com, Petsy y Social Win, las 3 startups ganadores del IX Campus SeedRocket</div>
+            <div class="fright">AgoraNews, 24/05/2013</div>
+        </a>
+     </div> 	
+
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.hemerotek.com/2013/05/ganadores-eedrocket-barcelona-2013.html">
+            <div class="fleft">Tres 'startups' a seguir: Chicfy, Petsy y Socialwin</div>
+            <div class="fright">HemeroTek.com, 24/05/2013</div>
+        </a>
+     </div>       
+	 
+     <div class="post-prensa">
+        <a target="_blank" href="http://www.youtube.com/watch?v=wondj6l6WBk&feature=youtube_gdata">
+            <div class="fleft">Chicfy.com, Petsy y Social Win, las 3 startups ganadores del IX Campus SeedRocket</div>
+            <div class="fright">Youtube, 24/05/2013</div>
+        </a>
+     </div> 	 
 
      <div class="post-prensa">
         <a target="_blank" href="http://www.puromarketing.com/18/15867/cadenas-television-tambien-apuestan-engagement.html">

@@ -1,17 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="http://www.socialwin.es/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- generator="wordpress/3.4.1" -->
 <!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="3.2.9" -->
-<!-- generated-on="03/05/2013 4:48 pm" -->
+<!-- generated-on="30/05/2013 3:06 pm" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>http://www.socialwin.es/</loc>
-		<lastmod>2013-05-03T16:47:10+00:00</lastmod>
+		<lastmod>2013-05-30T15:04:50+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/nosotros/nuestros-partners/</loc>
-		<lastmod>2013-05-03T16:47:10+00:00</lastmod>
+		<lastmod>2013-05-30T15:04:50+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/contacto/</loc>
+		<lastmod>2013-05-30T14:23:53+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/team-view/2466/</loc>
+		<lastmod>2013-05-10T16:05:30+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/team-view/lourenco-viana/</loc>
+		<lastmod>2013-05-08T13:37:21+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
+	</url>
+	<url>
+		<loc>http://www.socialwin.es/marketing-online/las-7-areas-de-influencia-de-las-redes-sociales-en-una-empresa/</loc>
+		<lastmod>2013-05-03T16:43:28+00:00</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/team-view/thomas-bartczak/</loc>
@@ -20,22 +44,10 @@
 		<priority>0.3</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/team-view/2466/</loc>
-		<lastmod>2013-05-03T10:45:45+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
 		<loc>http://www.socialwin.es/metodo-socialwin/metodo/</loc>
 		<lastmod>2013-05-02T16:12:27+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/team-view/lourenco-viana/</loc>
-		<lastmod>2013-04-29T16:23:57+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
 	</url>
 	<url>
 		<loc>http://www.socialwin.es/team-view/anna-monreal/</loc>
@@ -116,12 +128,6 @@
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>http://www.socialwin.es/team-view/jeanette-quezada/</loc>
-		<lastmod>2013-02-18T12:24:53+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>0.3</priority>
-	</url>
-	<url>
 		<loc>http://www.socialwin.es/consultoria-estrategica/inspirar-sobre-el-social-media/</loc>
 		<lastmod>2013-02-13T08:05:18+00:00</lastmod>
 		<changefreq>weekly</changefreq>
@@ -130,12 +136,6 @@
 	<url>
 		<loc>http://www.socialwin.es/nosotros/vision/</loc>
 		<lastmod>2013-02-12T12:13:02+00:00</lastmod>
-		<changefreq>weekly</changefreq>
-		<priority>1.0</priority>
-	</url>
-	<url>
-		<loc>http://www.socialwin.es/contacto/</loc>
-		<lastmod>2013-02-11T16:20:16+00:00</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
