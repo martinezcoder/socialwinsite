@@ -306,7 +306,7 @@ function the_sociallinks($id = 0) {
 	                                                               data-url=\"".$post_permalink."\" 
 	                                                               class=\"twitter-share-button\" 
 	                                                               data-count=\"horizontal\"
-	                                                               data-via=\"SocialWinTW\"
+	                                                               data-via=\"SocialWinApp\"
 	                                                               data-lang=\"es\"></a></li>";
 
 	$html_text = $html_text."

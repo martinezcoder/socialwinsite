@@ -256,7 +256,7 @@
         <div id="sociable-header">
         	<div class="sociable-header">
 				<ul class='s_clearfix'>				
-					<li><a title="Síguenos en Twitter" class="option1_32 tooltip tool-left youtube-icon" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinTW"></a></li>
+					<li><a title="Síguenos en Twitter" class="option1_32 tooltip tool-left youtube-icon" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="https://twitter.com/SocialWinApp"></a></li>
 					<li><a title="Síguenos en Facebook" class="option1_32 tooltip tool-left youtube-icon" style="background-position:-96px 0px" rel="nofollow" target="_blank" href="https://www.facebook.com/pages/SocialWin/349679691794392"></a></li>
 					<li><a title="Síguenos en LinkedIn" class="option1_32 tooltip tool-center youtube-icon" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/company/socialwin"></a></li>
 					<li><a title="Síguenos en Youtube" class="option1_32 tooltip tool-center youtube-icon" style="background-position:-353px 0px" rel="nofollow" target="_blank" href="http://www.youtube.com/user/SocialWin"></a></li>
